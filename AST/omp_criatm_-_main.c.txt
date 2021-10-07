@@ -1,0 +1,122 @@
+TranslationUnitDecl 0x55eb9fad8e18 <<invalid sloc>> <invalid sloc>
+|-TypedefDecl 0x55eb9fad93b0 <<invalid sloc>> <invalid sloc> implicit __int128_t '__int128'
+| `-BuiltinType 0x55eb9fad90b0 '__int128'
+|-TypedefDecl 0x55eb9fad9420 <<invalid sloc>> <invalid sloc> implicit __uint128_t 'unsigned __int128'
+| `-BuiltinType 0x55eb9fad90d0 'unsigned __int128'
+|-TypedefDecl 0x55eb9fad96f8 <<invalid sloc>> <invalid sloc> implicit __NSConstantString 'struct __NSConstantString_tag'
+| `-RecordType 0x55eb9fad9500 'struct __NSConstantString_tag'
+|   `-Record 0x55eb9fad9478 '__NSConstantString_tag'
+|-TypedefDecl 0x55eb9fad9790 <<invalid sloc>> <invalid sloc> implicit __builtin_ms_va_list 'char *'
+| `-PointerType 0x55eb9fad9750 'char *'
+|   `-BuiltinType 0x55eb9fad8eb0 'char'
+|-TypedefDecl 0x55eb9fad9a58 <<invalid sloc>> <invalid sloc> implicit __builtin_va_list 'struct __va_list_tag [1]'
+| `-ConstantArrayType 0x55eb9fad9a00 'struct __va_list_tag [1]' 1 
+|   `-RecordType 0x55eb9fad9870 'struct __va_list_tag'
+|     `-Record 0x55eb9fad97e8 '__va_list_tag'
+|-FunctionDecl 0x55eb9fb328b0 <omp_criatm_-_main.c:1:1, line:23:1> line:1:5 main 'int ()'
+| `-CompoundStmt 0x55eb9fb360d0 <line:2:1, line:23:1>
+|   |-DeclStmt 0x55eb9fb32a08 <line:3:3, col:8>
+|   | `-VarDecl 0x55eb9fb329a8 <col:3, col:7> col:7 used x 'int'
+|   |-DeclStmt 0x55eb9fb32a98 <line:4:3, col:12>
+|   | `-VarDecl 0x55eb9fb32a38 <col:3, col:7> col:7 used count 'int'
+|   |-DeclStmt 0x55eb9fb32b28 <line:5:3, col:8>
+|   | `-VarDecl 0x55eb9fb32ac8 <col:3, col:7> col:7 used i 'int'
+|   |-BinaryOperator 0x55eb9fb32b88 <line:6:3, col:7> 'int' '='
+|   | |-DeclRefExpr 0x55eb9fb32b40 <col:3> 'int' lvalue Var 0x55eb9fb329a8 'x' 'int'
+|   | `-IntegerLiteral 0x55eb9fb32b68 <col:7> 'int' 0
+|   |-BinaryOperator 0x55eb9fb32bf8 <line:7:3, col:11> 'int' '='
+|   | |-DeclRefExpr 0x55eb9fb32bb0 <col:3> 'int' lvalue Var 0x55eb9fb32a38 'count' 'int'
+|   | `-IntegerLiteral 0x55eb9fb32bd8 <col:11> 'int' 0
+|   |-OMPParallelDirective 0x55eb9fb333e8 <line:8:11, col:33>
+|   | |-OMPSharedClause 0x55eb9fb32c48 <col:24, col:33>
+|   | | `-DeclRefExpr 0x55eb9fb32c20 <col:31> 'int' lvalue Var 0x55eb9fb329a8 'x' 'int'
+|   | `-CapturedStmt 0x55eb9fb333b0 <line:9:3, line:12:3>
+|   |   |-CapturedDecl 0x55eb9fb32d88 <<invalid sloc>> <invalid sloc>
+|   |   | |-CompoundStmt 0x55eb9fb33398 <line:9:3, line:12:3>
+|   |   | | `-OMPCriticalDirective 0x55eb9fb33358 <line:10:13, col:25>
+|   |   | |   `-CapturedStmt 0x55eb9fb33320 <line:11:5, col:13>
+|   |   | |     |-CapturedDecl 0x55eb9fb33028 <<invalid sloc>> <invalid sloc>
+|   |   | |     | |-BinaryOperator 0x55eb9fb332f8 <col:5, col:13> 'int' '='
+|   |   | |     | | |-DeclRefExpr 0x55eb9fb33138 <col:5> 'int' lvalue Var 0x55eb9fb329a8 'x' 'int'
+|   |   | |     | | `-BinaryOperator 0x55eb9fb332d0 <col:9, col:13> 'int' '+'
+|   |   | |     | |   |-ImplicitCastExpr 0x55eb9fb332b8 <col:9> 'int' <LValueToRValue>
+|   |   | |     | |   | `-DeclRefExpr 0x55eb9fb33270 <col:9> 'int' lvalue Var 0x55eb9fb329a8 'x' 'int'
+|   |   | |     | |   `-IntegerLiteral 0x55eb9fb33298 <col:13> 'int' 1
+|   |   | |     | `-ImplicitParamDecl 0x55eb9fb330a8 <line:10:13> col:13 implicit __context 'struct (anonymous at omp_criatm_-_main.c:10:13) *'
+|   |   | |     `-DeclRefExpr 0x55eb9fb33248 <line:11:5> 'int' lvalue Var 0x55eb9fb329a8 'x' 'int'
+|   |   | |-ImplicitParamDecl 0x55eb9fb32df0 <line:8:11> col:11 implicit .global_tid. 'int *const restrict'
+|   |   | |-ImplicitParamDecl 0x55eb9fb32e50 <col:11> col:11 implicit .bound_tid. 'int *const restrict'
+|   |   | |-ImplicitParamDecl 0x55eb9fb32ed8 <col:11> col:11 implicit __context 'struct (anonymous at omp_criatm_-_main.c:8:11) *'
+|   |   | |-RecordDecl 0x55eb9fb32f38 <line:10:13> col:13 implicit struct definition
+|   |   | | |-CapturedRecordAttr 0x55eb9fb32fe0 <<invalid sloc>> Implicit
+|   |   | | `-FieldDecl 0x55eb9fb33200 <line:11:5> col:5 implicit 'int &'
+|   |   | `-CapturedDecl 0x55eb9fb33028 <<invalid sloc>> <invalid sloc>
+|   |   |   |-BinaryOperator 0x55eb9fb332f8 <col:5, col:13> 'int' '='
+|   |   |   | |-DeclRefExpr 0x55eb9fb33138 <col:5> 'int' lvalue Var 0x55eb9fb329a8 'x' 'int'
+|   |   |   | `-BinaryOperator 0x55eb9fb332d0 <col:9, col:13> 'int' '+'
+|   |   |   |   |-ImplicitCastExpr 0x55eb9fb332b8 <col:9> 'int' <LValueToRValue>
+|   |   |   |   | `-DeclRefExpr 0x55eb9fb33270 <col:9> 'int' lvalue Var 0x55eb9fb329a8 'x' 'int'
+|   |   |   |   `-IntegerLiteral 0x55eb9fb33298 <col:13> 'int' 1
+|   |   |   `-ImplicitParamDecl 0x55eb9fb330a8 <line:10:13> col:13 implicit __context 'struct (anonymous at omp_criatm_-_main.c:10:13) *'
+|   |   `-DeclRefExpr 0x55eb9fb331c0 <line:11:5> 'int' lvalue Var 0x55eb9fb329a8 'x' 'int'
+|   |-CallExpr 0x55eb9fb35540 <line:13:3, col:44> 'int'
+|   | |-ImplicitCastExpr 0x55eb9fb35528 <col:3> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|   | | `-DeclRefExpr 0x55eb9fb35420 <col:3> 'int (const char *, ...)' Function 0x55eb9fb33810 'printf' 'int (const char *, ...)'
+|   | |-ImplicitCastExpr 0x55eb9fb35590 <col:10> 'const char *' <BitCast>
+|   | | `-ImplicitCastExpr 0x55eb9fb35578 <col:10> 'char *' <ArrayToPointerDecay>
+|   | |   `-StringLiteral 0x55eb9fb35488 <col:10> 'char [29]' lvalue "critical section done. x=%d\n"
+|   | `-ImplicitCastExpr 0x55eb9fb355a8 <col:43> 'int' <LValueToRValue>
+|   |   `-DeclRefExpr 0x55eb9fb354d0 <col:43> 'int' lvalue Var 0x55eb9fb329a8 'x' 'int'
+|   |-OMPParallelDirective 0x55eb9fb35f08 <line:14:11, col:23>
+|   | `-CapturedStmt 0x55eb9fb35eb8 <line:15:3, line:20:3>
+|   |   |-CapturedDecl 0x55eb9fb356b8 <<invalid sloc>> <invalid sloc>
+|   |   | |-CompoundStmt 0x55eb9fb35ea0 <line:15:3, line:20:3>
+|   |   | | `-ForStmt 0x55eb9fb35e68 <line:16:5, line:17:25>
+|   |   | |   |-BinaryOperator 0x55eb9fb35938 <line:16:10, col:14> 'int' '='
+|   |   | |   | |-DeclRefExpr 0x55eb9fb35868 <col:10> 'int' lvalue Var 0x55eb9fb32ac8 'i' 'int'
+|   |   | |   | `-IntegerLiteral 0x55eb9fb35918 <col:14> 'int' 0
+|   |   | |   |-<<<NULL>>>
+|   |   | |   |-BinaryOperator 0x55eb9fb359c0 <col:17, col:21> 'int' '<'
+|   |   | |   | |-ImplicitCastExpr 0x55eb9fb359a8 <col:17> 'int' <LValueToRValue>
+|   |   | |   | | `-DeclRefExpr 0x55eb9fb35960 <col:17> 'int' lvalue Var 0x55eb9fb32ac8 'i' 'int'
+|   |   | |   | `-IntegerLiteral 0x55eb9fb35988 <col:21> 'int' 100
+|   |   | |   |-UnaryOperator 0x55eb9fb35a10 <col:26, col:27> 'int' postfix '++'
+|   |   | |   | `-DeclRefExpr 0x55eb9fb359e8 <col:26> 'int' lvalue Var 0x55eb9fb32ac8 'i' 'int'
+|   |   | |   `-OMPAtomicDirective 0x55eb9fb35e20 <line:17:15, col:25>
+|   |   | |     |-CapturedStmt 0x55eb9fb35d60 <line:19:5, col:10>
+|   |   | |     | |-CapturedDecl 0x55eb9fb35b28 <<invalid sloc>> <invalid sloc>
+|   |   | |     | | |-UnaryOperator 0x55eb9fb35d40 <col:5, col:10> 'int' postfix '++'
+|   |   | |     | | | `-DeclRefExpr 0x55eb9fb35c08 <col:5> 'int' lvalue Var 0x55eb9fb32a38 'count' 'int'
+|   |   | |     | | `-ImplicitParamDecl 0x55eb9fb35ba8 <line:17:15> col:15 implicit __context 'struct (anonymous at omp_criatm_-_main.c:17:15) *'
+|   |   | |     | `-DeclRefExpr 0x55eb9fb35d18 <line:19:5> 'int' lvalue Var 0x55eb9fb32a38 'count' 'int'
+|   |   | |     |-DeclRefExpr 0x55eb9fb35c08 <col:5> 'int' lvalue Var 0x55eb9fb32a38 'count' 'int'
+|   |   | |     |-BinaryOperator 0x55eb9fb35df8 <col:5, col:10> 'int' '+'
+|   |   | |     | |-OpaqueValueExpr 0x55eb9fb35db8 <col:5> 'int'
+|   |   | |     | `-OpaqueValueExpr 0x55eb9fb35dd8 <col:10> 'int'
+|   |   | |     |-<<<NULL>>>
+|   |   | |     `-IntegerLiteral 0x55eb9fb35d98 <col:10> 'int' 1
+|   |   | |-ImplicitParamDecl 0x55eb9fb35720 <line:14:11> col:11 implicit .global_tid. 'int *const restrict'
+|   |   | |-ImplicitParamDecl 0x55eb9fb35780 <col:11> col:11 implicit .bound_tid. 'int *const restrict'
+|   |   | |-ImplicitParamDecl 0x55eb9fb35808 <col:11> col:11 implicit __context 'struct (anonymous at omp_criatm_-_main.c:14:11) *'
+|   |   | |-RecordDecl 0x55eb9fb35a30 <line:17:15> col:15 implicit struct definition
+|   |   | | |-CapturedRecordAttr 0x55eb9fb35ae0 <<invalid sloc>> Implicit
+|   |   | | `-FieldDecl 0x55eb9fb35cd0 <line:19:5> col:5 implicit 'int &'
+|   |   | `-CapturedDecl 0x55eb9fb35b28 <<invalid sloc>> <invalid sloc>
+|   |   |   |-UnaryOperator 0x55eb9fb35d40 <col:5, col:10> 'int' postfix '++'
+|   |   |   | `-DeclRefExpr 0x55eb9fb35c08 <col:5> 'int' lvalue Var 0x55eb9fb32a38 'count' 'int'
+|   |   |   `-ImplicitParamDecl 0x55eb9fb35ba8 <line:17:15> col:15 implicit __context 'struct (anonymous at omp_criatm_-_main.c:17:15) *'
+|   |   |-DeclRefExpr 0x55eb9fb358f0 <line:16:10> 'int' lvalue Var 0x55eb9fb32ac8 'i' 'int'
+|   |   `-DeclRefExpr 0x55eb9fb35c90 <line:19:5> 'int' lvalue Var 0x55eb9fb32a38 'count' 'int'
+|   |-CallExpr 0x55eb9fb36018 <line:21:3, col:42> 'int'
+|   | |-ImplicitCastExpr 0x55eb9fb36000 <col:3> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|   | | `-DeclRefExpr 0x55eb9fb35f30 <col:3> 'int (const char *, ...)' Function 0x55eb9fb33810 'printf' 'int (const char *, ...)'
+|   | |-ImplicitCastExpr 0x55eb9fb36068 <col:10> 'const char *' <BitCast>
+|   | | `-ImplicitCastExpr 0x55eb9fb36050 <col:10> 'char *' <ArrayToPointerDecay>
+|   | |   `-StringLiteral 0x55eb9fb35f98 <col:10> 'char [23]' lvalue "atomic done. count=%d\n"
+|   | `-ImplicitCastExpr 0x55eb9fb36080 <col:37> 'int' <LValueToRValue>
+|   |   `-DeclRefExpr 0x55eb9fb35fd8 <col:37> 'int' lvalue Var 0x55eb9fb32a38 'count' 'int'
+|   `-ReturnStmt 0x55eb9fb360b8 <line:22:3, col:10>
+|     `-IntegerLiteral 0x55eb9fb36098 <col:10> 'int' 0
+`-FunctionDecl 0x55eb9fb33810 <line:13:3> col:3 implicit used printf 'int (const char *, ...)' extern
+  |-ParmVarDecl 0x55eb9fb35360 <<invalid sloc>> <invalid sloc> 'const char *'
+  `-FormatAttr 0x55eb9fb353c8 <col:3> Implicit printf 1 2

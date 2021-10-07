@@ -1,0 +1,68 @@
+<pre>int main()
+{
+  clock_t start;
+  clock_t end;
+<span style="background-color: rgba(255, 0, 0, 0.26440488789273786);">  int *sequence;</span>
+<span style="background-color: rgba(255, 0, 0, 0.22589567609439598);">  int *aux;</span>
+<span style="background-color: rgba(255, 0, 0, 0.22589567609439598);">  int p;</span>
+<span style="background-color: rgba(255, 0, 0, 0.1576891345155076);">  double cpu_time_used;</span>
+  start = clock();
+<span style="background-color: rgba(255, 0, 0, 0.46232427093477213);">  int s_seq;</span>
+<span style="background-color: rgba(255, 0, 0, 0.23525252337861957);">  #pragma omp parallel for</span>
+  for (p = 8; p &lt;= 14; p++)
+  {
+    s_seq = pow(2, p);
+    sequence = (int *) malloc(s_seq * (sizeof(int)));
+    aux = (int *) malloc(s_seq * (sizeof(int)));
+<span style="background-color: rgba(255, 0, 0, 0.002185758493396861);">    for (int k = 0; k &lt; s_seq; k++)</span>
+    {
+<span style="background-color: rgba(255, 0, 0, 0.050062416296015044);">      aux[k] = (sequence[k] = k);</span>
+    }
+
+<span style="background-color: rgba(255, 0, 0, 0.23969009633486849);">    int jump = 0;</span>
+<span style="background-color: rgba(255, 0, 0, 0.1320320368981811);">    int i;</span>
+<span style="background-color: rgba(255, 0, 0, 0.07984256041480364);">    int j;</span>
+    int a = 0;
+    while (pow(2, jump) &lt; s_seq)
+    {
+      {
+        if (a == 0)
+        {
+          printf("numbrs of threads: %d\n", omp_get_thread_num());
+        }
+
+        a = 1;
+        for (i = s_seq - 1; i &#62; 0; i--)
+        {
+          j = i - pow(2, jump);
+          if (j &#62;= 0)
+          {
+            sequence[i] = sequence[i] + sequence[j];
+          }
+          else
+          {
+            i = 0;
+          }
+
+        }
+
+      }
+      jump++;
+    }
+
+    for (i = 0; i &lt; s_seq; i++)
+    {
+      printf("%d ", sequence[i]);
+    }
+
+    sequence = (aux = 0);
+<span style="background-color: rgba(255, 0, 0, 0.247974087402266);">    printf("\n");</span>
+  }
+
+  end = clock();
+  cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
+<span style="background-color: rgba(255, 0, 0, 0.13362440709831702);">  printf("%f\n", cpu_time_used);</span>
+  return 0;
+}
+
+</pre>

@@ -1,0 +1,75 @@
+TranslationUnitDecl 0x55cfe8636b98 <<invalid sloc>> <invalid sloc>
+|-TypedefDecl 0x55cfe8637130 <<invalid sloc>> <invalid sloc> implicit __int128_t '__int128'
+| `-BuiltinType 0x55cfe8636e30 '__int128'
+|-TypedefDecl 0x55cfe86371a0 <<invalid sloc>> <invalid sloc> implicit __uint128_t 'unsigned __int128'
+| `-BuiltinType 0x55cfe8636e50 'unsigned __int128'
+|-TypedefDecl 0x55cfe8637478 <<invalid sloc>> <invalid sloc> implicit __NSConstantString 'struct __NSConstantString_tag'
+| `-RecordType 0x55cfe8637280 'struct __NSConstantString_tag'
+|   `-Record 0x55cfe86371f8 '__NSConstantString_tag'
+|-TypedefDecl 0x55cfe8637510 <<invalid sloc>> <invalid sloc> implicit __builtin_ms_va_list 'char *'
+| `-PointerType 0x55cfe86374d0 'char *'
+|   `-BuiltinType 0x55cfe8636c30 'char'
+|-TypedefDecl 0x55cfe86377d8 <<invalid sloc>> <invalid sloc> implicit __builtin_va_list 'struct __va_list_tag [1]'
+| `-ConstantArrayType 0x55cfe8637780 'struct __va_list_tag [1]' 1 
+|   `-RecordType 0x55cfe86375f0 'struct __va_list_tag'
+|     `-Record 0x55cfe8637568 '__va_list_tag'
+|-FunctionDecl 0x55cfe86908f0 <hiomp_-_main.c:1:1, line:17:1> line:1:5 main 'int ()'
+| `-CompoundStmt 0x55cfe8693158 <line:2:1, line:17:1>
+|   |-DeclStmt 0x55cfe8690a48 <line:3:3, col:15>
+|   | `-VarDecl 0x55cfe86909e8 <col:3, col:7> col:7 used nthreads 'int'
+|   |-DeclStmt 0x55cfe8690ad8 <line:4:3, col:10>
+|   | `-VarDecl 0x55cfe8690a78 <col:3, col:7> col:7 used tid 'int'
+|   |-OMPParallelDirective 0x55cfe86930e8 <line:5:11, col:61>
+|   | |-OMPNum_threadsClause 0x55cfe8690b10 <col:24, col:37>
+|   | | `-IntegerLiteral 0x55cfe8690af0 <col:36> 'int' 8
+|   | |-OMPPrivateClause 0x55cfe8690cc8 <col:39, col:61>
+|   | | |-DeclRefExpr 0x55cfe8690b38 <col:47> 'int' lvalue Var 0x55cfe86909e8 'nthreads' 'int'
+|   | | `-DeclRefExpr 0x55cfe8690b60 <col:57> 'int' lvalue Var 0x55cfe8690a78 'tid' 'int'
+|   | `-CapturedStmt 0x55cfe86930c8 <line:6:3, line:15:3>
+|   |   `-CapturedDecl 0x55cfe8690e18 <<invalid sloc>> <invalid sloc>
+|   |     |-CompoundStmt 0x55cfe86930a0 <line:6:3, line:15:3>
+|   |     | |-BinaryOperator 0x55cfe8691188 <line:7:5, col:30> 'int' '='
+|   |     | | |-DeclRefExpr 0x55cfe8690ff8 <col:5> 'int' lvalue Var 0x55cfe8690a78 'tid' 'int'
+|   |     | | `-CallExpr 0x55cfe8691160 <col:11, col:30> 'int'
+|   |     | |   `-ImplicitCastExpr 0x55cfe8691148 <col:11> 'int (*)()' <FunctionToPointerDecay>
+|   |     | |     `-DeclRefExpr 0x55cfe86910f8 <col:11> 'int ()' Function 0x55cfe8691048 'omp_get_thread_num' 'int ()'
+|   |     | |-CallExpr 0x55cfe8691810 <line:8:5, col:32> 'int'
+|   |     | | |-ImplicitCastExpr 0x55cfe86917f8 <col:5> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|   |     | | | `-DeclRefExpr 0x55cfe8691700 <col:5> 'int (const char *, ...)' Function 0x55cfe86915a0 'printf' 'int (const char *, ...)'
+|   |     | | |-ImplicitCastExpr 0x55cfe8691860 <col:12> 'const char *' <BitCast>
+|   |     | | | `-ImplicitCastExpr 0x55cfe8691848 <col:12> 'char *' <ArrayToPointerDecay>
+|   |     | | |   `-StringLiteral 0x55cfe8691768 <col:12> 'char [13]' lvalue "thread = %d\n"
+|   |     | | `-ImplicitCastExpr 0x55cfe8691878 <col:29> 'int' <LValueToRValue>
+|   |     | |   `-DeclRefExpr 0x55cfe86917a0 <col:29> 'int' lvalue Var 0x55cfe8690a78 'tid' 'int'
+|   |     | `-IfStmt 0x55cfe8693068 <line:9:5, line:13:5>
+|   |     |   |-<<<NULL>>>
+|   |     |   |-<<<NULL>>>
+|   |     |   |-BinaryOperator 0x55cfe8692d30 <line:9:9, col:16> 'int' '=='
+|   |     |   | |-ImplicitCastExpr 0x55cfe86918d8 <col:9> 'int' <LValueToRValue>
+|   |     |   | | `-DeclRefExpr 0x55cfe8691890 <col:9> 'int' lvalue Var 0x55cfe8690a78 'tid' 'int'
+|   |     |   | `-IntegerLiteral 0x55cfe86918b8 <col:16> 'int' 0
+|   |     |   |-CompoundStmt 0x55cfe8693048 <line:10:5, line:13:5>
+|   |     |   | |-BinaryOperator 0x55cfe8692ec0 <line:11:7, col:38> 'int' '='
+|   |     |   | | |-DeclRefExpr 0x55cfe8692d58 <col:7> 'int' lvalue Var 0x55cfe86909e8 'nthreads' 'int'
+|   |     |   | | `-CallExpr 0x55cfe8692e98 <col:18, col:38> 'int'
+|   |     |   | |   `-ImplicitCastExpr 0x55cfe8692e80 <col:18> 'int (*)()' <FunctionToPointerDecay>
+|   |     |   | |     `-DeclRefExpr 0x55cfe8692e58 <col:18> 'int ()' Function 0x55cfe8692da8 'omp_get_num_threads' 'int ()'
+|   |     |   | `-CallExpr 0x55cfe8692fc8 <line:12:7, col:50> 'int'
+|   |     |   |   |-ImplicitCastExpr 0x55cfe8692fb0 <col:7> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|   |     |   |   | `-DeclRefExpr 0x55cfe8692ee8 <col:7> 'int (const char *, ...)' Function 0x55cfe86915a0 'printf' 'int (const char *, ...)'
+|   |     |   |   |-ImplicitCastExpr 0x55cfe8693018 <col:14> 'const char *' <BitCast>
+|   |     |   |   | `-ImplicitCastExpr 0x55cfe8693000 <col:14> 'char *' <ArrayToPointerDecay>
+|   |     |   |   |   `-StringLiteral 0x55cfe8692f48 <col:14> 'char [24]' lvalue "number of threads = %d\n"
+|   |     |   |   `-ImplicitCastExpr 0x55cfe8693030 <col:42> 'int' <LValueToRValue>
+|   |     |   |     `-DeclRefExpr 0x55cfe8692f88 <col:42> 'int' lvalue Var 0x55cfe86909e8 'nthreads' 'int'
+|   |     |   `-<<<NULL>>>
+|   |     |-ImplicitParamDecl 0x55cfe8690e80 <line:5:11> col:11 implicit .global_tid. 'int *const restrict'
+|   |     |-ImplicitParamDecl 0x55cfe8690ee0 <col:11> col:11 implicit .bound_tid. 'int *const restrict'
+|   |     |-ImplicitParamDecl 0x55cfe8690f68 <col:11> col:11 implicit __context 'struct (anonymous at hiomp_-_main.c:5:11) *'
+|   |     |-FunctionDecl 0x55cfe8691048 parent 0x55cfe8636b98 <<invalid sloc>> line:7:11 implicit used omp_get_thread_num 'int ()'
+|   |     `-FunctionDecl 0x55cfe8692da8 parent 0x55cfe8636b98 <<invalid sloc>> line:11:18 implicit used omp_get_num_threads 'int ()'
+|   `-ReturnStmt 0x55cfe8693140 <line:16:3, col:10>
+|     `-IntegerLiteral 0x55cfe8693120 <col:10> 'int' 0
+`-FunctionDecl 0x55cfe86915a0 <line:8:5> col:5 implicit used printf 'int (const char *, ...)' extern
+  |-ParmVarDecl 0x55cfe8691640 <<invalid sloc>> <invalid sloc> 'const char *'
+  `-FormatAttr 0x55cfe86916a8 <col:5> Implicit printf 1 2

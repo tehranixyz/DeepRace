@@ -1,0 +1,113 @@
+TranslationUnitDecl 0x5556bcab0b98 <<invalid sloc>> <invalid sloc>
+|-TypedefDecl 0x5556bcab1130 <<invalid sloc>> <invalid sloc> implicit __int128_t '__int128'
+| `-BuiltinType 0x5556bcab0e30 '__int128'
+|-TypedefDecl 0x5556bcab11a0 <<invalid sloc>> <invalid sloc> implicit __uint128_t 'unsigned __int128'
+| `-BuiltinType 0x5556bcab0e50 'unsigned __int128'
+|-TypedefDecl 0x5556bcab1478 <<invalid sloc>> <invalid sloc> implicit __NSConstantString 'struct __NSConstantString_tag'
+| `-RecordType 0x5556bcab1280 'struct __NSConstantString_tag'
+|   `-Record 0x5556bcab11f8 '__NSConstantString_tag'
+|-TypedefDecl 0x5556bcab1510 <<invalid sloc>> <invalid sloc> implicit __builtin_ms_va_list 'char *'
+| `-PointerType 0x5556bcab14d0 'char *'
+|   `-BuiltinType 0x5556bcab0c30 'char'
+|-TypedefDecl 0x5556bcab17d8 <<invalid sloc>> <invalid sloc> implicit __builtin_va_list 'struct __va_list_tag [1]'
+| `-ConstantArrayType 0x5556bcab1780 'struct __va_list_tag [1]' 1 
+|   `-RecordType 0x5556bcab15f0 'struct __va_list_tag'
+|     `-Record 0x5556bcab1568 '__va_list_tag'
+|-FunctionDecl 0x5556bcb0a948 <fibo_-_main.c:1:1, col:13> col:5 used fibo 'int (int)'
+| `-ParmVarDecl 0x5556bcab1848 <col:10> col:13 'int'
+|-FunctionDecl 0x5556bcb0aa80 <line:2:1, line:16:1> line:2:5 main 'int ()'
+| `-CompoundStmt 0x5556bcb0d8b8 <line:3:1, line:16:1>
+|   |-DeclStmt 0x5556bcb0ab98 <line:4:3, col:15>
+|   | `-VarDecl 0x5556bcb0ab38 <col:3, col:7> col:7 nthreads 'int'
+|   |-DeclStmt 0x5556bcb0ac28 <line:5:3, col:10>
+|   | `-VarDecl 0x5556bcb0abc8 <col:3, col:7> col:7 used tid 'int'
+|   |-DeclStmt 0x5556bcb0acd8 <line:6:3, col:12>
+|   | `-VarDecl 0x5556bcb0ac58 <col:3, col:11> col:7 used n 'int' cinit
+|   |   `-IntegerLiteral 0x5556bcb0acb8 <col:11> 'int' 5
+|   `-OMPParallelDirective 0x5556bcb0d880 <line:7:11, col:51>
+|     |-OMPNum_threadsClause 0x5556bcb0ad10 <col:24, col:37>
+|     | `-IntegerLiteral 0x5556bcb0acf0 <col:36> 'int' 4
+|     |-OMPPrivateClause 0x5556bcb0ae00 <col:39, col:51>
+|     | `-DeclRefExpr 0x5556bcb0ad38 <col:47> 'int' lvalue Var 0x5556bcb0abc8 'tid' 'int'
+|     `-CapturedStmt 0x5556bcb0d848 <line:8:3, line:15:3>
+|       |-CapturedDecl 0x5556bcb0af48 <<invalid sloc>> <invalid sloc>
+|       | |-CompoundStmt 0x5556bcb0d830 <line:8:3, line:15:3>
+|       | | `-OMPSingleDirective 0x5556bcb0d808 <line:9:13, col:23>
+|       | |   `-CapturedStmt 0x5556bcb0d7b8 <line:10:5, line:14:5>
+|       | |     |-CapturedDecl 0x5556bcb0b1e8 <<invalid sloc>> <invalid sloc>
+|       | |     | |-CompoundStmt 0x5556bcb0d790 <line:10:5, line:14:5>
+|       | |     | | |-BinaryOperator 0x5556bcb0b518 <line:11:7, col:32> 'int' '='
+|       | |     | | | |-DeclRefExpr 0x5556bcb0b2f8 <col:7> 'int' lvalue Var 0x5556bcb0abc8 'tid' 'int'
+|       | |     | | | `-CallExpr 0x5556bcb0b4f0 <col:13, col:32> 'int'
+|       | |     | | |   `-ImplicitCastExpr 0x5556bcb0b4d8 <col:13> 'int (*)()' <FunctionToPointerDecay>
+|       | |     | | |     `-DeclRefExpr 0x5556bcb0b480 <col:13> 'int ()' Function 0x5556bcb0b3d0 'omp_get_thread_num' 'int ()'
+|       | |     | | |-CallExpr 0x5556bcb0d370 <line:12:7, col:44> 'int'
+|       | |     | | | |-ImplicitCastExpr 0x5556bcb0d358 <col:7> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|       | |     | | | | `-DeclRefExpr 0x5556bcb0d260 <col:7> 'int (const char *, ...)' Function 0x5556bcb0d100 'printf' 'int (const char *, ...)'
+|       | |     | | | |-ImplicitCastExpr 0x5556bcb0d3c0 <col:14> 'const char *' <BitCast>
+|       | |     | | | | `-ImplicitCastExpr 0x5556bcb0d3a8 <col:14> 'char *' <ArrayToPointerDecay>
+|       | |     | | | |   `-StringLiteral 0x5556bcb0d2c8 <col:14> 'char [23]' lvalue "Hello world from (%d)\n"
+|       | |     | | | `-ImplicitCastExpr 0x5556bcb0d3d8 <col:41> 'int' <LValueToRValue>
+|       | |     | | |   `-DeclRefExpr 0x5556bcb0d308 <col:41> 'int' lvalue Var 0x5556bcb0abc8 'tid' 'int'
+|       | |     | | `-CallExpr 0x5556bcb0d6e8 <line:13:7, col:51> 'int'
+|       | |     | |   |-ImplicitCastExpr 0x5556bcb0d6d0 <col:7> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|       | |     | |   | `-DeclRefExpr 0x5556bcb0d3f0 <col:7> 'int (const char *, ...)' Function 0x5556bcb0d100 'printf' 'int (const char *, ...)'
+|       | |     | |   |-ImplicitCastExpr 0x5556bcb0d748 <col:14> 'const char *' <BitCast>
+|       | |     | |   | `-ImplicitCastExpr 0x5556bcb0d730 <col:14> 'char *' <ArrayToPointerDecay>
+|       | |     | |   |   `-StringLiteral 0x5556bcb0d458 <col:14> 'char [18]' lvalue "Fib(%d)=%d by %d\n"
+|       | |     | |   |-ImplicitCastExpr 0x5556bcb0d760 <col:36> 'int' <LValueToRValue>
+|       | |     | |   | `-DeclRefExpr 0x5556bcb0d498 <col:36> 'int' lvalue Var 0x5556bcb0ac58 'n' 'int'
+|       | |     | |   |-CallExpr 0x5556bcb0d660 <col:39, col:45> 'int'
+|       | |     | |   | |-ImplicitCastExpr 0x5556bcb0d648 <col:39> 'int (*)(int)' <FunctionToPointerDecay>
+|       | |     | |   | | `-DeclRefExpr 0x5556bcb0d5d0 <col:39> 'int (int)' Function 0x5556bcb0a948 'fibo' 'int (int)'
+|       | |     | |   | `-ImplicitCastExpr 0x5556bcb0d690 <col:44> 'int' <LValueToRValue>
+|       | |     | |   |   `-DeclRefExpr 0x5556bcb0d5f8 <col:44> 'int' lvalue Var 0x5556bcb0ac58 'n' 'int'
+|       | |     | |   `-ImplicitCastExpr 0x5556bcb0d778 <col:48> 'int' <LValueToRValue>
+|       | |     | |     `-DeclRefExpr 0x5556bcb0d6a8 <col:48> 'int' lvalue Var 0x5556bcb0abc8 'tid' 'int'
+|       | |     | |-ImplicitParamDecl 0x5556bcb0b268 <line:9:13> col:13 implicit __context 'struct (anonymous at fibo_-_main.c:9:13) *'
+|       | |     | `-FunctionDecl 0x5556bcb0b3d0 parent 0x5556bcab0b98 <<invalid sloc>> line:11:13 implicit used omp_get_thread_num 'int ()'
+|       | |     |-DeclRefExpr 0x5556bcb0b380 <col:7> 'int' lvalue Var 0x5556bcb0abc8 'tid' 'int'
+|       | |     `-DeclRefExpr 0x5556bcb0d5a8 <line:13:36> 'int' lvalue Var 0x5556bcb0ac58 'n' 'int'
+|       | |-ImplicitParamDecl 0x5556bcb0afb0 <line:7:11> col:11 implicit .global_tid. 'int *const restrict'
+|       | |-ImplicitParamDecl 0x5556bcb0b010 <col:11> col:11 implicit .bound_tid. 'int *const restrict'
+|       | |-ImplicitParamDecl 0x5556bcb0b098 <col:11> col:11 implicit __context 'struct (anonymous at fibo_-_main.c:7:11) *'
+|       | |-RecordDecl 0x5556bcb0b0f8 <line:9:13> col:13 implicit struct definition
+|       | | |-CapturedRecordAttr 0x5556bcb0b1a0 <<invalid sloc>> Implicit
+|       | | |-FieldDecl 0x5556bcb0b338 <line:11:7> col:7 implicit 'int &'
+|       | | `-FieldDecl 0x5556bcb0d560 <line:13:36> col:36 implicit 'int &'
+|       | `-CapturedDecl 0x5556bcb0b1e8 <<invalid sloc>> <invalid sloc>
+|       |   |-CompoundStmt 0x5556bcb0d790 <line:10:5, line:14:5>
+|       |   | |-BinaryOperator 0x5556bcb0b518 <line:11:7, col:32> 'int' '='
+|       |   | | |-DeclRefExpr 0x5556bcb0b2f8 <col:7> 'int' lvalue Var 0x5556bcb0abc8 'tid' 'int'
+|       |   | | `-CallExpr 0x5556bcb0b4f0 <col:13, col:32> 'int'
+|       |   | |   `-ImplicitCastExpr 0x5556bcb0b4d8 <col:13> 'int (*)()' <FunctionToPointerDecay>
+|       |   | |     `-DeclRefExpr 0x5556bcb0b480 <col:13> 'int ()' Function 0x5556bcb0b3d0 'omp_get_thread_num' 'int ()'
+|       |   | |-CallExpr 0x5556bcb0d370 <line:12:7, col:44> 'int'
+|       |   | | |-ImplicitCastExpr 0x5556bcb0d358 <col:7> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|       |   | | | `-DeclRefExpr 0x5556bcb0d260 <col:7> 'int (const char *, ...)' Function 0x5556bcb0d100 'printf' 'int (const char *, ...)'
+|       |   | | |-ImplicitCastExpr 0x5556bcb0d3c0 <col:14> 'const char *' <BitCast>
+|       |   | | | `-ImplicitCastExpr 0x5556bcb0d3a8 <col:14> 'char *' <ArrayToPointerDecay>
+|       |   | | |   `-StringLiteral 0x5556bcb0d2c8 <col:14> 'char [23]' lvalue "Hello world from (%d)\n"
+|       |   | | `-ImplicitCastExpr 0x5556bcb0d3d8 <col:41> 'int' <LValueToRValue>
+|       |   | |   `-DeclRefExpr 0x5556bcb0d308 <col:41> 'int' lvalue Var 0x5556bcb0abc8 'tid' 'int'
+|       |   | `-CallExpr 0x5556bcb0d6e8 <line:13:7, col:51> 'int'
+|       |   |   |-ImplicitCastExpr 0x5556bcb0d6d0 <col:7> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|       |   |   | `-DeclRefExpr 0x5556bcb0d3f0 <col:7> 'int (const char *, ...)' Function 0x5556bcb0d100 'printf' 'int (const char *, ...)'
+|       |   |   |-ImplicitCastExpr 0x5556bcb0d748 <col:14> 'const char *' <BitCast>
+|       |   |   | `-ImplicitCastExpr 0x5556bcb0d730 <col:14> 'char *' <ArrayToPointerDecay>
+|       |   |   |   `-StringLiteral 0x5556bcb0d458 <col:14> 'char [18]' lvalue "Fib(%d)=%d by %d\n"
+|       |   |   |-ImplicitCastExpr 0x5556bcb0d760 <col:36> 'int' <LValueToRValue>
+|       |   |   | `-DeclRefExpr 0x5556bcb0d498 <col:36> 'int' lvalue Var 0x5556bcb0ac58 'n' 'int'
+|       |   |   |-CallExpr 0x5556bcb0d660 <col:39, col:45> 'int'
+|       |   |   | |-ImplicitCastExpr 0x5556bcb0d648 <col:39> 'int (*)(int)' <FunctionToPointerDecay>
+|       |   |   | | `-DeclRefExpr 0x5556bcb0d5d0 <col:39> 'int (int)' Function 0x5556bcb0a948 'fibo' 'int (int)'
+|       |   |   | `-ImplicitCastExpr 0x5556bcb0d690 <col:44> 'int' <LValueToRValue>
+|       |   |   |   `-DeclRefExpr 0x5556bcb0d5f8 <col:44> 'int' lvalue Var 0x5556bcb0ac58 'n' 'int'
+|       |   |   `-ImplicitCastExpr 0x5556bcb0d778 <col:48> 'int' <LValueToRValue>
+|       |   |     `-DeclRefExpr 0x5556bcb0d6a8 <col:48> 'int' lvalue Var 0x5556bcb0abc8 'tid' 'int'
+|       |   |-ImplicitParamDecl 0x5556bcb0b268 <line:9:13> col:13 implicit __context 'struct (anonymous at fibo_-_main.c:9:13) *'
+|       |   `-FunctionDecl 0x5556bcb0b3d0 parent 0x5556bcab0b98 <<invalid sloc>> line:11:13 implicit used omp_get_thread_num 'int ()'
+|       `-DeclRefExpr 0x5556bcb0d520 <line:13:36> 'int' lvalue Var 0x5556bcb0ac58 'n' 'int'
+`-FunctionDecl 0x5556bcb0d100 <line:12:7> col:7 implicit used printf 'int (const char *, ...)' extern
+  |-ParmVarDecl 0x5556bcb0d1a0 <<invalid sloc>> <invalid sloc> 'const char *'
+  `-FormatAttr 0x5556bcb0d208 <col:7> Implicit printf 1 2

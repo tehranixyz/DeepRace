@@ -1,0 +1,194 @@
+TranslationUnitDecl 0x5627cbc66e18 <<invalid sloc>> <invalid sloc>
+|-TypedefDecl 0x5627cbc673b0 <<invalid sloc>> <invalid sloc> implicit __int128_t '__int128'
+| `-BuiltinType 0x5627cbc670b0 '__int128'
+|-TypedefDecl 0x5627cbc67420 <<invalid sloc>> <invalid sloc> implicit __uint128_t 'unsigned __int128'
+| `-BuiltinType 0x5627cbc670d0 'unsigned __int128'
+|-TypedefDecl 0x5627cbc676f8 <<invalid sloc>> <invalid sloc> implicit __NSConstantString 'struct __NSConstantString_tag'
+| `-RecordType 0x5627cbc67500 'struct __NSConstantString_tag'
+|   `-Record 0x5627cbc67478 '__NSConstantString_tag'
+|-TypedefDecl 0x5627cbc67790 <<invalid sloc>> <invalid sloc> implicit __builtin_ms_va_list 'char *'
+| `-PointerType 0x5627cbc67750 'char *'
+|   `-BuiltinType 0x5627cbc66eb0 'char'
+|-TypedefDecl 0x5627cbc67a58 <<invalid sloc>> <invalid sloc> implicit __builtin_va_list 'struct __va_list_tag [1]'
+| `-ConstantArrayType 0x5627cbc67a00 'struct __va_list_tag [1]' 1 
+|   `-RecordType 0x5627cbc67870 'struct __va_list_tag'
+|     `-Record 0x5627cbc677e8 '__va_list_tag'
+|-FunctionDecl 0x5627cbcc0cc0 <single_master_-_main.c:1:1, line:41:1> line:1:5 main 'int ()'
+| `-CompoundStmt 0x5627cbcc5678 <line:2:1, line:41:1>
+|   |-CallExpr 0x5627cbcc13d0 <line:3:3, col:18> 'int'
+|   | |-ImplicitCastExpr 0x5627cbcc13b8 <col:3> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|   | | `-DeclRefExpr 0x5627cbcc12f0 <col:3> 'int (const char *, ...)' Function 0x5627cbcc1190 'printf' 'int (const char *, ...)'
+|   | `-ImplicitCastExpr 0x5627cbcc1418 <col:10> 'const char *' <BitCast>
+|   |   `-ImplicitCastExpr 0x5627cbcc1400 <col:10> 'char *' <ArrayToPointerDecay>
+|   |     `-StringLiteral 0x5627cbcc1358 <col:10> 'char [4]' lvalue "\n\n\n"
+|   |-DeclStmt 0x5627cbcc14a8 <line:4:3, col:17>
+|   | `-VarDecl 0x5627cbcc1448 <col:3, col:7> col:7 used thread_num 'int'
+|   |-OMPParallelDirective 0x5627cbcc2ca8 <line:5:11, col:23>
+|   | `-CapturedStmt 0x5627cbcc2c70 <line:6:3, line:14:3>
+|   |   |-CapturedDecl 0x5627cbcc15d8 <<invalid sloc>> <invalid sloc>
+|   |   | |-CompoundStmt 0x5627cbcc2c40 <line:6:3, line:14:3>
+|   |   | | |-BinaryOperator 0x5627cbcc19d8 <line:7:5, col:37> 'int' '='
+|   |   | | | |-DeclRefExpr 0x5627cbcc17b8 <col:5> 'int' lvalue Var 0x5627cbcc1448 'thread_num' 'int'
+|   |   | | | `-CallExpr 0x5627cbcc19b0 <col:18, col:37> 'int'
+|   |   | | |   `-ImplicitCastExpr 0x5627cbcc1998 <col:18> 'int (*)()' <FunctionToPointerDecay>
+|   |   | | |     `-DeclRefExpr 0x5627cbcc1940 <col:18> 'int ()' Function 0x5627cbcc1890 'omp_get_thread_num' 'int ()'
+|   |   | | |-CallExpr 0x5627cbcc1af8 <line:8:5, col:60> 'int'
+|   |   | | | |-ImplicitCastExpr 0x5627cbcc1ae0 <col:5> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|   |   | | | | `-DeclRefExpr 0x5627cbcc1a00 <col:5> 'int (const char *, ...)' Function 0x5627cbcc1190 'printf' 'int (const char *, ...)'
+|   |   | | | |-ImplicitCastExpr 0x5627cbcc1b48 <col:12> 'const char *' <BitCast>
+|   |   | | | | `-ImplicitCastExpr 0x5627cbcc1b30 <col:12> 'char *' <ArrayToPointerDecay>
+|   |   | | | |   `-StringLiteral 0x5627cbcc1a68 <col:12> 'char [34]' lvalue "Bonjour je suis le thread n\302\260 %d\n"
+|   |   | | | `-ImplicitCastExpr 0x5627cbcc1b60 <col:50> 'int' <LValueToRValue>
+|   |   | | |   `-DeclRefExpr 0x5627cbcc1ab8 <col:50> 'int' lvalue Var 0x5627cbcc1448 'thread_num' 'int'
+|   |   | | |-OMPMasterDirective 0x5627cbcc2c08 <line:9:13, col:23>
+|   |   | | | `-CapturedStmt 0x5627cbcc2be8 <line:10:5, line:12:5>
+|   |   | | |   `-CapturedDecl 0x5627cbcc1c68 <<invalid sloc>> <invalid sloc>
+|   |   | | |     |-CompoundStmt 0x5627cbcc2bd0 <line:10:5, line:12:5>
+|   |   | | |     | `-CallExpr 0x5627cbcc2b68 <line:11:7, col:92> 'int'
+|   |   | | |     |   |-ImplicitCastExpr 0x5627cbcc2b50 <col:7> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|   |   | | |     |   | `-DeclRefExpr 0x5627cbcc2a28 <col:7> 'int (const char *, ...)' Function 0x5627cbcc1190 'printf' 'int (const char *, ...)'
+|   |   | | |     |   |-ImplicitCastExpr 0x5627cbcc2bb8 <col:14> 'const char *' <BitCast>
+|   |   | | |     |   | `-ImplicitCastExpr 0x5627cbcc2ba0 <col:14> 'char *' <ArrayToPointerDecay>
+|   |   | | |     |   |   `-StringLiteral 0x5627cbcc2a88 <col:14> 'char [54]' lvalue "Bonjour je suis le thread maitre avec le numero : %d\n"
+|   |   | | |     |   `-CallExpr 0x5627cbcc2b28 <col:72, col:91> 'int'
+|   |   | | |     |     `-ImplicitCastExpr 0x5627cbcc2b10 <col:72> 'int (*)()' <FunctionToPointerDecay>
+|   |   | | |     |       `-DeclRefExpr 0x5627cbcc2ae8 <col:72> 'int ()' Function 0x5627cbcc1890 'omp_get_thread_num' 'int ()'
+|   |   | | |     `-ImplicitParamDecl 0x5627cbcc29c8 <line:9:13> col:13 implicit __context 'struct (anonymous at single_master_-_main.c:9:13) *'
+|   |   | | `-NullStmt 0x5627cbcc2c30 <line:13:5>
+|   |   | |-ImplicitParamDecl 0x5627cbcc1640 <line:5:11> col:11 implicit .global_tid. 'int *const restrict'
+|   |   | |-ImplicitParamDecl 0x5627cbcc16a0 <col:11> col:11 implicit .bound_tid. 'int *const restrict'
+|   |   | |-ImplicitParamDecl 0x5627cbcc1728 <col:11> col:11 implicit __context 'struct (anonymous at single_master_-_main.c:5:11) *'
+|   |   | |-FunctionDecl 0x5627cbcc1890 parent 0x5627cbc66e18 <<invalid sloc>> line:7:18 implicit used omp_get_thread_num 'int ()'
+|   |   | |-RecordDecl 0x5627cbcc1b78 <line:9:13> col:13 implicit struct definition
+|   |   | | `-CapturedRecordAttr 0x5627cbcc1c20 <<invalid sloc>> Implicit
+|   |   | `-CapturedDecl 0x5627cbcc1c68 <<invalid sloc>> <invalid sloc>
+|   |   |   |-CompoundStmt 0x5627cbcc2bd0 <line:10:5, line:12:5>
+|   |   |   | `-CallExpr 0x5627cbcc2b68 <line:11:7, col:92> 'int'
+|   |   |   |   |-ImplicitCastExpr 0x5627cbcc2b50 <col:7> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|   |   |   |   | `-DeclRefExpr 0x5627cbcc2a28 <col:7> 'int (const char *, ...)' Function 0x5627cbcc1190 'printf' 'int (const char *, ...)'
+|   |   |   |   |-ImplicitCastExpr 0x5627cbcc2bb8 <col:14> 'const char *' <BitCast>
+|   |   |   |   | `-ImplicitCastExpr 0x5627cbcc2ba0 <col:14> 'char *' <ArrayToPointerDecay>
+|   |   |   |   |   `-StringLiteral 0x5627cbcc2a88 <col:14> 'char [54]' lvalue "Bonjour je suis le thread maitre avec le numero : %d\n"
+|   |   |   |   `-CallExpr 0x5627cbcc2b28 <col:72, col:91> 'int'
+|   |   |   |     `-ImplicitCastExpr 0x5627cbcc2b10 <col:72> 'int (*)()' <FunctionToPointerDecay>
+|   |   |   |       `-DeclRefExpr 0x5627cbcc2ae8 <col:72> 'int ()' Function 0x5627cbcc1890 'omp_get_thread_num' 'int ()'
+|   |   |   `-ImplicitParamDecl 0x5627cbcc29c8 <line:9:13> col:13 implicit __context 'struct (anonymous at single_master_-_main.c:9:13) *'
+|   |   `-DeclRefExpr 0x5627cbcc1840 <line:7:5> 'int' lvalue Var 0x5627cbcc1448 'thread_num' 'int'
+|   |-CallExpr 0x5627cbcc2db0 <line:15:3, col:68> 'int'
+|   | |-ImplicitCastExpr 0x5627cbcc2d98 <col:3> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|   | | `-DeclRefExpr 0x5627cbcc2cd0 <col:3> 'int (const char *, ...)' Function 0x5627cbcc1190 'printf' 'int (const char *, ...)'
+|   | `-ImplicitCastExpr 0x5627cbcc2df8 <col:10> 'const char *' <BitCast>
+|   |   `-ImplicitCastExpr 0x5627cbcc2de0 <col:10> 'char *' <ArrayToPointerDecay>
+|   |     `-StringLiteral 0x5627cbcc2d38 <col:10> 'char [53]' lvalue "\n\n\nThis is an example of using the directive Single\n"
+|   |-DeclStmt 0x5627cbcc2e88 <line:16:3, col:8>
+|   | `-VarDecl 0x5627cbcc2e28 <col:3, col:7> col:7 used a 'int'
+|   |-DeclStmt 0x5627cbcc2f18 <line:17:3, col:11>
+|   | `-VarDecl 0x5627cbcc2eb8 <col:3, col:7> col:7 used rang 'int'
+|   |-OMPParallelDirective 0x5627cbcc4d48 <line:18:11, col:23>
+|   | `-CapturedStmt 0x5627cbcc4cf8 <line:19:3, line:29:3>
+|   |   |-CapturedDecl 0x5627cbcc3028 <<invalid sloc>> <invalid sloc>
+|   |   | |-CompoundStmt 0x5627cbcc4cc0 <line:19:3, line:29:3>
+|   |   | | |-BinaryOperator 0x5627cbcc32f0 <line:20:5, col:31> 'int' '='
+|   |   | | | |-DeclRefExpr 0x5627cbcc31d8 <col:5> 'int' lvalue Var 0x5627cbcc2eb8 'rang' 'int'
+|   |   | | | `-CallExpr 0x5627cbcc32c8 <col:12, col:31> 'int'
+|   |   | | |   `-ImplicitCastExpr 0x5627cbcc32b0 <col:12> 'int (*)()' <FunctionToPointerDecay>
+|   |   | | |     `-DeclRefExpr 0x5627cbcc3288 <col:12> 'int ()' Function 0x5627cbcc1890 'omp_get_thread_num' 'int ()'
+|   |   | | |-BinaryOperator 0x5627cbcc33e8 <line:21:5, col:9> 'int' '='
+|   |   | | | |-DeclRefExpr 0x5627cbcc3318 <col:5> 'int' lvalue Var 0x5627cbcc2e28 'a' 'int'
+|   |   | | | `-IntegerLiteral 0x5627cbcc33c8 <col:9> 'int' 1
+|   |   | | |-OMPSingleDirective 0x5627cbcc4ad0 <line:22:13, col:23>
+|   |   | | | `-CapturedStmt 0x5627cbcc4a80 <line:23:5, line:26:5>
+|   |   | | |   |-CapturedDecl 0x5627cbcc3508 <<invalid sloc>> <invalid sloc>
+|   |   | | |   | |-CompoundStmt 0x5627cbcc3950 <line:23:5, line:26:5>
+|   |   | | |   | | |-BinaryOperator 0x5627cbcc36b8 <line:24:7, col:11> 'int' '='
+|   |   | | |   | | | |-DeclRefExpr 0x5627cbcc35e8 <col:7> 'int' lvalue Var 0x5627cbcc2e28 'a' 'int'
+|   |   | | |   | | | `-IntegerLiteral 0x5627cbcc3698 <col:11> 'int' 2
+|   |   | | |   | | `-CallExpr 0x5627cbcc38b0 <line:25:7, col:102> 'int'
+|   |   | | |   | |   |-ImplicitCastExpr 0x5627cbcc3898 <col:7> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|   |   | | |   | |   | `-DeclRefExpr 0x5627cbcc36e0 <col:7> 'int (const char *, ...)' Function 0x5627cbcc1190 'printf' 'int (const char *, ...)'
+|   |   | | |   | |   |-ImplicitCastExpr 0x5627cbcc3908 <col:14> 'const char *' <BitCast>
+|   |   | | |   | |   | `-ImplicitCastExpr 0x5627cbcc38f0 <col:14> 'char *' <ArrayToPointerDecay>
+|   |   | | |   | |   |   `-StringLiteral 0x5627cbcc3748 <col:14> 'char [77]' lvalue "je suis le premier thread (%d) arriv\303\251  et j'ai modifi\303\251 la variable a = %d\n"
+|   |   | | |   | |   |-ImplicitCastExpr 0x5627cbcc3920 <col:95> 'int' <LValueToRValue>
+|   |   | | |   | |   | `-DeclRefExpr 0x5627cbcc37c0 <col:95> 'int' lvalue Var 0x5627cbcc2eb8 'rang' 'int'
+|   |   | | |   | |   `-ImplicitCastExpr 0x5627cbcc3938 <col:101> 'int' <LValueToRValue>
+|   |   | | |   | |     `-DeclRefExpr 0x5627cbcc3870 <col:101> 'int' lvalue Var 0x5627cbcc2e28 'a' 'int'
+|   |   | | |   | `-ImplicitParamDecl 0x5627cbcc3588 <line:22:13> col:13 implicit __context 'struct (anonymous at single_master_-_main.c:22:13) *'
+|   |   | | |   |-DeclRefExpr 0x5627cbcc3670 <line:24:7> 'int' lvalue Var 0x5627cbcc2e28 'a' 'int'
+|   |   | | |   `-DeclRefExpr 0x5627cbcc3848 <line:25:95> 'int' lvalue Var 0x5627cbcc2eb8 'rang' 'int'
+|   |   | | |-NullStmt 0x5627cbcc4af8 <line:27:5>
+|   |   | | `-CallExpr 0x5627cbcc4c20 <line:28:5, col:58> 'int'
+|   |   | |   |-ImplicitCastExpr 0x5627cbcc4c08 <col:5> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|   |   | |   | `-DeclRefExpr 0x5627cbcc4b08 <col:5> 'int (const char *, ...)' Function 0x5627cbcc1190 'printf' 'int (const char *, ...)'
+|   |   | |   |-ImplicitCastExpr 0x5627cbcc4c78 <col:12> 'const char *' <BitCast>
+|   |   | |   | `-ImplicitCastExpr 0x5627cbcc4c60 <col:12> 'char *' <ArrayToPointerDecay>
+|   |   | |   |   `-StringLiteral 0x5627cbcc4b68 <col:12> 'char [35]' lvalue "je suis le thread %d, avec a = %d\n"
+|   |   | |   |-ImplicitCastExpr 0x5627cbcc4c90 <col:51> 'int' <LValueToRValue>
+|   |   | |   | `-DeclRefExpr 0x5627cbcc4bb8 <col:51> 'int' lvalue Var 0x5627cbcc2eb8 'rang' 'int'
+|   |   | |   `-ImplicitCastExpr 0x5627cbcc4ca8 <col:57> 'int' <LValueToRValue>
+|   |   | |     `-DeclRefExpr 0x5627cbcc4be0 <col:57> 'int' lvalue Var 0x5627cbcc2e28 'a' 'int'
+|   |   | |-ImplicitParamDecl 0x5627cbcc3090 <line:18:11> col:11 implicit .global_tid. 'int *const restrict'
+|   |   | |-ImplicitParamDecl 0x5627cbcc30f0 <col:11> col:11 implicit .bound_tid. 'int *const restrict'
+|   |   | |-ImplicitParamDecl 0x5627cbcc3178 <col:11> col:11 implicit __context 'struct (anonymous at single_master_-_main.c:18:11) *'
+|   |   | |-RecordDecl 0x5627cbcc3410 <line:22:13> col:13 implicit struct definition
+|   |   | | |-CapturedRecordAttr 0x5627cbcc34c0 <<invalid sloc>> Implicit
+|   |   | | |-FieldDecl 0x5627cbcc3628 <line:24:7> col:7 implicit 'int &'
+|   |   | | `-FieldDecl 0x5627cbcc3800 <line:25:95> col:95 implicit 'int &'
+|   |   | `-CapturedDecl 0x5627cbcc3508 <<invalid sloc>> <invalid sloc>
+|   |   |   |-CompoundStmt 0x5627cbcc3950 <line:23:5, line:26:5>
+|   |   |   | |-BinaryOperator 0x5627cbcc36b8 <line:24:7, col:11> 'int' '='
+|   |   |   | | |-DeclRefExpr 0x5627cbcc35e8 <col:7> 'int' lvalue Var 0x5627cbcc2e28 'a' 'int'
+|   |   |   | | `-IntegerLiteral 0x5627cbcc3698 <col:11> 'int' 2
+|   |   |   | `-CallExpr 0x5627cbcc38b0 <line:25:7, col:102> 'int'
+|   |   |   |   |-ImplicitCastExpr 0x5627cbcc3898 <col:7> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|   |   |   |   | `-DeclRefExpr 0x5627cbcc36e0 <col:7> 'int (const char *, ...)' Function 0x5627cbcc1190 'printf' 'int (const char *, ...)'
+|   |   |   |   |-ImplicitCastExpr 0x5627cbcc3908 <col:14> 'const char *' <BitCast>
+|   |   |   |   | `-ImplicitCastExpr 0x5627cbcc38f0 <col:14> 'char *' <ArrayToPointerDecay>
+|   |   |   |   |   `-StringLiteral 0x5627cbcc3748 <col:14> 'char [77]' lvalue "je suis le premier thread (%d) arriv\303\251  et j'ai modifi\303\251 la variable a = %d\n"
+|   |   |   |   |-ImplicitCastExpr 0x5627cbcc3920 <col:95> 'int' <LValueToRValue>
+|   |   |   |   | `-DeclRefExpr 0x5627cbcc37c0 <col:95> 'int' lvalue Var 0x5627cbcc2eb8 'rang' 'int'
+|   |   |   |   `-ImplicitCastExpr 0x5627cbcc3938 <col:101> 'int' <LValueToRValue>
+|   |   |   |     `-DeclRefExpr 0x5627cbcc3870 <col:101> 'int' lvalue Var 0x5627cbcc2e28 'a' 'int'
+|   |   |   `-ImplicitParamDecl 0x5627cbcc3588 <line:22:13> col:13 implicit __context 'struct (anonymous at single_master_-_main.c:22:13) *'
+|   |   |-DeclRefExpr 0x5627cbcc3260 <line:20:5> 'int' lvalue Var 0x5627cbcc2eb8 'rang' 'int'
+|   |   `-DeclRefExpr 0x5627cbcc33a0 <line:21:5> 'int' lvalue Var 0x5627cbcc2e28 'a' 'int'
+|   |-CallExpr 0x5627cbcc4e68 <line:30:3, col:90> 'int'
+|   | |-ImplicitCastExpr 0x5627cbcc4e50 <col:3> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|   | | `-DeclRefExpr 0x5627cbcc4d70 <col:3> 'int (const char *, ...)' Function 0x5627cbcc1190 'printf' 'int (const char *, ...)'
+|   | `-ImplicitCastExpr 0x5627cbcc4eb0 <col:10> 'const char *' <BitCast>
+|   |   `-ImplicitCastExpr 0x5627cbcc4e98 <col:10> 'char *' <ArrayToPointerDecay>
+|   |     `-StringLiteral 0x5627cbcc4dd8 <col:10> 'char [76]' lvalue "\n\nThis is an example of the directive single and the clause copyprivate() \n"
+|   `-OMPParallelDirective 0x5627cbcc5650 <line:31:11, col:23>
+|     `-CapturedStmt 0x5627cbcc5600 <line:32:3, line:40:3>
+|       |-CapturedDecl 0x5627cbcc4fb8 <<invalid sloc>> <invalid sloc>
+|       | |-CompoundStmt 0x5627cbcc55d0 <line:32:3, line:40:3>
+|       | | |-BinaryOperator 0x5627cbcc5280 <line:33:5, col:31> 'int' '='
+|       | | | |-DeclRefExpr 0x5627cbcc5168 <col:5> 'int' lvalue Var 0x5627cbcc2eb8 'rang' 'int'
+|       | | | `-CallExpr 0x5627cbcc5258 <col:12, col:31> 'int'
+|       | | |   `-ImplicitCastExpr 0x5627cbcc5240 <col:12> 'int (*)()' <FunctionToPointerDecay>
+|       | | |     `-DeclRefExpr 0x5627cbcc5218 <col:12> 'int ()' Function 0x5627cbcc1890 'omp_get_thread_num' 'int ()'
+|       | | |-BinaryOperator 0x5627cbcc5378 <line:34:5, col:9> 'int' '='
+|       | | | |-DeclRefExpr 0x5627cbcc52a8 <col:5> 'int' lvalue Var 0x5627cbcc2e28 'a' 'int'
+|       | | | `-IntegerLiteral 0x5627cbcc5358 <col:9> 'int' 1
+|       | | |-CompoundStmt 0x5627cbcc5410 <line:36:5, line:38:5>
+|       | | | `-BinaryOperator 0x5627cbcc53e8 <line:37:7, col:11> 'int' '='
+|       | | |   |-DeclRefExpr 0x5627cbcc53a0 <col:7> 'int' lvalue Var 0x5627cbcc2e28 'a' 'int'
+|       | | |   `-IntegerLiteral 0x5627cbcc53c8 <col:11> 'int' 2
+|       | | `-CallExpr 0x5627cbcc5530 <line:39:5, col:47> 'int'
+|       | |   |-ImplicitCastExpr 0x5627cbcc5518 <col:5> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|       | |   | `-DeclRefExpr 0x5627cbcc5428 <col:5> 'int (const char *, ...)' Function 0x5627cbcc1190 'printf' 'int (const char *, ...)'
+|       | |   |-ImplicitCastExpr 0x5627cbcc5588 <col:12> 'const char *' <BitCast>
+|       | |   | `-ImplicitCastExpr 0x5627cbcc5570 <col:12> 'char *' <ArrayToPointerDecay>
+|       | |   |   `-StringLiteral 0x5627cbcc5488 <col:12> 'char [23]' lvalue "thread n\302\260%d \t a = %d\n"
+|       | |   |-ImplicitCastExpr 0x5627cbcc55a0 <col:40> 'int' <LValueToRValue>
+|       | |   | `-DeclRefExpr 0x5627cbcc54c8 <col:40> 'int' lvalue Var 0x5627cbcc2eb8 'rang' 'int'
+|       | |   `-ImplicitCastExpr 0x5627cbcc55b8 <col:46> 'int' <LValueToRValue>
+|       | |     `-DeclRefExpr 0x5627cbcc54f0 <col:46> 'int' lvalue Var 0x5627cbcc2e28 'a' 'int'
+|       | |-ImplicitParamDecl 0x5627cbcc5020 <line:31:11> col:11 implicit .global_tid. 'int *const restrict'
+|       | |-ImplicitParamDecl 0x5627cbcc5080 <col:11> col:11 implicit .bound_tid. 'int *const restrict'
+|       | `-ImplicitParamDecl 0x5627cbcc5108 <col:11> col:11 implicit __context 'struct (anonymous at single_master_-_main.c:31:11) *'
+|       |-DeclRefExpr 0x5627cbcc51f0 <line:33:5> 'int' lvalue Var 0x5627cbcc2eb8 'rang' 'int'
+|       `-DeclRefExpr 0x5627cbcc5330 <line:34:5> 'int' lvalue Var 0x5627cbcc2e28 'a' 'int'
+`-FunctionDecl 0x5627cbcc1190 <line:3:3> col:3 implicit used printf 'int (const char *, ...)' extern
+  |-ParmVarDecl 0x5627cbcc1230 <<invalid sloc>> <invalid sloc> 'const char *'
+  `-FormatAttr 0x5627cbcc1298 <col:3> Implicit printf 1 2

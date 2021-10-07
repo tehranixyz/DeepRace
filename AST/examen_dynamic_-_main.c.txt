@@ -1,0 +1,288 @@
+TranslationUnitDecl 0x562a15d92e18 <<invalid sloc>> <invalid sloc>
+|-TypedefDecl 0x562a15d933b0 <<invalid sloc>> <invalid sloc> implicit __int128_t '__int128'
+| `-BuiltinType 0x562a15d930b0 '__int128'
+|-TypedefDecl 0x562a15d93420 <<invalid sloc>> <invalid sloc> implicit __uint128_t 'unsigned __int128'
+| `-BuiltinType 0x562a15d930d0 'unsigned __int128'
+|-TypedefDecl 0x562a15d936f8 <<invalid sloc>> <invalid sloc> implicit __NSConstantString 'struct __NSConstantString_tag'
+| `-RecordType 0x562a15d93500 'struct __NSConstantString_tag'
+|   `-Record 0x562a15d93478 '__NSConstantString_tag'
+|-TypedefDecl 0x562a15d93790 <<invalid sloc>> <invalid sloc> implicit __builtin_ms_va_list 'char *'
+| `-PointerType 0x562a15d93750 'char *'
+|   `-BuiltinType 0x562a15d92eb0 'char'
+|-TypedefDecl 0x562a15d93a58 <<invalid sloc>> <invalid sloc> implicit __builtin_va_list 'struct __va_list_tag [1]'
+| `-ConstantArrayType 0x562a15d93a00 'struct __va_list_tag [1]' 1 
+|   `-RecordType 0x562a15d93870 'struct __va_list_tag'
+|     `-Record 0x562a15d937e8 '__va_list_tag'
+|-FunctionDecl 0x562a15decba0 <examen_dynamic_-_main.c:1:1, line:21:1> line:1:5 main 'int ()'
+| `-CompoundStmt 0x562a15df23f8 <line:2:1, line:21:1>
+|   |-DeclStmt 0x562a15decd18 <line:3:3, col:14>
+|   | `-VarDecl 0x562a15decc98 <col:3, col:13> col:7 used iam 'int' cinit
+|   |   `-IntegerLiteral 0x562a15deccf8 <col:13> 'int' 0
+|   |-DeclStmt 0x562a15decdc8 <line:4:3, col:13>
+|   | `-VarDecl 0x562a15decd48 <col:3, col:12> col:7 used np 'int' cinit
+|   |   `-IntegerLiteral 0x562a15decda8 <col:12> 'int' 1
+|   |-DeclStmt 0x562a15dece78 <line:5:3, col:12>
+|   | `-VarDecl 0x562a15decdf8 <col:3, col:11> col:7 used i 'int' cinit
+|   |   `-IntegerLiteral 0x562a15dece58 <col:11> 'int' 0
+|   |-DeclStmt 0x562a15ded090 <line:6:3, col:33>
+|   | `-VarDecl 0x562a15decea8 <col:3, col:32> col:10 used start 'double' cinit
+|   |   `-ImplicitCastExpr 0x562a15ded078 <col:18, col:32> 'double' <IntegralToFloating>
+|   |     `-CallExpr 0x562a15ded050 <col:18, col:32> 'int'
+|   |       `-ImplicitCastExpr 0x562a15ded038 <col:18> 'int (*)()' <FunctionToPointerDecay>
+|   |         `-DeclRefExpr 0x562a15decfe0 <col:18> 'int ()' Function 0x562a15decf30 'omp_get_wtime' 'int ()'
+|   |-OMPParallelDirective 0x562a15df1e38 <line:7:11, col:41>
+|   | |-OMPPrivateClause 0x562a15ded300 <col:24, col:41>
+|   | | |-DeclRefExpr 0x562a15ded0a8 <col:32> 'int' lvalue Var 0x562a15decc98 'iam' 'int'
+|   | | |-DeclRefExpr 0x562a15ded0d0 <col:36> 'int' lvalue Var 0x562a15decd48 'np' 'int'
+|   | | `-DeclRefExpr 0x562a15ded0f8 <col:39> 'int' lvalue Var 0x562a15decdf8 'i' 'int'
+|   | `-CapturedStmt 0x562a15df1e18 <line:8:3, line:16:3>
+|   |   `-CapturedDecl 0x562a15ded468 <<invalid sloc>> <invalid sloc>
+|   |     |-CompoundStmt 0x562a15df1df8 <line:8:3, line:16:3>
+|   |     | |-CallExpr 0x562a15deeb70 <line:9:5, col:56> 'int'
+|   |     | | |-ImplicitCastExpr 0x562a15deeb58 <col:5> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|   |     | | | `-DeclRefExpr 0x562a15dedb70 <col:5> 'int (const char *, ...)' Function 0x562a15deda10 'printf' 'int (const char *, ...)'
+|   |     | | |-ImplicitCastExpr 0x562a15deebc8 <col:12> 'const char *' <BitCast>
+|   |     | | | `-ImplicitCastExpr 0x562a15deebb0 <col:12> 'char *' <ArrayToPointerDecay>
+|   |     | | |   `-StringLiteral 0x562a15deea68 <col:12> 'char [33]' lvalue "Hello from thread %d out of %d \n"
+|   |     | | |-ImplicitCastExpr 0x562a15deebe0 <col:49> 'int' <LValueToRValue>
+|   |     | | | `-DeclRefExpr 0x562a15deead8 <col:49> 'int' lvalue Var 0x562a15decc98 'iam' 'int'
+|   |     | | `-ImplicitCastExpr 0x562a15deebf8 <col:54> 'int' <LValueToRValue>
+|   |     | |   `-DeclRefExpr 0x562a15deeb00 <col:54> 'int' lvalue Var 0x562a15decd48 'np' 'int'
+|   |     | `-OMPForDirective 0x562a15df1d18 <line:10:13, col:38>
+|   |     |   |-OMPScheduleClause 0x562a15deec10 <col:21, col:37>
+|   |     |   | `-<<<NULL>>>
+|   |     |   |-CapturedStmt 0x562a15def388 <line:11:5, line:14:5>
+|   |     |   | |-CapturedDecl 0x562a15deed48 <<invalid sloc>> <invalid sloc>
+|   |     |   | | |-ForStmt 0x562a15def350 <line:11:5, line:14:5>
+|   |     |   | | | |-BinaryOperator 0x562a15deeef8 <line:11:10, col:14> 'int' '='
+|   |     |   | | | | |-DeclRefExpr 0x562a15deee28 <col:10> 'int' lvalue Var 0x562a15decdf8 'i' 'int'
+|   |     |   | | | | `-IntegerLiteral 0x562a15deeed8 <col:14> 'int' 0
+|   |     |   | | | |-<<<NULL>>>
+|   |     |   | | | |-BinaryOperator 0x562a15def090 <col:17, col:28> 'int' '<'
+|   |     |   | | | | |-ImplicitCastExpr 0x562a15def078 <col:17> 'int' <LValueToRValue>
+|   |     |   | | | | | `-DeclRefExpr 0x562a15deef20 <col:17> 'int' lvalue Var 0x562a15decdf8 'i' 'int'
+|   |     |   | | | | `-ParenExpr 0x562a15def058 <col:21, col:28> 'int'
+|   |     |   | | | |   `-BinaryOperator 0x562a15def030 <col:22, col:27> 'int' '*'
+|   |     |   | | | |     |-ImplicitCastExpr 0x562a15def018 <col:22> 'int' <LValueToRValue>
+|   |     |   | | | |     | `-DeclRefExpr 0x562a15deef48 <col:22> 'int' lvalue Var 0x562a15decd48 'np' 'int'
+|   |     |   | | | |     `-IntegerLiteral 0x562a15deeff8 <col:27> 'int' 2
+|   |     |   | | | |-UnaryOperator 0x562a15def0e0 <col:31, col:32> 'int' postfix '++'
+|   |     |   | | | | `-DeclRefExpr 0x562a15def0b8 <col:31> 'int' lvalue Var 0x562a15decdf8 'i' 'int'
+|   |     |   | | | `-CompoundStmt 0x562a15def338 <line:12:5, line:14:5>
+|   |     |   | | |   `-CallExpr 0x562a15def298 <line:13:7, col:47> 'int'
+|   |     |   | | |     |-ImplicitCastExpr 0x562a15def280 <col:7> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|   |     |   | | |     | `-DeclRefExpr 0x562a15def100 <col:7> 'int (const char *, ...)' Function 0x562a15deda10 'printf' 'int (const char *, ...)'
+|   |     |   | | |     |-ImplicitCastExpr 0x562a15def2f0 <col:14> 'const char *' <BitCast>
+|   |     |   | | |     | `-ImplicitCastExpr 0x562a15def2d8 <col:14> 'char *' <ArrayToPointerDecay>
+|   |     |   | | |     |   `-StringLiteral 0x562a15def168 <col:14> 'char [23]' lvalue "Thread %d,contador %d\n"
+|   |     |   | | |     |-ImplicitCastExpr 0x562a15def308 <col:41> 'int' <LValueToRValue>
+|   |     |   | | |     | `-DeclRefExpr 0x562a15def1a8 <col:41> 'int' lvalue Var 0x562a15decc98 'iam' 'int'
+|   |     |   | | |     `-ImplicitCastExpr 0x562a15def320 <col:46> 'int' <LValueToRValue>
+|   |     |   | | |       `-DeclRefExpr 0x562a15def258 <col:46> 'int' lvalue Var 0x562a15decdf8 'i' 'int'
+|   |     |   | | `-ImplicitParamDecl 0x562a15deedc8 <line:10:13> col:13 implicit __context 'struct (anonymous at examen_dynamic_-_main.c:10:13) *'
+|   |     |   | |-DeclRefExpr 0x562a15deeeb0 <line:11:10> 'int' lvalue Var 0x562a15decdf8 'i' 'int'
+|   |     |   | |-DeclRefExpr 0x562a15deefd0 <col:22> 'int' lvalue Var 0x562a15decd48 'np' 'int'
+|   |     |   | `-DeclRefExpr 0x562a15def230 <line:13:41> 'int' lvalue Var 0x562a15decc98 'iam' 'int'
+|   |     |   |-DeclRefExpr 0x562a15df18f0 <line:11:10> 'int' lvalue Var 0x562a15df1890 '.omp.iv' 'int'
+|   |     |   |-ImplicitCastExpr 0x562a15def798 <col:5> 'int' <LValueToRValue>
+|   |     |   | `-DeclRefExpr 0x562a15def770 <col:5> 'int' lvalue OMPCapturedExpr 0x562a15def710 '.capture_expr.' 'int'
+|   |     |   |-<<<NULL>>>
+|   |     |   |-ImplicitCastExpr 0x562a15def4d8 <col:14, col:21> '_Bool' <IntegralToBoolean>
+|   |     |   | `-BinaryOperator 0x562a15def4b0 <col:14, col:21> 'int' '<'
+|   |     |   |   |-IntegerLiteral 0x562a15deeed8 <col:14> 'int' 0
+|   |     |   |   `-ImplicitCastExpr 0x562a15def498 <col:21> 'int' <LValueToRValue>
+|   |     |   |     `-DeclRefExpr 0x562a15def470 <col:21> 'int' lvalue OMPCapturedExpr 0x562a15def410 '.capture_expr.' 'int'
+|   |     |   |-BinaryOperator 0x562a15df1988 <col:10> 'int' '<='
+|   |     |   | |-ImplicitCastExpr 0x562a15df1958 <col:10> 'int' <LValueToRValue>
+|   |     |   | | `-DeclRefExpr 0x562a15df18f0 <col:10> 'int' lvalue Var 0x562a15df1890 '.omp.iv' 'int'
+|   |     |   | `-ImplicitCastExpr 0x562a15df1970 <col:10> 'int' <LValueToRValue>
+|   |     |   |   `-DeclRefExpr 0x562a15def930 <col:10> 'int' lvalue Var 0x562a15def8d0 '.omp.ub' 'int'
+|   |     |   |-BinaryOperator 0x562a15df1930 <col:10> 'int' '='
+|   |     |   | |-DeclRefExpr 0x562a15df18f0 <col:10> 'int' lvalue Var 0x562a15df1890 '.omp.iv' 'int'
+|   |     |   | `-ImplicitCastExpr 0x562a15df1918 <col:10> 'int' <LValueToRValue>
+|   |     |   |   `-DeclRefExpr 0x562a15def870 <col:10> 'int' lvalue Var 0x562a15def810 '.omp.lb' 'int'
+|   |     |   |-BinaryOperator 0x562a15df1a10 <col:10, <invalid sloc>> 'int' '='
+|   |     |   | |-DeclRefExpr 0x562a15df18f0 <col:10> 'int' lvalue Var 0x562a15df1890 '.omp.iv' 'int'
+|   |     |   | `-BinaryOperator 0x562a15df19e8 <col:10, <invalid sloc>> 'int' '+'
+|   |     |   |   |-ImplicitCastExpr 0x562a15df19d0 <col:10> 'int' <LValueToRValue>
+|   |     |   |   | `-DeclRefExpr 0x562a15df18f0 <col:10> 'int' lvalue Var 0x562a15df1890 '.omp.iv' 'int'
+|   |     |   |   `-IntegerLiteral 0x562a15df19b0 <<invalid sloc>> 'int' 1
+|   |     |   |-DeclStmt 0x562a15df1ce8 <<invalid sloc>>
+|   |     |   | |-OMPCapturedExprDecl 0x562a15def410 <col:21, col:28> <invalid sloc> implicit used .capture_expr. 'int'
+|   |     |   | | `-ParenExpr 0x562a15def058 <col:21, col:28> 'int'
+|   |     |   | |   `-BinaryOperator 0x562a15def030 <col:22, col:27> 'int' '*'
+|   |     |   | |     |-ImplicitCastExpr 0x562a15def018 <col:22> 'int' <LValueToRValue>
+|   |     |   | |     | `-DeclRefExpr 0x562a15deef48 <col:22> 'int' lvalue Var 0x562a15decd48 'np' 'int'
+|   |     |   | |     `-IntegerLiteral 0x562a15deeff8 <col:27> 'int' 2
+|   |     |   | `-OMPCapturedExprDecl 0x562a15def710 <col:5, <invalid sloc>> <invalid sloc> implicit used .capture_expr. 'int'
+|   |     |   |   `-BinaryOperator 0x562a15def6e8 <col:5, <invalid sloc>> 'int' '-'
+|   |     |   |     |-BinaryOperator 0x562a15def5c0 <col:5, col:31> 'int' '/'
+|   |     |   |     | |-ParenExpr 0x562a15def5a0 <col:5> 'int'
+|   |     |   |     | | `-BinaryOperator 0x562a15def578 <col:21, col:31> 'int' '+'
+|   |     |   |     | |   |-BinaryOperator 0x562a15def550 <col:21, <invalid sloc>> 'int' '-'
+|   |     |   |     | |   | |-BinaryOperator 0x562a15def508 <col:21, col:14> 'int' '-'
+|   |     |   |     | |   | | |-ImplicitCastExpr 0x562a15def4f0 <col:21> 'int' <LValueToRValue>
+|   |     |   |     | |   | | | `-DeclRefExpr 0x562a15def470 <col:21> 'int' lvalue OMPCapturedExpr 0x562a15def410 '.capture_expr.' 'int'
+|   |     |   |     | |   | | `-IntegerLiteral 0x562a15deeed8 <col:14> 'int' 0
+|   |     |   |     | |   | `-IntegerLiteral 0x562a15def530 <<invalid sloc>> 'int' 1
+|   |     |   |     | |   `-IntegerLiteral 0x562a15def3f0 <col:31> 'int' 1
+|   |     |   |     | `-IntegerLiteral 0x562a15def3f0 <col:31> 'int' 1
+|   |     |   |     `-IntegerLiteral 0x562a15def6c8 <<invalid sloc>> 'int' 1
+|   |     |   |-DeclRefExpr 0x562a15def9d0 <col:10> 'int' lvalue Var 0x562a15def970 '.omp.is_last' 'int'
+|   |     |   |-DeclRefExpr 0x562a15def870 <col:10> 'int' lvalue Var 0x562a15def810 '.omp.lb' 'int'
+|   |     |   |-DeclRefExpr 0x562a15def930 <col:10> 'int' lvalue Var 0x562a15def8d0 '.omp.ub' 'int'
+|   |     |   |-DeclRefExpr 0x562a15df1780 <col:10> 'int' lvalue Var 0x562a15df1720 '.omp.stride' 'int'
+|   |     |   |-BinaryOperator 0x562a15df1850 <col:10> 'int' '='
+|   |     |   | |-DeclRefExpr 0x562a15def930 <col:10> 'int' lvalue Var 0x562a15def8d0 '.omp.ub' 'int'
+|   |     |   | `-ConditionalOperator 0x562a15df1820 <col:10> 'int'
+|   |     |   |   |-BinaryOperator 0x562a15df17e0 <col:10, col:5> 'int' '>'
+|   |     |   |   | |-ImplicitCastExpr 0x562a15df17c8 <col:10> 'int' <LValueToRValue>
+|   |     |   |   | | `-DeclRefExpr 0x562a15def930 <col:10> 'int' lvalue Var 0x562a15def8d0 '.omp.ub' 'int'
+|   |     |   |   | `-ImplicitCastExpr 0x562a15def798 <col:5> 'int' <LValueToRValue>
+|   |     |   |   |   `-DeclRefExpr 0x562a15def770 <col:5> 'int' lvalue OMPCapturedExpr 0x562a15def710 '.capture_expr.' 'int'
+|   |     |   |   |-ImplicitCastExpr 0x562a15def798 <col:5> 'int' <LValueToRValue>
+|   |     |   |   | `-DeclRefExpr 0x562a15def770 <col:5> 'int' lvalue OMPCapturedExpr 0x562a15def710 '.capture_expr.' 'int'
+|   |     |   |   `-ImplicitCastExpr 0x562a15df1808 <col:10> 'int' <LValueToRValue>
+|   |     |   |     `-DeclRefExpr 0x562a15def930 <col:10> 'int' lvalue Var 0x562a15def8d0 '.omp.ub' 'int'
+|   |     |   |-BinaryOperator 0x562a15df1a90 <col:10> 'int' '='
+|   |     |   | |-DeclRefExpr 0x562a15def870 <col:10> 'int' lvalue Var 0x562a15def810 '.omp.lb' 'int'
+|   |     |   | `-BinaryOperator 0x562a15df1a68 <col:10> 'int' '+'
+|   |     |   |   |-ImplicitCastExpr 0x562a15df1a38 <col:10> 'int' <LValueToRValue>
+|   |     |   |   | `-DeclRefExpr 0x562a15def870 <col:10> 'int' lvalue Var 0x562a15def810 '.omp.lb' 'int'
+|   |     |   |   `-ImplicitCastExpr 0x562a15df1a50 <col:10> 'int' <LValueToRValue>
+|   |     |   |     `-DeclRefExpr 0x562a15df1780 <col:10> 'int' lvalue Var 0x562a15df1720 '.omp.stride' 'int'
+|   |     |   |-BinaryOperator 0x562a15df1b10 <col:10> 'int' '='
+|   |     |   | |-DeclRefExpr 0x562a15def930 <col:10> 'int' lvalue Var 0x562a15def8d0 '.omp.ub' 'int'
+|   |     |   | `-BinaryOperator 0x562a15df1ae8 <col:10> 'int' '+'
+|   |     |   |   |-ImplicitCastExpr 0x562a15df1ab8 <col:10> 'int' <LValueToRValue>
+|   |     |   |   | `-DeclRefExpr 0x562a15def930 <col:10> 'int' lvalue Var 0x562a15def8d0 '.omp.ub' 'int'
+|   |     |   |   `-ImplicitCastExpr 0x562a15df1ad0 <col:10> 'int' <LValueToRValue>
+|   |     |   |     `-DeclRefExpr 0x562a15df1780 <col:10> 'int' lvalue Var 0x562a15df1720 '.omp.stride' 'int'
+|   |     |   |-BinaryOperator 0x562a15def7d0 <col:5, <invalid sloc>> 'int' '+'
+|   |     |   | |-ImplicitCastExpr 0x562a15def798 <col:5> 'int' <LValueToRValue>
+|   |     |   | | `-DeclRefExpr 0x562a15def770 <col:5> 'int' lvalue OMPCapturedExpr 0x562a15def710 '.capture_expr.' 'int'
+|   |     |   | `-IntegerLiteral 0x562a15def7b0 <<invalid sloc>> 'int' 1
+|   |     |   |-DeclRefExpr 0x562a15def5e8 <col:5> 'int' lvalue Var 0x562a15decdf8 'i' 'int'
+|   |     |   |-DeclRefExpr 0x562a15def688 <col:5> 'int' lvalue Var 0x562a15def628 'i' 'int'
+|   |     |   |-BinaryOperator 0x562a15df1b60 <col:5, col:14> 'int' '='
+|   |     |   | |-DeclRefExpr 0x562a15df1b38 <col:5> 'int' lvalue Var 0x562a15decdf8 'i' 'int'
+|   |     |   | `-IntegerLiteral 0x562a15deeed8 <col:14> 'int' 0
+|   |     |   |-BinaryOperator 0x562a15df1c10 <col:5, col:31> 'int' '='
+|   |     |   | |-DeclRefExpr 0x562a15df1b38 <col:5> 'int' lvalue Var 0x562a15decdf8 'i' 'int'
+|   |     |   | `-BinaryOperator 0x562a15df1be8 <col:14, col:31> 'int' '+'
+|   |     |   |   |-IntegerLiteral 0x562a15deeed8 <col:14> 'int' 0
+|   |     |   |   `-BinaryOperator 0x562a15df1bc0 <col:31> 'int' '*'
+|   |     |   |     |-ImplicitCastExpr 0x562a15df1ba8 <col:31> 'int' <LValueToRValue>
+|   |     |   |     | `-ParenExpr 0x562a15df1b88 <col:31> 'int' lvalue
+|   |     |   |     |   `-DeclRefExpr 0x562a15df18f0 <col:10> 'int' lvalue Var 0x562a15df1890 '.omp.iv' 'int'
+|   |     |   |     `-IntegerLiteral 0x562a15def3f0 <col:31> 'int' 1
+|   |     |   `-BinaryOperator 0x562a15df1ca8 <col:5, col:31> 'int' '='
+|   |     |     |-DeclRefExpr 0x562a15df1b38 <col:5> 'int' lvalue Var 0x562a15decdf8 'i' 'int'
+|   |     |     `-BinaryOperator 0x562a15df1c80 <col:14, col:31> 'int' '+'
+|   |     |       |-IntegerLiteral 0x562a15deeed8 <col:14> 'int' 0
+|   |     |       `-BinaryOperator 0x562a15df1c58 <col:31> 'int' '*'
+|   |     |         |-ParenExpr 0x562a15df1c38 <col:31> 'int'
+|   |     |         | `-BinaryOperator 0x562a15def5c0 <col:5, col:31> 'int' '/'
+|   |     |         |   |-ParenExpr 0x562a15def5a0 <col:5> 'int'
+|   |     |         |   | `-BinaryOperator 0x562a15def578 <col:21, col:31> 'int' '+'
+|   |     |         |   |   |-BinaryOperator 0x562a15def550 <col:21, <invalid sloc>> 'int' '-'
+|   |     |         |   |   | |-BinaryOperator 0x562a15def508 <col:21, col:14> 'int' '-'
+|   |     |         |   |   | | |-ImplicitCastExpr 0x562a15def4f0 <col:21> 'int' <LValueToRValue>
+|   |     |         |   |   | | | `-DeclRefExpr 0x562a15def470 <col:21> 'int' lvalue OMPCapturedExpr 0x562a15def410 '.capture_expr.' 'int'
+|   |     |         |   |   | | `-IntegerLiteral 0x562a15deeed8 <col:14> 'int' 0
+|   |     |         |   |   | `-IntegerLiteral 0x562a15def530 <<invalid sloc>> 'int' 1
+|   |     |         |   |   `-IntegerLiteral 0x562a15def3f0 <col:31> 'int' 1
+|   |     |         |   `-IntegerLiteral 0x562a15def3f0 <col:31> 'int' 1
+|   |     |         `-IntegerLiteral 0x562a15def3f0 <col:31> 'int' 1
+|   |     |-ImplicitParamDecl 0x562a15ded4d0 <line:7:11> col:11 implicit .global_tid. 'int *const restrict'
+|   |     |-ImplicitParamDecl 0x562a15ded530 <col:11> col:11 implicit .bound_tid. 'int *const restrict'
+|   |     |-ImplicitParamDecl 0x562a15ded5b8 <col:11> col:11 implicit __context 'struct (anonymous at examen_dynamic_-_main.c:7:11) *'
+|   |     |-RecordDecl 0x562a15deec58 <line:10:13> col:13 implicit struct definition
+|   |     | |-CapturedRecordAttr 0x562a15deed00 <<invalid sloc>> Implicit
+|   |     | |-FieldDecl 0x562a15deee68 <line:11:10> col:10 implicit 'int &'
+|   |     | |-FieldDecl 0x562a15deef88 <col:22> col:22 implicit 'int &'
+|   |     | `-FieldDecl 0x562a15def1e8 <line:13:41> col:41 implicit 'int &'
+|   |     |-CapturedDecl 0x562a15deed48 <<invalid sloc>> <invalid sloc>
+|   |     | |-ForStmt 0x562a15def350 <line:11:5, line:14:5>
+|   |     | | |-BinaryOperator 0x562a15deeef8 <line:11:10, col:14> 'int' '='
+|   |     | | | |-DeclRefExpr 0x562a15deee28 <col:10> 'int' lvalue Var 0x562a15decdf8 'i' 'int'
+|   |     | | | `-IntegerLiteral 0x562a15deeed8 <col:14> 'int' 0
+|   |     | | |-<<<NULL>>>
+|   |     | | |-BinaryOperator 0x562a15def090 <col:17, col:28> 'int' '<'
+|   |     | | | |-ImplicitCastExpr 0x562a15def078 <col:17> 'int' <LValueToRValue>
+|   |     | | | | `-DeclRefExpr 0x562a15deef20 <col:17> 'int' lvalue Var 0x562a15decdf8 'i' 'int'
+|   |     | | | `-ParenExpr 0x562a15def058 <col:21, col:28> 'int'
+|   |     | | |   `-BinaryOperator 0x562a15def030 <col:22, col:27> 'int' '*'
+|   |     | | |     |-ImplicitCastExpr 0x562a15def018 <col:22> 'int' <LValueToRValue>
+|   |     | | |     | `-DeclRefExpr 0x562a15deef48 <col:22> 'int' lvalue Var 0x562a15decd48 'np' 'int'
+|   |     | | |     `-IntegerLiteral 0x562a15deeff8 <col:27> 'int' 2
+|   |     | | |-UnaryOperator 0x562a15def0e0 <col:31, col:32> 'int' postfix '++'
+|   |     | | | `-DeclRefExpr 0x562a15def0b8 <col:31> 'int' lvalue Var 0x562a15decdf8 'i' 'int'
+|   |     | | `-CompoundStmt 0x562a15def338 <line:12:5, line:14:5>
+|   |     | |   `-CallExpr 0x562a15def298 <line:13:7, col:47> 'int'
+|   |     | |     |-ImplicitCastExpr 0x562a15def280 <col:7> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|   |     | |     | `-DeclRefExpr 0x562a15def100 <col:7> 'int (const char *, ...)' Function 0x562a15deda10 'printf' 'int (const char *, ...)'
+|   |     | |     |-ImplicitCastExpr 0x562a15def2f0 <col:14> 'const char *' <BitCast>
+|   |     | |     | `-ImplicitCastExpr 0x562a15def2d8 <col:14> 'char *' <ArrayToPointerDecay>
+|   |     | |     |   `-StringLiteral 0x562a15def168 <col:14> 'char [23]' lvalue "Thread %d,contador %d\n"
+|   |     | |     |-ImplicitCastExpr 0x562a15def308 <col:41> 'int' <LValueToRValue>
+|   |     | |     | `-DeclRefExpr 0x562a15def1a8 <col:41> 'int' lvalue Var 0x562a15decc98 'iam' 'int'
+|   |     | |     `-ImplicitCastExpr 0x562a15def320 <col:46> 'int' <LValueToRValue>
+|   |     | |       `-DeclRefExpr 0x562a15def258 <col:46> 'int' lvalue Var 0x562a15decdf8 'i' 'int'
+|   |     | `-ImplicitParamDecl 0x562a15deedc8 <line:10:13> col:13 implicit __context 'struct (anonymous at examen_dynamic_-_main.c:10:13) *'
+|   |     |-OMPCapturedExprDecl 0x562a15def410 <line:11:21, col:28> <invalid sloc> implicit used .capture_expr. 'int'
+|   |     | `-ParenExpr 0x562a15def058 <col:21, col:28> 'int'
+|   |     |   `-BinaryOperator 0x562a15def030 <col:22, col:27> 'int' '*'
+|   |     |     |-ImplicitCastExpr 0x562a15def018 <col:22> 'int' <LValueToRValue>
+|   |     |     | `-DeclRefExpr 0x562a15deef48 <col:22> 'int' lvalue Var 0x562a15decd48 'np' 'int'
+|   |     |     `-IntegerLiteral 0x562a15deeff8 <col:27> 'int' 2
+|   |     `-OMPCapturedExprDecl 0x562a15def710 <col:5, <invalid sloc>> <invalid sloc> implicit used .capture_expr. 'int'
+|   |       `-BinaryOperator 0x562a15def6e8 <col:5, <invalid sloc>> 'int' '-'
+|   |         |-BinaryOperator 0x562a15def5c0 <col:5, col:31> 'int' '/'
+|   |         | |-ParenExpr 0x562a15def5a0 <col:5> 'int'
+|   |         | | `-BinaryOperator 0x562a15def578 <col:21, col:31> 'int' '+'
+|   |         | |   |-BinaryOperator 0x562a15def550 <col:21, <invalid sloc>> 'int' '-'
+|   |         | |   | |-BinaryOperator 0x562a15def508 <col:21, col:14> 'int' '-'
+|   |         | |   | | |-ImplicitCastExpr 0x562a15def4f0 <col:21> 'int' <LValueToRValue>
+|   |         | |   | | | `-DeclRefExpr 0x562a15def470 <col:21> 'int' lvalue OMPCapturedExpr 0x562a15def410 '.capture_expr.' 'int'
+|   |         | |   | | `-IntegerLiteral 0x562a15deeed8 <col:14> 'int' 0
+|   |         | |   | `-IntegerLiteral 0x562a15def530 <<invalid sloc>> 'int' 1
+|   |         | |   `-IntegerLiteral 0x562a15def3f0 <col:31> 'int' 1
+|   |         | `-IntegerLiteral 0x562a15def3f0 <col:31> 'int' 1
+|   |         `-IntegerLiteral 0x562a15def6c8 <<invalid sloc>> 'int' 1
+|   |-DeclStmt 0x562a15df1f60 <line:17:3, col:31>
+|   | `-VarDecl 0x562a15df1e80 <col:3, col:30> col:10 used end 'double' cinit
+|   |   `-ImplicitCastExpr 0x562a15df1f48 <col:16, col:30> 'double' <IntegralToFloating>
+|   |     `-CallExpr 0x562a15df1f20 <col:16, col:30> 'int'
+|   |       `-ImplicitCastExpr 0x562a15df1f08 <col:16> 'int (*)()' <FunctionToPointerDecay>
+|   |         `-DeclRefExpr 0x562a15df1ee0 <col:16> 'int ()' Function 0x562a15decf30 'omp_get_wtime' 'int ()'
+|   |-CallExpr 0x562a15df2050 <line:18:3, col:36> 'int'
+|   | |-ImplicitCastExpr 0x562a15df2038 <col:3> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|   | | `-DeclRefExpr 0x562a15df1f78 <col:3> 'int (const char *, ...)' Function 0x562a15deda10 'printf' 'int (const char *, ...)'
+|   | |-ImplicitCastExpr 0x562a15df20a0 <col:10> 'const char *' <BitCast>
+|   | | `-ImplicitCastExpr 0x562a15df2088 <col:10> 'char *' <ArrayToPointerDecay>
+|   | |   `-StringLiteral 0x562a15df1fd8 <col:10> 'char [17]' lvalue "start time = %f\n"
+|   | `-ImplicitCastExpr 0x562a15df20b8 <col:31> 'double' <LValueToRValue>
+|   |   `-DeclRefExpr 0x562a15df2010 <col:31> 'double' lvalue Var 0x562a15decea8 'start' 'double'
+|   |-CallExpr 0x562a15df21b0 <line:19:3, col:32> 'int'
+|   | |-ImplicitCastExpr 0x562a15df2198 <col:3> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|   | | `-DeclRefExpr 0x562a15df20d0 <col:3> 'int (const char *, ...)' Function 0x562a15deda10 'printf' 'int (const char *, ...)'
+|   | |-ImplicitCastExpr 0x562a15df2200 <col:10> 'const char *' <BitCast>
+|   | | `-ImplicitCastExpr 0x562a15df21e8 <col:10> 'char *' <ArrayToPointerDecay>
+|   | |   `-StringLiteral 0x562a15df2138 <col:10> 'char [15]' lvalue "end time = %f\n"
+|   | `-ImplicitCastExpr 0x562a15df2218 <col:29> 'double' <LValueToRValue>
+|   |   `-DeclRefExpr 0x562a15df2170 <col:29> 'double' lvalue Var 0x562a15df1e80 'end' 'double'
+|   `-CallExpr 0x562a15df2390 <line:20:3, col:41> 'int'
+|     |-ImplicitCastExpr 0x562a15df2378 <col:3> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|     | `-DeclRefExpr 0x562a15df2230 <col:3> 'int (const char *, ...)' Function 0x562a15deda10 'printf' 'int (const char *, ...)'
+|     |-ImplicitCastExpr 0x562a15df23e0 <col:10> 'const char *' <BitCast>
+|     | `-ImplicitCastExpr 0x562a15df23c8 <col:10> 'char *' <ArrayToPointerDecay>
+|     |   `-StringLiteral 0x562a15df2298 <col:10> 'char [16]' lvalue "diff time = %f\n"
+|     `-BinaryOperator 0x562a15df2350 <col:30, col:36> 'double' '-'
+|       |-ImplicitCastExpr 0x562a15df2320 <col:30> 'double' <LValueToRValue>
+|       | `-DeclRefExpr 0x562a15df22d0 <col:30> 'double' lvalue Var 0x562a15df1e80 'end' 'double'
+|       `-ImplicitCastExpr 0x562a15df2338 <col:36> 'double' <LValueToRValue>
+|         `-DeclRefExpr 0x562a15df22f8 <col:36> 'double' lvalue Var 0x562a15decea8 'start' 'double'
+`-FunctionDecl 0x562a15deda10 <line:9:5> col:5 implicit used printf 'int (const char *, ...)' extern
+  |-ParmVarDecl 0x562a15dedab0 <<invalid sloc>> <invalid sloc> 'const char *'
+  `-FormatAttr 0x562a15dedb18 <col:5> Implicit printf 1 2

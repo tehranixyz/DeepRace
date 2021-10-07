@@ -1,0 +1,473 @@
+TranslationUnitDecl 0x5637e1c43e38 <<invalid sloc>> <invalid sloc>
+|-TypedefDecl 0x5637e1c443d0 <<invalid sloc>> <invalid sloc> implicit __int128_t '__int128'
+| `-BuiltinType 0x5637e1c440d0 '__int128'
+|-TypedefDecl 0x5637e1c44440 <<invalid sloc>> <invalid sloc> implicit __uint128_t 'unsigned __int128'
+| `-BuiltinType 0x5637e1c440f0 'unsigned __int128'
+|-TypedefDecl 0x5637e1c44718 <<invalid sloc>> <invalid sloc> implicit __NSConstantString 'struct __NSConstantString_tag'
+| `-RecordType 0x5637e1c44520 'struct __NSConstantString_tag'
+|   `-Record 0x5637e1c44498 '__NSConstantString_tag'
+|-TypedefDecl 0x5637e1c447b0 <<invalid sloc>> <invalid sloc> implicit __builtin_ms_va_list 'char *'
+| `-PointerType 0x5637e1c44770 'char *'
+|   `-BuiltinType 0x5637e1c43ed0 'char'
+|-TypedefDecl 0x5637e1c44a78 <<invalid sloc>> <invalid sloc> implicit __builtin_va_list 'struct __va_list_tag [1]'
+| `-ConstantArrayType 0x5637e1c44a20 'struct __va_list_tag [1]' 1 
+|   `-RecordType 0x5637e1c44890 'struct __va_list_tag'
+|     `-Record 0x5637e1c44808 '__va_list_tag'
+|-FunctionDecl 0x5637e1c9d970 <ej2openmpsections_-_main.c:1:1, line:44:1> line:1:5 main 'int ()'
+| `-CompoundStmt 0x5637e1ca3660 <line:2:1, line:44:1>
+|   |-DeclStmt 0x5637e1c9dac8 <line:3:3, col:20>
+|   | `-VarDecl 0x5637e1c9da68 <col:3, col:17> col:17 tid 'long long'
+|   |-DeclStmt 0x5637e1c9db58 <line:4:3, col:18>
+|   | `-VarDecl 0x5637e1c9daf8 <col:3, col:17> col:17 used i 'long long'
+|   |-DeclStmt 0x5637e1c9dbe8 <line:5:3, col:21>
+|   | `-VarDecl 0x5637e1c9db88 <col:3, col:17> col:17 used suma 'long long'
+|   |-BinaryOperator 0x5637e1c9dc60 <line:6:3, col:10> 'long long' '='
+|   | |-DeclRefExpr 0x5637e1c9dc00 <col:3> 'long long' lvalue Var 0x5637e1c9db88 'suma' 'long long'
+|   | `-ImplicitCastExpr 0x5637e1c9dc48 <col:10> 'long long' <IntegralCast>
+|   |   `-IntegerLiteral 0x5637e1c9dc28 <col:10> 'int' 0
+|   |-DeclStmt 0x5637e1c9dd00 <line:7:3, col:13>
+|   | `-VarDecl 0x5637e1c9dca0 <col:3, col:10> col:10 used kuz 'double'
+|   |-DeclStmt 0x5637e1c9dd90 <line:8:3, col:14>
+|   | `-VarDecl 0x5637e1c9dd30 <col:3, col:10> col:10 used zain 'double'
+|   |-BinaryOperator 0x5637e1c9df50 <line:9:3, col:23> 'double' '='
+|   | |-DeclRefExpr 0x5637e1c9dda8 <col:3> 'double' lvalue Var 0x5637e1c9dca0 'kuz' 'double'
+|   | `-ImplicitCastExpr 0x5637e1c9df38 <col:9, col:23> 'double' <IntegralToFloating>
+|   |   `-CallExpr 0x5637e1c9df10 <col:9, col:23> 'int'
+|   |     `-ImplicitCastExpr 0x5637e1c9def8 <col:9> 'int (*)()' <FunctionToPointerDecay>
+|   |       `-DeclRefExpr 0x5637e1c9dea8 <col:9> 'int ()' Function 0x5637e1c9ddf8 'omp_get_wtime' 'int ()'
+|   |-DeclStmt 0x5637e1c9dff0 <line:10:3, col:16>
+|   | `-VarDecl 0x5637e1c9df90 <col:3, col:10> col:10 inicio 'double'
+|   |-DeclStmt 0x5637e1c9e080 <line:11:3, col:13>
+|   | `-VarDecl 0x5637e1c9e020 <col:3, col:10> col:10 fin 'double'
+|   |-DeclStmt 0x5637e1c9e180 <line:12:3, col:19>
+|   | `-VarDecl 0x5637e1c9e120 <col:3, col:18> col:10 used A 'double [100000]'
+|   |-DeclStmt 0x5637e1c9e240 <line:13:3, col:19>
+|   | `-VarDecl 0x5637e1c9e1e0 <col:3, col:18> col:10 used B 'double [100000]'
+|   |-DeclStmt 0x5637e1c9e300 <line:14:3, col:19>
+|   | `-VarDecl 0x5637e1c9e2a0 <col:3, col:18> col:10 used S 'double [100000]'
+|   |-DeclStmt 0x5637e1c9e3c0 <line:15:3, col:19>
+|   | `-VarDecl 0x5637e1c9e360 <col:3, col:18> col:10 used P 'double [100000]'
+|   |-ForStmt 0x5637e1c9e878 <line:16:3, line:20:3>
+|   | |-BinaryOperator 0x5637e1c9e438 <line:16:8, col:12> 'long long' '='
+|   | | |-DeclRefExpr 0x5637e1c9e3d8 <col:8> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   | | `-ImplicitCastExpr 0x5637e1c9e420 <col:12> 'long long' <IntegralCast>
+|   | |   `-IntegerLiteral 0x5637e1c9e400 <col:12> 'int' 0
+|   | |-<<<NULL>>>
+|   | |-BinaryOperator 0x5637e1c9e4d8 <col:15, col:19> 'int' '<'
+|   | | |-ImplicitCastExpr 0x5637e1c9e4a8 <col:15> 'long long' <LValueToRValue>
+|   | | | `-DeclRefExpr 0x5637e1c9e460 <col:15> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   | | `-ImplicitCastExpr 0x5637e1c9e4c0 <col:19> 'long long' <IntegralCast>
+|   | |   `-IntegerLiteral 0x5637e1c9e488 <col:19> 'int' 100000
+|   | |-UnaryOperator 0x5637e1c9e528 <col:27, col:29> 'long long' prefix '++'
+|   | | `-DeclRefExpr 0x5637e1c9e500 <col:29> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   | `-CompoundStmt 0x5637e1c9e858 <line:17:3, line:20:3>
+|   |   |-BinaryOperator 0x5637e1c9e6c0 <line:18:5, col:16> 'double' '='
+|   |   | |-ArraySubscriptExpr 0x5637e1c9e5f8 <col:5, col:8> 'double' lvalue
+|   |   | | |-ImplicitCastExpr 0x5637e1c9e5c8 <col:5> 'double *' <ArrayToPointerDecay>
+|   |   | | | `-DeclRefExpr 0x5637e1c9e548 <col:5> 'double [100000]' lvalue Var 0x5637e1c9e120 'A' 'double [100000]'
+|   |   | | `-ImplicitCastExpr 0x5637e1c9e5e0 <col:7> 'long long' <LValueToRValue>
+|   |   | |   `-DeclRefExpr 0x5637e1c9e570 <col:7> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   | `-BinaryOperator 0x5637e1c9e698 <col:12, col:16> 'double' '*'
+|   |   |   |-ImplicitCastExpr 0x5637e1c9e680 <col:12> 'double' <IntegralToFloating>
+|   |   |   | `-ImplicitCastExpr 0x5637e1c9e668 <col:12> 'long long' <LValueToRValue>
+|   |   |   |   `-DeclRefExpr 0x5637e1c9e620 <col:12> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   |   `-FloatingLiteral 0x5637e1c9e648 <col:16> 'double' 1.750000e+00
+|   |   `-BinaryOperator 0x5637e1c9e830 <line:19:5, col:16> 'double' '='
+|   |     |-ArraySubscriptExpr 0x5637e1c9e768 <col:5, col:8> 'double' lvalue
+|   |     | |-ImplicitCastExpr 0x5637e1c9e738 <col:5> 'double *' <ArrayToPointerDecay>
+|   |     | | `-DeclRefExpr 0x5637e1c9e6e8 <col:5> 'double [100000]' lvalue Var 0x5637e1c9e1e0 'B' 'double [100000]'
+|   |     | `-ImplicitCastExpr 0x5637e1c9e750 <col:7> 'long long' <LValueToRValue>
+|   |     |   `-DeclRefExpr 0x5637e1c9e710 <col:7> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |     `-BinaryOperator 0x5637e1c9e808 <col:12, col:16> 'double' '*'
+|   |       |-ImplicitCastExpr 0x5637e1c9e7f0 <col:12> 'double' <IntegralToFloating>
+|   |       | `-ImplicitCastExpr 0x5637e1c9e7d8 <col:12> 'long long' <LValueToRValue>
+|   |       |   `-DeclRefExpr 0x5637e1c9e790 <col:12> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |       `-FloatingLiteral 0x5637e1c9e7b8 <col:16> 'double' 5.800000e-01
+|   |-CallExpr 0x5637e1c9eab0 <line:22:3, col:19> 'int'
+|   | |-ImplicitCastExpr 0x5637e1c9ea98 <col:3> 'int (*)()' <FunctionToPointerDecay>
+|   | | `-DeclRefExpr 0x5637e1c9ea50 <col:3> 'int ()' Function 0x5637e1c9e9a0 'omp_set_nested' 'int ()'
+|   | `-IntegerLiteral 0x5637e1c9ea78 <col:18> 'int' 1
+|   |-OMPParallelDirective 0x5637e1ca2dd8 <line:23:11, col:38>
+|   | |-OMPNum_threadsClause 0x5637e1c9eb00 <col:24, col:37>
+|   | | `-IntegerLiteral 0x5637e1c9eae0 <col:36> 'int' 2
+|   | `-CapturedStmt 0x5637e1ca2d40 <line:24:3, line:40:3>
+|   |   |-CapturedDecl 0x5637e1c9ec48 <<invalid sloc>> <invalid sloc>
+|   |   | |-CompoundStmt 0x5637e1ca2cf0 <line:24:3, line:40:3>
+|   |   | | `-OMPSectionsDirective 0x5637e1ca2cc8 <line:25:13, col:25>
+|   |   | |   `-CapturedStmt 0x5637e1ca2c30 <line:26:5, line:39:5>
+|   |   | |     |-CapturedDecl 0x5637e1c9eee8 <<invalid sloc>> <invalid sloc>
+|   |   | |     | |-CompoundStmt 0x5637e1ca2c10 <line:26:5, line:39:5>
+|   |   | |     | | |-OMPSectionDirective 0x5637e1ca2188 <line:27:15, col:26>
+|   |   | |     | | | `-CapturedStmt 0x5637e1ca2108 <line:28:7, line:31:7>
+|   |   | |     | | |   |-CapturedDecl 0x5637e1c9f0b8 <<invalid sloc>> <invalid sloc>
+|   |   | |     | | |   | |-ForStmt 0x5637e1ca20d0 <line:28:7, line:31:7>
+|   |   | |     | | |   | | |-BinaryOperator 0x5637e1c9f3c0 <line:28:12, col:16> 'long long' '='
+|   |   | |     | | |   | | | |-DeclRefExpr 0x5637e1c9f1c8 <col:12> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   | |     | | |   | | | `-ImplicitCastExpr 0x5637e1c9f3a8 <col:16> 'long long' <IntegralCast>
+|   |   | |     | | |   | | |   `-IntegerLiteral 0x5637e1c9f388 <col:16> 'int' 0
+|   |   | |     | | |   | | |-<<<NULL>>>
+|   |   | |     | | |   | | |-BinaryOperator 0x5637e1c9f460 <col:19, col:23> 'int' '<'
+|   |   | |     | | |   | | | |-ImplicitCastExpr 0x5637e1c9f430 <col:19> 'long long' <LValueToRValue>
+|   |   | |     | | |   | | | | `-DeclRefExpr 0x5637e1c9f3e8 <col:19> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   | |     | | |   | | | `-ImplicitCastExpr 0x5637e1c9f448 <col:23> 'long long' <IntegralCast>
+|   |   | |     | | |   | | |   `-IntegerLiteral 0x5637e1c9f410 <col:23> 'int' 100000
+|   |   | |     | | |   | | |-UnaryOperator 0x5637e1c9f4b0 <col:31, col:33> 'long long' prefix '++'
+|   |   | |     | | |   | | | `-DeclRefExpr 0x5637e1c9f488 <col:33> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   | |     | | |   | | `-CompoundStmt 0x5637e1ca20b8 <line:29:7, line:31:7>
+|   |   | |     | | |   | |   `-BinaryOperator 0x5637e1ca2090 <line:30:9, col:26> 'double' '='
+|   |   | |     | | |   | |     |-ArraySubscriptExpr 0x5637e1c9f758 <col:9, col:12> 'double' lvalue
+|   |   | |     | | |   | |     | |-ImplicitCastExpr 0x5637e1c9f728 <col:9> 'double *' <ArrayToPointerDecay>
+|   |   | |     | | |   | |     | | `-DeclRefExpr 0x5637e1c9f4f8 <col:9> 'double [100000]' lvalue Var 0x5637e1c9e360 'P' 'double [100000]'
+|   |   | |     | | |   | |     | `-ImplicitCastExpr 0x5637e1c9f740 <col:11> 'long long' <LValueToRValue>
+|   |   | |     | | |   | |     |   `-DeclRefExpr 0x5637e1c9f700 <col:11> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   | |     | | |   | |     `-BinaryOperator 0x5637e1ca2068 <col:16, col:26> 'double' '*'
+|   |   | |     | | |   | |       |-ImplicitCastExpr 0x5637e1ca2038 <col:16, col:19> 'double' <LValueToRValue>
+|   |   | |     | | |   | |       | `-ArraySubscriptExpr 0x5637e1ca1d88 <col:16, col:19> 'double' lvalue
+|   |   | |     | | |   | |       |   |-ImplicitCastExpr 0x5637e1ca1d58 <col:16> 'double *' <ArrayToPointerDecay>
+|   |   | |     | | |   | |       |   | `-DeclRefExpr 0x5637e1c9f780 <col:16> 'double [100000]' lvalue Var 0x5637e1c9e120 'A' 'double [100000]'
+|   |   | |     | | |   | |       |   `-ImplicitCastExpr 0x5637e1ca1d70 <col:18> 'long long' <LValueToRValue>
+|   |   | |     | | |   | |       |     `-DeclRefExpr 0x5637e1ca1d30 <col:18> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   | |     | | |   | |       `-ImplicitCastExpr 0x5637e1ca2050 <col:23, col:26> 'double' <LValueToRValue>
+|   |   | |     | | |   | |         `-ArraySubscriptExpr 0x5637e1ca2010 <col:23, col:26> 'double' lvalue
+|   |   | |     | | |   | |           |-ImplicitCastExpr 0x5637e1ca1fe0 <col:23> 'double *' <ArrayToPointerDecay>
+|   |   | |     | | |   | |           | `-DeclRefExpr 0x5637e1ca1db0 <col:23> 'double [100000]' lvalue Var 0x5637e1c9e1e0 'B' 'double [100000]'
+|   |   | |     | | |   | |           `-ImplicitCastExpr 0x5637e1ca1ff8 <col:25> 'long long' <LValueToRValue>
+|   |   | |     | | |   | |             `-DeclRefExpr 0x5637e1ca1fb8 <col:25> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   | |     | | |   | `-ImplicitParamDecl 0x5637e1c9f138 <line:27:15> col:15 implicit __context 'struct (anonymous at ej2openmpsections_-_main.c:27:15) *'
+|   |   | |     | | |   |-DeclRefExpr 0x5637e1c9f360 <line:28:12> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   | |     | | |   |-DeclRefExpr 0x5637e1c9f6d8 <line:30:9> 'double [100000]' lvalue Var 0x5637e1c9e360 'P' 'double [100000]'
+|   |   | |     | | |   |-DeclRefExpr 0x5637e1c9f960 <col:16> 'double [100000]' lvalue Var 0x5637e1c9e120 'A' 'double [100000]'
+|   |   | |     | | |   `-DeclRefExpr 0x5637e1ca1f90 <col:23> 'double [100000]' lvalue Var 0x5637e1c9e1e0 'B' 'double [100000]'
+|   |   | |     | | `-OMPSectionDirective 0x5637e1ca2be8 <line:33:15, col:26>
+|   |   | |     | |   `-CapturedStmt 0x5637e1ca2b68 <line:34:7, line:37:7>
+|   |   | |     | |     |-CapturedDecl 0x5637e1ca22a8 <<invalid sloc>> <invalid sloc>
+|   |   | |     | |     | |-ForStmt 0x5637e1ca2b30 <line:34:7, line:37:7>
+|   |   | |     | |     | | |-BinaryOperator 0x5637e1ca2470 <line:34:12, col:16> 'long long' '='
+|   |   | |     | |     | | | |-DeclRefExpr 0x5637e1ca2388 <col:12> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   | |     | |     | | | `-ImplicitCastExpr 0x5637e1ca2458 <col:16> 'long long' <IntegralCast>
+|   |   | |     | |     | | |   `-IntegerLiteral 0x5637e1ca2438 <col:16> 'int' 0
+|   |   | |     | |     | | |-<<<NULL>>>
+|   |   | |     | |     | | |-BinaryOperator 0x5637e1ca2510 <col:19, col:23> 'int' '<'
+|   |   | |     | |     | | | |-ImplicitCastExpr 0x5637e1ca24e0 <col:19> 'long long' <LValueToRValue>
+|   |   | |     | |     | | | | `-DeclRefExpr 0x5637e1ca2498 <col:19> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   | |     | |     | | | `-ImplicitCastExpr 0x5637e1ca24f8 <col:23> 'long long' <IntegralCast>
+|   |   | |     | |     | | |   `-IntegerLiteral 0x5637e1ca24c0 <col:23> 'int' 100000
+|   |   | |     | |     | | |-UnaryOperator 0x5637e1ca2560 <col:31, col:33> 'long long' prefix '++'
+|   |   | |     | |     | | | `-DeclRefExpr 0x5637e1ca2538 <col:33> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   | |     | |     | | `-CompoundStmt 0x5637e1ca2b18 <line:35:7, line:37:7>
+|   |   | |     | |     | |   `-BinaryOperator 0x5637e1ca2af0 <line:36:9, col:26> 'double' '='
+|   |   | |     | |     | |     |-ArraySubscriptExpr 0x5637e1ca27e0 <col:9, col:12> 'double' lvalue
+|   |   | |     | |     | |     | |-ImplicitCastExpr 0x5637e1ca27b0 <col:9> 'double *' <ArrayToPointerDecay>
+|   |   | |     | |     | |     | | `-DeclRefExpr 0x5637e1ca2580 <col:9> 'double [100000]' lvalue Var 0x5637e1c9e2a0 'S' 'double [100000]'
+|   |   | |     | |     | |     | `-ImplicitCastExpr 0x5637e1ca27c8 <col:11> 'long long' <LValueToRValue>
+|   |   | |     | |     | |     |   `-DeclRefExpr 0x5637e1ca2788 <col:11> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   | |     | |     | |     `-BinaryOperator 0x5637e1ca2ac8 <col:16, col:26> 'double' '+'
+|   |   | |     | |     | |       |-ImplicitCastExpr 0x5637e1ca2a98 <col:16, col:19> 'double' <LValueToRValue>
+|   |   | |     | |     | |       | `-ArraySubscriptExpr 0x5637e1ca2928 <col:16, col:19> 'double' lvalue
+|   |   | |     | |     | |       |   |-ImplicitCastExpr 0x5637e1ca28f8 <col:16> 'double *' <ArrayToPointerDecay>
+|   |   | |     | |     | |       |   | `-DeclRefExpr 0x5637e1ca2808 <col:16> 'double [100000]' lvalue Var 0x5637e1c9e120 'A' 'double [100000]'
+|   |   | |     | |     | |       |   `-ImplicitCastExpr 0x5637e1ca2910 <col:18> 'long long' <LValueToRValue>
+|   |   | |     | |     | |       |     `-DeclRefExpr 0x5637e1ca28d0 <col:18> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   | |     | |     | |       `-ImplicitCastExpr 0x5637e1ca2ab0 <col:23, col:26> 'double' <LValueToRValue>
+|   |   | |     | |     | |         `-ArraySubscriptExpr 0x5637e1ca2a70 <col:23, col:26> 'double' lvalue
+|   |   | |     | |     | |           |-ImplicitCastExpr 0x5637e1ca2a40 <col:23> 'double *' <ArrayToPointerDecay>
+|   |   | |     | |     | |           | `-DeclRefExpr 0x5637e1ca2950 <col:23> 'double [100000]' lvalue Var 0x5637e1c9e1e0 'B' 'double [100000]'
+|   |   | |     | |     | |           `-ImplicitCastExpr 0x5637e1ca2a58 <col:25> 'long long' <LValueToRValue>
+|   |   | |     | |     | |             `-DeclRefExpr 0x5637e1ca2a18 <col:25> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   | |     | |     | `-ImplicitParamDecl 0x5637e1ca2328 <line:33:15> col:15 implicit __context 'struct (anonymous at ej2openmpsections_-_main.c:33:15) *'
+|   |   | |     | |     |-DeclRefExpr 0x5637e1ca2410 <line:34:12> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   | |     | |     |-DeclRefExpr 0x5637e1ca2760 <line:36:9> 'double [100000]' lvalue Var 0x5637e1c9e2a0 'S' 'double [100000]'
+|   |   | |     | |     |-DeclRefExpr 0x5637e1ca28a8 <col:16> 'double [100000]' lvalue Var 0x5637e1c9e120 'A' 'double [100000]'
+|   |   | |     | |     `-DeclRefExpr 0x5637e1ca29f0 <col:23> 'double [100000]' lvalue Var 0x5637e1c9e1e0 'B' 'double [100000]'
+|   |   | |     | |-ImplicitParamDecl 0x5637e1c9ef68 <line:25:13> col:13 implicit __context 'struct (anonymous at ej2openmpsections_-_main.c:25:13) *'
+|   |   | |     | |-RecordDecl 0x5637e1c9efc8 <line:27:15> col:15 implicit struct definition
+|   |   | |     | | |-CapturedRecordAttr 0x5637e1c9f070 <<invalid sloc>> Implicit
+|   |   | |     | | |-FieldDecl 0x5637e1c9f318 <line:28:12> col:12 implicit 'long long &'
+|   |   | |     | | |-FieldDecl 0x5637e1c9f690 <line:30:9> col:9 implicit 'double (&)[100000]'
+|   |   | |     | | |-FieldDecl 0x5637e1c9f918 <col:16> col:16 implicit 'double (&)[100000]'
+|   |   | |     | | `-FieldDecl 0x5637e1ca1f48 <col:23> col:23 implicit 'double (&)[100000]'
+|   |   | |     | |-CapturedDecl 0x5637e1c9f0b8 <<invalid sloc>> <invalid sloc>
+|   |   | |     | | |-ForStmt 0x5637e1ca20d0 <line:28:7, line:31:7>
+|   |   | |     | | | |-BinaryOperator 0x5637e1c9f3c0 <line:28:12, col:16> 'long long' '='
+|   |   | |     | | | | |-DeclRefExpr 0x5637e1c9f1c8 <col:12> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   | |     | | | | `-ImplicitCastExpr 0x5637e1c9f3a8 <col:16> 'long long' <IntegralCast>
+|   |   | |     | | | |   `-IntegerLiteral 0x5637e1c9f388 <col:16> 'int' 0
+|   |   | |     | | | |-<<<NULL>>>
+|   |   | |     | | | |-BinaryOperator 0x5637e1c9f460 <col:19, col:23> 'int' '<'
+|   |   | |     | | | | |-ImplicitCastExpr 0x5637e1c9f430 <col:19> 'long long' <LValueToRValue>
+|   |   | |     | | | | | `-DeclRefExpr 0x5637e1c9f3e8 <col:19> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   | |     | | | | `-ImplicitCastExpr 0x5637e1c9f448 <col:23> 'long long' <IntegralCast>
+|   |   | |     | | | |   `-IntegerLiteral 0x5637e1c9f410 <col:23> 'int' 100000
+|   |   | |     | | | |-UnaryOperator 0x5637e1c9f4b0 <col:31, col:33> 'long long' prefix '++'
+|   |   | |     | | | | `-DeclRefExpr 0x5637e1c9f488 <col:33> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   | |     | | | `-CompoundStmt 0x5637e1ca20b8 <line:29:7, line:31:7>
+|   |   | |     | | |   `-BinaryOperator 0x5637e1ca2090 <line:30:9, col:26> 'double' '='
+|   |   | |     | | |     |-ArraySubscriptExpr 0x5637e1c9f758 <col:9, col:12> 'double' lvalue
+|   |   | |     | | |     | |-ImplicitCastExpr 0x5637e1c9f728 <col:9> 'double *' <ArrayToPointerDecay>
+|   |   | |     | | |     | | `-DeclRefExpr 0x5637e1c9f4f8 <col:9> 'double [100000]' lvalue Var 0x5637e1c9e360 'P' 'double [100000]'
+|   |   | |     | | |     | `-ImplicitCastExpr 0x5637e1c9f740 <col:11> 'long long' <LValueToRValue>
+|   |   | |     | | |     |   `-DeclRefExpr 0x5637e1c9f700 <col:11> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   | |     | | |     `-BinaryOperator 0x5637e1ca2068 <col:16, col:26> 'double' '*'
+|   |   | |     | | |       |-ImplicitCastExpr 0x5637e1ca2038 <col:16, col:19> 'double' <LValueToRValue>
+|   |   | |     | | |       | `-ArraySubscriptExpr 0x5637e1ca1d88 <col:16, col:19> 'double' lvalue
+|   |   | |     | | |       |   |-ImplicitCastExpr 0x5637e1ca1d58 <col:16> 'double *' <ArrayToPointerDecay>
+|   |   | |     | | |       |   | `-DeclRefExpr 0x5637e1c9f780 <col:16> 'double [100000]' lvalue Var 0x5637e1c9e120 'A' 'double [100000]'
+|   |   | |     | | |       |   `-ImplicitCastExpr 0x5637e1ca1d70 <col:18> 'long long' <LValueToRValue>
+|   |   | |     | | |       |     `-DeclRefExpr 0x5637e1ca1d30 <col:18> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   | |     | | |       `-ImplicitCastExpr 0x5637e1ca2050 <col:23, col:26> 'double' <LValueToRValue>
+|   |   | |     | | |         `-ArraySubscriptExpr 0x5637e1ca2010 <col:23, col:26> 'double' lvalue
+|   |   | |     | | |           |-ImplicitCastExpr 0x5637e1ca1fe0 <col:23> 'double *' <ArrayToPointerDecay>
+|   |   | |     | | |           | `-DeclRefExpr 0x5637e1ca1db0 <col:23> 'double [100000]' lvalue Var 0x5637e1c9e1e0 'B' 'double [100000]'
+|   |   | |     | | |           `-ImplicitCastExpr 0x5637e1ca1ff8 <col:25> 'long long' <LValueToRValue>
+|   |   | |     | | |             `-DeclRefExpr 0x5637e1ca1fb8 <col:25> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   | |     | | `-ImplicitParamDecl 0x5637e1c9f138 <line:27:15> col:15 implicit __context 'struct (anonymous at ej2openmpsections_-_main.c:27:15) *'
+|   |   | |     | |-RecordDecl 0x5637e1ca21b0 <line:33:15> col:15 implicit struct definition
+|   |   | |     | | |-CapturedRecordAttr 0x5637e1ca2260 <<invalid sloc>> Implicit
+|   |   | |     | | |-FieldDecl 0x5637e1ca23c8 <line:34:12> col:12 implicit 'long long &'
+|   |   | |     | | |-FieldDecl 0x5637e1ca2718 <line:36:9> col:9 implicit 'double (&)[100000]'
+|   |   | |     | | |-FieldDecl 0x5637e1ca2860 <col:16> col:16 implicit 'double (&)[100000]'
+|   |   | |     | | `-FieldDecl 0x5637e1ca29a8 <col:23> col:23 implicit 'double (&)[100000]'
+|   |   | |     | `-CapturedDecl 0x5637e1ca22a8 <<invalid sloc>> <invalid sloc>
+|   |   | |     |   |-ForStmt 0x5637e1ca2b30 <line:34:7, line:37:7>
+|   |   | |     |   | |-BinaryOperator 0x5637e1ca2470 <line:34:12, col:16> 'long long' '='
+|   |   | |     |   | | |-DeclRefExpr 0x5637e1ca2388 <col:12> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   | |     |   | | `-ImplicitCastExpr 0x5637e1ca2458 <col:16> 'long long' <IntegralCast>
+|   |   | |     |   | |   `-IntegerLiteral 0x5637e1ca2438 <col:16> 'int' 0
+|   |   | |     |   | |-<<<NULL>>>
+|   |   | |     |   | |-BinaryOperator 0x5637e1ca2510 <col:19, col:23> 'int' '<'
+|   |   | |     |   | | |-ImplicitCastExpr 0x5637e1ca24e0 <col:19> 'long long' <LValueToRValue>
+|   |   | |     |   | | | `-DeclRefExpr 0x5637e1ca2498 <col:19> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   | |     |   | | `-ImplicitCastExpr 0x5637e1ca24f8 <col:23> 'long long' <IntegralCast>
+|   |   | |     |   | |   `-IntegerLiteral 0x5637e1ca24c0 <col:23> 'int' 100000
+|   |   | |     |   | |-UnaryOperator 0x5637e1ca2560 <col:31, col:33> 'long long' prefix '++'
+|   |   | |     |   | | `-DeclRefExpr 0x5637e1ca2538 <col:33> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   | |     |   | `-CompoundStmt 0x5637e1ca2b18 <line:35:7, line:37:7>
+|   |   | |     |   |   `-BinaryOperator 0x5637e1ca2af0 <line:36:9, col:26> 'double' '='
+|   |   | |     |   |     |-ArraySubscriptExpr 0x5637e1ca27e0 <col:9, col:12> 'double' lvalue
+|   |   | |     |   |     | |-ImplicitCastExpr 0x5637e1ca27b0 <col:9> 'double *' <ArrayToPointerDecay>
+|   |   | |     |   |     | | `-DeclRefExpr 0x5637e1ca2580 <col:9> 'double [100000]' lvalue Var 0x5637e1c9e2a0 'S' 'double [100000]'
+|   |   | |     |   |     | `-ImplicitCastExpr 0x5637e1ca27c8 <col:11> 'long long' <LValueToRValue>
+|   |   | |     |   |     |   `-DeclRefExpr 0x5637e1ca2788 <col:11> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   | |     |   |     `-BinaryOperator 0x5637e1ca2ac8 <col:16, col:26> 'double' '+'
+|   |   | |     |   |       |-ImplicitCastExpr 0x5637e1ca2a98 <col:16, col:19> 'double' <LValueToRValue>
+|   |   | |     |   |       | `-ArraySubscriptExpr 0x5637e1ca2928 <col:16, col:19> 'double' lvalue
+|   |   | |     |   |       |   |-ImplicitCastExpr 0x5637e1ca28f8 <col:16> 'double *' <ArrayToPointerDecay>
+|   |   | |     |   |       |   | `-DeclRefExpr 0x5637e1ca2808 <col:16> 'double [100000]' lvalue Var 0x5637e1c9e120 'A' 'double [100000]'
+|   |   | |     |   |       |   `-ImplicitCastExpr 0x5637e1ca2910 <col:18> 'long long' <LValueToRValue>
+|   |   | |     |   |       |     `-DeclRefExpr 0x5637e1ca28d0 <col:18> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   | |     |   |       `-ImplicitCastExpr 0x5637e1ca2ab0 <col:23, col:26> 'double' <LValueToRValue>
+|   |   | |     |   |         `-ArraySubscriptExpr 0x5637e1ca2a70 <col:23, col:26> 'double' lvalue
+|   |   | |     |   |           |-ImplicitCastExpr 0x5637e1ca2a40 <col:23> 'double *' <ArrayToPointerDecay>
+|   |   | |     |   |           | `-DeclRefExpr 0x5637e1ca2950 <col:23> 'double [100000]' lvalue Var 0x5637e1c9e1e0 'B' 'double [100000]'
+|   |   | |     |   |           `-ImplicitCastExpr 0x5637e1ca2a58 <col:25> 'long long' <LValueToRValue>
+|   |   | |     |   |             `-DeclRefExpr 0x5637e1ca2a18 <col:25> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   | |     |   `-ImplicitParamDecl 0x5637e1ca2328 <line:33:15> col:15 implicit __context 'struct (anonymous at ej2openmpsections_-_main.c:33:15) *'
+|   |   | |     |-DeclRefExpr 0x5637e1c9f2d8 <line:28:12> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   | |     |-DeclRefExpr 0x5637e1c9f638 <line:30:9> 'double [100000]' lvalue Var 0x5637e1c9e360 'P' 'double [100000]'
+|   |   | |     |-DeclRefExpr 0x5637e1c9f8c0 <col:16> 'double [100000]' lvalue Var 0x5637e1c9e120 'A' 'double [100000]'
+|   |   | |     |-DeclRefExpr 0x5637e1ca1ef0 <col:23> 'double [100000]' lvalue Var 0x5637e1c9e1e0 'B' 'double [100000]'
+|   |   | |     `-DeclRefExpr 0x5637e1ca26c0 <line:36:9> 'double [100000]' lvalue Var 0x5637e1c9e2a0 'S' 'double [100000]'
+|   |   | |-ImplicitParamDecl 0x5637e1c9ecb0 <line:23:11> col:11 implicit .global_tid. 'int *const restrict'
+|   |   | |-ImplicitParamDecl 0x5637e1c9ed10 <col:11> col:11 implicit .bound_tid. 'int *const restrict'
+|   |   | |-ImplicitParamDecl 0x5637e1c9ed98 <col:11> col:11 implicit __context 'struct (anonymous at ej2openmpsections_-_main.c:23:11) *'
+|   |   | |-RecordDecl 0x5637e1c9edf8 <line:25:13> col:13 implicit struct definition
+|   |   | | |-CapturedRecordAttr 0x5637e1c9eea0 <<invalid sloc>> Implicit
+|   |   | | |-FieldDecl 0x5637e1c9f290 <line:28:12> col:12 implicit 'long long &'
+|   |   | | |-FieldDecl 0x5637e1c9f5f0 <line:30:9> col:9 implicit 'double (&)[100000]'
+|   |   | | |-FieldDecl 0x5637e1c9f878 <col:16> col:16 implicit 'double (&)[100000]'
+|   |   | | |-FieldDecl 0x5637e1ca1ea8 <col:23> col:23 implicit 'double (&)[100000]'
+|   |   | | `-FieldDecl 0x5637e1ca2678 <line:36:9> col:9 implicit 'double (&)[100000]'
+|   |   | `-CapturedDecl 0x5637e1c9eee8 <<invalid sloc>> <invalid sloc>
+|   |   |   |-CompoundStmt 0x5637e1ca2c10 <line:26:5, line:39:5>
+|   |   |   | |-OMPSectionDirective 0x5637e1ca2188 <line:27:15, col:26>
+|   |   |   | | `-CapturedStmt 0x5637e1ca2108 <line:28:7, line:31:7>
+|   |   |   | |   |-CapturedDecl 0x5637e1c9f0b8 <<invalid sloc>> <invalid sloc>
+|   |   |   | |   | |-ForStmt 0x5637e1ca20d0 <line:28:7, line:31:7>
+|   |   |   | |   | | |-BinaryOperator 0x5637e1c9f3c0 <line:28:12, col:16> 'long long' '='
+|   |   |   | |   | | | |-DeclRefExpr 0x5637e1c9f1c8 <col:12> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   |   | |   | | | `-ImplicitCastExpr 0x5637e1c9f3a8 <col:16> 'long long' <IntegralCast>
+|   |   |   | |   | | |   `-IntegerLiteral 0x5637e1c9f388 <col:16> 'int' 0
+|   |   |   | |   | | |-<<<NULL>>>
+|   |   |   | |   | | |-BinaryOperator 0x5637e1c9f460 <col:19, col:23> 'int' '<'
+|   |   |   | |   | | | |-ImplicitCastExpr 0x5637e1c9f430 <col:19> 'long long' <LValueToRValue>
+|   |   |   | |   | | | | `-DeclRefExpr 0x5637e1c9f3e8 <col:19> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   |   | |   | | | `-ImplicitCastExpr 0x5637e1c9f448 <col:23> 'long long' <IntegralCast>
+|   |   |   | |   | | |   `-IntegerLiteral 0x5637e1c9f410 <col:23> 'int' 100000
+|   |   |   | |   | | |-UnaryOperator 0x5637e1c9f4b0 <col:31, col:33> 'long long' prefix '++'
+|   |   |   | |   | | | `-DeclRefExpr 0x5637e1c9f488 <col:33> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   |   | |   | | `-CompoundStmt 0x5637e1ca20b8 <line:29:7, line:31:7>
+|   |   |   | |   | |   `-BinaryOperator 0x5637e1ca2090 <line:30:9, col:26> 'double' '='
+|   |   |   | |   | |     |-ArraySubscriptExpr 0x5637e1c9f758 <col:9, col:12> 'double' lvalue
+|   |   |   | |   | |     | |-ImplicitCastExpr 0x5637e1c9f728 <col:9> 'double *' <ArrayToPointerDecay>
+|   |   |   | |   | |     | | `-DeclRefExpr 0x5637e1c9f4f8 <col:9> 'double [100000]' lvalue Var 0x5637e1c9e360 'P' 'double [100000]'
+|   |   |   | |   | |     | `-ImplicitCastExpr 0x5637e1c9f740 <col:11> 'long long' <LValueToRValue>
+|   |   |   | |   | |     |   `-DeclRefExpr 0x5637e1c9f700 <col:11> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   |   | |   | |     `-BinaryOperator 0x5637e1ca2068 <col:16, col:26> 'double' '*'
+|   |   |   | |   | |       |-ImplicitCastExpr 0x5637e1ca2038 <col:16, col:19> 'double' <LValueToRValue>
+|   |   |   | |   | |       | `-ArraySubscriptExpr 0x5637e1ca1d88 <col:16, col:19> 'double' lvalue
+|   |   |   | |   | |       |   |-ImplicitCastExpr 0x5637e1ca1d58 <col:16> 'double *' <ArrayToPointerDecay>
+|   |   |   | |   | |       |   | `-DeclRefExpr 0x5637e1c9f780 <col:16> 'double [100000]' lvalue Var 0x5637e1c9e120 'A' 'double [100000]'
+|   |   |   | |   | |       |   `-ImplicitCastExpr 0x5637e1ca1d70 <col:18> 'long long' <LValueToRValue>
+|   |   |   | |   | |       |     `-DeclRefExpr 0x5637e1ca1d30 <col:18> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   |   | |   | |       `-ImplicitCastExpr 0x5637e1ca2050 <col:23, col:26> 'double' <LValueToRValue>
+|   |   |   | |   | |         `-ArraySubscriptExpr 0x5637e1ca2010 <col:23, col:26> 'double' lvalue
+|   |   |   | |   | |           |-ImplicitCastExpr 0x5637e1ca1fe0 <col:23> 'double *' <ArrayToPointerDecay>
+|   |   |   | |   | |           | `-DeclRefExpr 0x5637e1ca1db0 <col:23> 'double [100000]' lvalue Var 0x5637e1c9e1e0 'B' 'double [100000]'
+|   |   |   | |   | |           `-ImplicitCastExpr 0x5637e1ca1ff8 <col:25> 'long long' <LValueToRValue>
+|   |   |   | |   | |             `-DeclRefExpr 0x5637e1ca1fb8 <col:25> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   |   | |   | `-ImplicitParamDecl 0x5637e1c9f138 <line:27:15> col:15 implicit __context 'struct (anonymous at ej2openmpsections_-_main.c:27:15) *'
+|   |   |   | |   |-DeclRefExpr 0x5637e1c9f360 <line:28:12> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   |   | |   |-DeclRefExpr 0x5637e1c9f6d8 <line:30:9> 'double [100000]' lvalue Var 0x5637e1c9e360 'P' 'double [100000]'
+|   |   |   | |   |-DeclRefExpr 0x5637e1c9f960 <col:16> 'double [100000]' lvalue Var 0x5637e1c9e120 'A' 'double [100000]'
+|   |   |   | |   `-DeclRefExpr 0x5637e1ca1f90 <col:23> 'double [100000]' lvalue Var 0x5637e1c9e1e0 'B' 'double [100000]'
+|   |   |   | `-OMPSectionDirective 0x5637e1ca2be8 <line:33:15, col:26>
+|   |   |   |   `-CapturedStmt 0x5637e1ca2b68 <line:34:7, line:37:7>
+|   |   |   |     |-CapturedDecl 0x5637e1ca22a8 <<invalid sloc>> <invalid sloc>
+|   |   |   |     | |-ForStmt 0x5637e1ca2b30 <line:34:7, line:37:7>
+|   |   |   |     | | |-BinaryOperator 0x5637e1ca2470 <line:34:12, col:16> 'long long' '='
+|   |   |   |     | | | |-DeclRefExpr 0x5637e1ca2388 <col:12> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   |   |     | | | `-ImplicitCastExpr 0x5637e1ca2458 <col:16> 'long long' <IntegralCast>
+|   |   |   |     | | |   `-IntegerLiteral 0x5637e1ca2438 <col:16> 'int' 0
+|   |   |   |     | | |-<<<NULL>>>
+|   |   |   |     | | |-BinaryOperator 0x5637e1ca2510 <col:19, col:23> 'int' '<'
+|   |   |   |     | | | |-ImplicitCastExpr 0x5637e1ca24e0 <col:19> 'long long' <LValueToRValue>
+|   |   |   |     | | | | `-DeclRefExpr 0x5637e1ca2498 <col:19> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   |   |     | | | `-ImplicitCastExpr 0x5637e1ca24f8 <col:23> 'long long' <IntegralCast>
+|   |   |   |     | | |   `-IntegerLiteral 0x5637e1ca24c0 <col:23> 'int' 100000
+|   |   |   |     | | |-UnaryOperator 0x5637e1ca2560 <col:31, col:33> 'long long' prefix '++'
+|   |   |   |     | | | `-DeclRefExpr 0x5637e1ca2538 <col:33> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   |   |     | | `-CompoundStmt 0x5637e1ca2b18 <line:35:7, line:37:7>
+|   |   |   |     | |   `-BinaryOperator 0x5637e1ca2af0 <line:36:9, col:26> 'double' '='
+|   |   |   |     | |     |-ArraySubscriptExpr 0x5637e1ca27e0 <col:9, col:12> 'double' lvalue
+|   |   |   |     | |     | |-ImplicitCastExpr 0x5637e1ca27b0 <col:9> 'double *' <ArrayToPointerDecay>
+|   |   |   |     | |     | | `-DeclRefExpr 0x5637e1ca2580 <col:9> 'double [100000]' lvalue Var 0x5637e1c9e2a0 'S' 'double [100000]'
+|   |   |   |     | |     | `-ImplicitCastExpr 0x5637e1ca27c8 <col:11> 'long long' <LValueToRValue>
+|   |   |   |     | |     |   `-DeclRefExpr 0x5637e1ca2788 <col:11> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   |   |     | |     `-BinaryOperator 0x5637e1ca2ac8 <col:16, col:26> 'double' '+'
+|   |   |   |     | |       |-ImplicitCastExpr 0x5637e1ca2a98 <col:16, col:19> 'double' <LValueToRValue>
+|   |   |   |     | |       | `-ArraySubscriptExpr 0x5637e1ca2928 <col:16, col:19> 'double' lvalue
+|   |   |   |     | |       |   |-ImplicitCastExpr 0x5637e1ca28f8 <col:16> 'double *' <ArrayToPointerDecay>
+|   |   |   |     | |       |   | `-DeclRefExpr 0x5637e1ca2808 <col:16> 'double [100000]' lvalue Var 0x5637e1c9e120 'A' 'double [100000]'
+|   |   |   |     | |       |   `-ImplicitCastExpr 0x5637e1ca2910 <col:18> 'long long' <LValueToRValue>
+|   |   |   |     | |       |     `-DeclRefExpr 0x5637e1ca28d0 <col:18> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   |   |     | |       `-ImplicitCastExpr 0x5637e1ca2ab0 <col:23, col:26> 'double' <LValueToRValue>
+|   |   |   |     | |         `-ArraySubscriptExpr 0x5637e1ca2a70 <col:23, col:26> 'double' lvalue
+|   |   |   |     | |           |-ImplicitCastExpr 0x5637e1ca2a40 <col:23> 'double *' <ArrayToPointerDecay>
+|   |   |   |     | |           | `-DeclRefExpr 0x5637e1ca2950 <col:23> 'double [100000]' lvalue Var 0x5637e1c9e1e0 'B' 'double [100000]'
+|   |   |   |     | |           `-ImplicitCastExpr 0x5637e1ca2a58 <col:25> 'long long' <LValueToRValue>
+|   |   |   |     | |             `-DeclRefExpr 0x5637e1ca2a18 <col:25> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   |   |     | `-ImplicitParamDecl 0x5637e1ca2328 <line:33:15> col:15 implicit __context 'struct (anonymous at ej2openmpsections_-_main.c:33:15) *'
+|   |   |   |     |-DeclRefExpr 0x5637e1ca2410 <line:34:12> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   |   |     |-DeclRefExpr 0x5637e1ca2760 <line:36:9> 'double [100000]' lvalue Var 0x5637e1c9e2a0 'S' 'double [100000]'
+|   |   |   |     |-DeclRefExpr 0x5637e1ca28a8 <col:16> 'double [100000]' lvalue Var 0x5637e1c9e120 'A' 'double [100000]'
+|   |   |   |     `-DeclRefExpr 0x5637e1ca29f0 <col:23> 'double [100000]' lvalue Var 0x5637e1c9e1e0 'B' 'double [100000]'
+|   |   |   |-ImplicitParamDecl 0x5637e1c9ef68 <line:25:13> col:13 implicit __context 'struct (anonymous at ej2openmpsections_-_main.c:25:13) *'
+|   |   |   |-RecordDecl 0x5637e1c9efc8 <line:27:15> col:15 implicit struct definition
+|   |   |   | |-CapturedRecordAttr 0x5637e1c9f070 <<invalid sloc>> Implicit
+|   |   |   | |-FieldDecl 0x5637e1c9f318 <line:28:12> col:12 implicit 'long long &'
+|   |   |   | |-FieldDecl 0x5637e1c9f690 <line:30:9> col:9 implicit 'double (&)[100000]'
+|   |   |   | |-FieldDecl 0x5637e1c9f918 <col:16> col:16 implicit 'double (&)[100000]'
+|   |   |   | `-FieldDecl 0x5637e1ca1f48 <col:23> col:23 implicit 'double (&)[100000]'
+|   |   |   |-CapturedDecl 0x5637e1c9f0b8 <<invalid sloc>> <invalid sloc>
+|   |   |   | |-ForStmt 0x5637e1ca20d0 <line:28:7, line:31:7>
+|   |   |   | | |-BinaryOperator 0x5637e1c9f3c0 <line:28:12, col:16> 'long long' '='
+|   |   |   | | | |-DeclRefExpr 0x5637e1c9f1c8 <col:12> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   |   | | | `-ImplicitCastExpr 0x5637e1c9f3a8 <col:16> 'long long' <IntegralCast>
+|   |   |   | | |   `-IntegerLiteral 0x5637e1c9f388 <col:16> 'int' 0
+|   |   |   | | |-<<<NULL>>>
+|   |   |   | | |-BinaryOperator 0x5637e1c9f460 <col:19, col:23> 'int' '<'
+|   |   |   | | | |-ImplicitCastExpr 0x5637e1c9f430 <col:19> 'long long' <LValueToRValue>
+|   |   |   | | | | `-DeclRefExpr 0x5637e1c9f3e8 <col:19> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   |   | | | `-ImplicitCastExpr 0x5637e1c9f448 <col:23> 'long long' <IntegralCast>
+|   |   |   | | |   `-IntegerLiteral 0x5637e1c9f410 <col:23> 'int' 100000
+|   |   |   | | |-UnaryOperator 0x5637e1c9f4b0 <col:31, col:33> 'long long' prefix '++'
+|   |   |   | | | `-DeclRefExpr 0x5637e1c9f488 <col:33> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   |   | | `-CompoundStmt 0x5637e1ca20b8 <line:29:7, line:31:7>
+|   |   |   | |   `-BinaryOperator 0x5637e1ca2090 <line:30:9, col:26> 'double' '='
+|   |   |   | |     |-ArraySubscriptExpr 0x5637e1c9f758 <col:9, col:12> 'double' lvalue
+|   |   |   | |     | |-ImplicitCastExpr 0x5637e1c9f728 <col:9> 'double *' <ArrayToPointerDecay>
+|   |   |   | |     | | `-DeclRefExpr 0x5637e1c9f4f8 <col:9> 'double [100000]' lvalue Var 0x5637e1c9e360 'P' 'double [100000]'
+|   |   |   | |     | `-ImplicitCastExpr 0x5637e1c9f740 <col:11> 'long long' <LValueToRValue>
+|   |   |   | |     |   `-DeclRefExpr 0x5637e1c9f700 <col:11> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   |   | |     `-BinaryOperator 0x5637e1ca2068 <col:16, col:26> 'double' '*'
+|   |   |   | |       |-ImplicitCastExpr 0x5637e1ca2038 <col:16, col:19> 'double' <LValueToRValue>
+|   |   |   | |       | `-ArraySubscriptExpr 0x5637e1ca1d88 <col:16, col:19> 'double' lvalue
+|   |   |   | |       |   |-ImplicitCastExpr 0x5637e1ca1d58 <col:16> 'double *' <ArrayToPointerDecay>
+|   |   |   | |       |   | `-DeclRefExpr 0x5637e1c9f780 <col:16> 'double [100000]' lvalue Var 0x5637e1c9e120 'A' 'double [100000]'
+|   |   |   | |       |   `-ImplicitCastExpr 0x5637e1ca1d70 <col:18> 'long long' <LValueToRValue>
+|   |   |   | |       |     `-DeclRefExpr 0x5637e1ca1d30 <col:18> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   |   | |       `-ImplicitCastExpr 0x5637e1ca2050 <col:23, col:26> 'double' <LValueToRValue>
+|   |   |   | |         `-ArraySubscriptExpr 0x5637e1ca2010 <col:23, col:26> 'double' lvalue
+|   |   |   | |           |-ImplicitCastExpr 0x5637e1ca1fe0 <col:23> 'double *' <ArrayToPointerDecay>
+|   |   |   | |           | `-DeclRefExpr 0x5637e1ca1db0 <col:23> 'double [100000]' lvalue Var 0x5637e1c9e1e0 'B' 'double [100000]'
+|   |   |   | |           `-ImplicitCastExpr 0x5637e1ca1ff8 <col:25> 'long long' <LValueToRValue>
+|   |   |   | |             `-DeclRefExpr 0x5637e1ca1fb8 <col:25> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   |   | `-ImplicitParamDecl 0x5637e1c9f138 <line:27:15> col:15 implicit __context 'struct (anonymous at ej2openmpsections_-_main.c:27:15) *'
+|   |   |   |-RecordDecl 0x5637e1ca21b0 <line:33:15> col:15 implicit struct definition
+|   |   |   | |-CapturedRecordAttr 0x5637e1ca2260 <<invalid sloc>> Implicit
+|   |   |   | |-FieldDecl 0x5637e1ca23c8 <line:34:12> col:12 implicit 'long long &'
+|   |   |   | |-FieldDecl 0x5637e1ca2718 <line:36:9> col:9 implicit 'double (&)[100000]'
+|   |   |   | |-FieldDecl 0x5637e1ca2860 <col:16> col:16 implicit 'double (&)[100000]'
+|   |   |   | `-FieldDecl 0x5637e1ca29a8 <col:23> col:23 implicit 'double (&)[100000]'
+|   |   |   `-CapturedDecl 0x5637e1ca22a8 <<invalid sloc>> <invalid sloc>
+|   |   |     |-ForStmt 0x5637e1ca2b30 <line:34:7, line:37:7>
+|   |   |     | |-BinaryOperator 0x5637e1ca2470 <line:34:12, col:16> 'long long' '='
+|   |   |     | | |-DeclRefExpr 0x5637e1ca2388 <col:12> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   |     | | `-ImplicitCastExpr 0x5637e1ca2458 <col:16> 'long long' <IntegralCast>
+|   |   |     | |   `-IntegerLiteral 0x5637e1ca2438 <col:16> 'int' 0
+|   |   |     | |-<<<NULL>>>
+|   |   |     | |-BinaryOperator 0x5637e1ca2510 <col:19, col:23> 'int' '<'
+|   |   |     | | |-ImplicitCastExpr 0x5637e1ca24e0 <col:19> 'long long' <LValueToRValue>
+|   |   |     | | | `-DeclRefExpr 0x5637e1ca2498 <col:19> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   |     | | `-ImplicitCastExpr 0x5637e1ca24f8 <col:23> 'long long' <IntegralCast>
+|   |   |     | |   `-IntegerLiteral 0x5637e1ca24c0 <col:23> 'int' 100000
+|   |   |     | |-UnaryOperator 0x5637e1ca2560 <col:31, col:33> 'long long' prefix '++'
+|   |   |     | | `-DeclRefExpr 0x5637e1ca2538 <col:33> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   |     | `-CompoundStmt 0x5637e1ca2b18 <line:35:7, line:37:7>
+|   |   |     |   `-BinaryOperator 0x5637e1ca2af0 <line:36:9, col:26> 'double' '='
+|   |   |     |     |-ArraySubscriptExpr 0x5637e1ca27e0 <col:9, col:12> 'double' lvalue
+|   |   |     |     | |-ImplicitCastExpr 0x5637e1ca27b0 <col:9> 'double *' <ArrayToPointerDecay>
+|   |   |     |     | | `-DeclRefExpr 0x5637e1ca2580 <col:9> 'double [100000]' lvalue Var 0x5637e1c9e2a0 'S' 'double [100000]'
+|   |   |     |     | `-ImplicitCastExpr 0x5637e1ca27c8 <col:11> 'long long' <LValueToRValue>
+|   |   |     |     |   `-DeclRefExpr 0x5637e1ca2788 <col:11> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   |     |     `-BinaryOperator 0x5637e1ca2ac8 <col:16, col:26> 'double' '+'
+|   |   |     |       |-ImplicitCastExpr 0x5637e1ca2a98 <col:16, col:19> 'double' <LValueToRValue>
+|   |   |     |       | `-ArraySubscriptExpr 0x5637e1ca2928 <col:16, col:19> 'double' lvalue
+|   |   |     |       |   |-ImplicitCastExpr 0x5637e1ca28f8 <col:16> 'double *' <ArrayToPointerDecay>
+|   |   |     |       |   | `-DeclRefExpr 0x5637e1ca2808 <col:16> 'double [100000]' lvalue Var 0x5637e1c9e120 'A' 'double [100000]'
+|   |   |     |       |   `-ImplicitCastExpr 0x5637e1ca2910 <col:18> 'long long' <LValueToRValue>
+|   |   |     |       |     `-DeclRefExpr 0x5637e1ca28d0 <col:18> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   |     |       `-ImplicitCastExpr 0x5637e1ca2ab0 <col:23, col:26> 'double' <LValueToRValue>
+|   |   |     |         `-ArraySubscriptExpr 0x5637e1ca2a70 <col:23, col:26> 'double' lvalue
+|   |   |     |           |-ImplicitCastExpr 0x5637e1ca2a40 <col:23> 'double *' <ArrayToPointerDecay>
+|   |   |     |           | `-DeclRefExpr 0x5637e1ca2950 <col:23> 'double [100000]' lvalue Var 0x5637e1c9e1e0 'B' 'double [100000]'
+|   |   |     |           `-ImplicitCastExpr 0x5637e1ca2a58 <col:25> 'long long' <LValueToRValue>
+|   |   |     |             `-DeclRefExpr 0x5637e1ca2a18 <col:25> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   |     `-ImplicitParamDecl 0x5637e1ca2328 <line:33:15> col:15 implicit __context 'struct (anonymous at ej2openmpsections_-_main.c:33:15) *'
+|   |   |-DeclRefExpr 0x5637e1c9f250 <line:28:12> 'long long' lvalue Var 0x5637e1c9daf8 'i' 'long long'
+|   |   |-DeclRefExpr 0x5637e1c9f598 <line:30:9> 'double [100000]' lvalue Var 0x5637e1c9e360 'P' 'double [100000]'
+|   |   |-DeclRefExpr 0x5637e1c9f820 <col:16> 'double [100000]' lvalue Var 0x5637e1c9e120 'A' 'double [100000]'
+|   |   |-DeclRefExpr 0x5637e1ca1e50 <col:23> 'double [100000]' lvalue Var 0x5637e1c9e1e0 'B' 'double [100000]'
+|   |   `-DeclRefExpr 0x5637e1ca2620 <line:36:9> 'double [100000]' lvalue Var 0x5637e1c9e2a0 'S' 'double [100000]'
+|   |-BinaryOperator 0x5637e1ca2eb0 <line:41:3, col:24> 'double' '='
+|   | |-DeclRefExpr 0x5637e1ca2e08 <col:3> 'double' lvalue Var 0x5637e1c9dd30 'zain' 'double'
+|   | `-ImplicitCastExpr 0x5637e1ca2e98 <col:10, col:24> 'double' <IntegralToFloating>
+|   |   `-CallExpr 0x5637e1ca2e70 <col:10, col:24> 'int'
+|   |     `-ImplicitCastExpr 0x5637e1ca2e58 <col:10> 'int (*)()' <FunctionToPointerDecay>
+|   |       `-DeclRefExpr 0x5637e1ca2e30 <col:10> 'int ()' Function 0x5637e1c9ddf8 'omp_get_wtime' 'int ()'
+|   |-CallExpr 0x5637e1ca35c0 <line:42:3, col:34> 'int'
+|   | |-ImplicitCastExpr 0x5637e1ca35a8 <col:3> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|   | | `-DeclRefExpr 0x5637e1ca3430 <col:3> 'int (const char *, ...)' Function 0x5637e1ca32d0 'printf' 'int (const char *, ...)'
+|   | |-ImplicitCastExpr 0x5637e1ca3610 <col:10> 'const char *' <BitCast>
+|   | | `-ImplicitCastExpr 0x5637e1ca35f8 <col:10> 'char *' <ArrayToPointerDecay>
+|   | |   `-StringLiteral 0x5637e1ca3498 <col:10> 'char [10]' lvalue "tarde %f\n"
+|   | `-BinaryOperator 0x5637e1ca3550 <col:24, col:31> 'double' '-'
+|   |   |-ImplicitCastExpr 0x5637e1ca3520 <col:24> 'double' <LValueToRValue>
+|   |   | `-DeclRefExpr 0x5637e1ca34d0 <col:24> 'double' lvalue Var 0x5637e1c9dd30 'zain' 'double'
+|   |   `-ImplicitCastExpr 0x5637e1ca3538 <col:31> 'double' <LValueToRValue>
+|   |     `-DeclRefExpr 0x5637e1ca34f8 <col:31> 'double' lvalue Var 0x5637e1c9dca0 'kuz' 'double'
+|   `-ReturnStmt 0x5637e1ca3648 <line:43:3, col:10>
+|     `-IntegerLiteral 0x5637e1ca3628 <col:10> 'int' 0
+`-FunctionDecl 0x5637e1ca32d0 <line:42:3> col:3 implicit used printf 'int (const char *, ...)' extern
+  |-ParmVarDecl 0x5637e1ca3370 <<invalid sloc>> <invalid sloc> 'const char *'
+  `-FormatAttr 0x5637e1ca33d8 <col:3> Implicit printf 1 2

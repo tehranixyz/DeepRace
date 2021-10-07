@@ -1,0 +1,135 @@
+TranslationUnitDecl 0x55cf38633e18 <<invalid sloc>> <invalid sloc>
+|-TypedefDecl 0x55cf386343b0 <<invalid sloc>> <invalid sloc> implicit __int128_t '__int128'
+| `-BuiltinType 0x55cf386340b0 '__int128'
+|-TypedefDecl 0x55cf38634420 <<invalid sloc>> <invalid sloc> implicit __uint128_t 'unsigned __int128'
+| `-BuiltinType 0x55cf386340d0 'unsigned __int128'
+|-TypedefDecl 0x55cf386346f8 <<invalid sloc>> <invalid sloc> implicit __NSConstantString 'struct __NSConstantString_tag'
+| `-RecordType 0x55cf38634500 'struct __NSConstantString_tag'
+|   `-Record 0x55cf38634478 '__NSConstantString_tag'
+|-TypedefDecl 0x55cf38634790 <<invalid sloc>> <invalid sloc> implicit __builtin_ms_va_list 'char *'
+| `-PointerType 0x55cf38634750 'char *'
+|   `-BuiltinType 0x55cf38633eb0 'char'
+|-TypedefDecl 0x55cf38634a58 <<invalid sloc>> <invalid sloc> implicit __builtin_va_list 'struct __va_list_tag [1]'
+| `-ConstantArrayType 0x55cf38634a00 'struct __va_list_tag [1]' 1 
+|   `-RecordType 0x55cf38634870 'struct __va_list_tag'
+|     `-Record 0x55cf386347e8 '__va_list_tag'
+|-FunctionDecl 0x55cf3868db40 <barrier-omp_-_main.c:1:1, line:23:1> line:1:5 main 'int ()'
+| `-CompoundStmt 0x55cf38691a98 <line:2:1, line:23:1>
+|   |-DeclStmt 0x55cf3868dc98 <line:3:3, col:19>
+|   | `-VarDecl 0x55cf3868dc38 <col:3, col:10> col:10 used startTime 'double'
+|   |-OMPParallelDirective 0x55cf38691a28 <line:4:11, col:58>
+|   | |-OMPPrivateClause 0x55cf3868dd78 <col:24, col:44>
+|   | | `-DeclRefExpr 0x55cf3868dcb0 <col:33> 'double' lvalue Var 0x55cf3868dc38 'startTime' 'double'
+|   | |-OMPNum_threadsClause 0x55cf3868ddc0 <col:44, col:57>
+|   | | `-IntegerLiteral 0x55cf3868dda0 <col:56> 'int' 4
+|   | `-CapturedStmt 0x55cf38691a08 <line:5:3, line:21:3>
+|   |   `-CapturedDecl 0x55cf3868df08 <<invalid sloc>> <invalid sloc>
+|   |     |-CompoundStmt 0x55cf386919c0 <line:5:3, line:21:3>
+|   |     | |-BinaryOperator 0x55cf3868e290 <line:6:5, col:31> 'double' '='
+|   |     | | |-DeclRefExpr 0x55cf3868e0e8 <col:5> 'double' lvalue Var 0x55cf3868dc38 'startTime' 'double'
+|   |     | | `-ImplicitCastExpr 0x55cf3868e278 <col:17, col:31> 'double' <IntegralToFloating>
+|   |     | |   `-CallExpr 0x55cf3868e250 <col:17, col:31> 'int'
+|   |     | |     `-ImplicitCastExpr 0x55cf3868e238 <col:17> 'int (*)()' <FunctionToPointerDecay>
+|   |     | |       `-DeclRefExpr 0x55cf3868e1e8 <col:17> 'int ()' Function 0x55cf3868e138 'omp_get_wtime' 'int ()'
+|   |     | |-WhileStmt 0x55cf3868e598 <line:7:5, line:8:7>
+|   |     | | |-<<<NULL>>>
+|   |     | | |-BinaryOperator 0x55cf3868e560 <line:7:12, col:74> 'int' '<'
+|   |     | | | |-ParenExpr 0x55cf3868e3a0 <col:12, col:40> 'double'
+|   |     | | | | `-BinaryOperator 0x55cf3868e378 <col:13, col:31> 'double' '-'
+|   |     | | | |   |-ImplicitCastExpr 0x55cf3868e360 <col:13, col:27> 'double' <IntegralToFloating>
+|   |     | | | |   | `-CallExpr 0x55cf3868e2f8 <col:13, col:27> 'int'
+|   |     | | | |   |   `-ImplicitCastExpr 0x55cf3868e2e0 <col:13> 'int (*)()' <FunctionToPointerDecay>
+|   |     | | | |   |     `-DeclRefExpr 0x55cf3868e2b8 <col:13> 'int ()' Function 0x55cf3868e138 'omp_get_wtime' 'int ()'
+|   |     | | | |   `-ImplicitCastExpr 0x55cf3868e348 <col:31> 'double' <LValueToRValue>
+|   |     | | | |     `-DeclRefExpr 0x55cf3868e320 <col:31> 'double' lvalue Var 0x55cf3868dc38 'startTime' 'double'
+|   |     | | | `-ParenExpr 0x55cf3868e540 <col:44, col:74> 'double'
+|   |     | | |   `-CStyleCastExpr 0x55cf3868e518 <col:45, col:73> 'double' <IntegralToFloating>
+|   |     | | |     `-CallExpr 0x55cf3868e4d8 <col:54, col:73> 'int'
+|   |     | | |       `-ImplicitCastExpr 0x55cf3868e4c0 <col:54> 'int (*)()' <FunctionToPointerDecay>
+|   |     | | |         `-DeclRefExpr 0x55cf3868e498 <col:54> 'int ()' Function 0x55cf3868e3e8 'omp_get_thread_num' 'int ()'
+|   |     | | `-NullStmt 0x55cf3868e588 <line:8:7>
+|   |     | |-CallExpr 0x55cf38691020 <line:10:5, col:60> 'int'
+|   |     | | |-ImplicitCastExpr 0x55cf38691008 <col:5> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|   |     | | | `-DeclRefExpr 0x55cf3868eb10 <col:5> 'int (const char *, ...)' Function 0x55cf3868e9b0 'printf' 'int (const char *, ...)'
+|   |     | | |-ImplicitCastExpr 0x55cf38691070 <col:12> 'const char *' <BitCast>
+|   |     | | | `-ImplicitCastExpr 0x55cf38691058 <col:12> 'char *' <ArrayToPointerDecay>
+|   |     | | |   `-StringLiteral 0x55cf38690f38 <col:12> 'char [24]' lvalue "I (%d) finish to count\n"
+|   |     | | `-CallExpr 0x55cf38690fb8 <col:40, col:59> 'int'
+|   |     | |   `-ImplicitCastExpr 0x55cf38690fa0 <col:40> 'int (*)()' <FunctionToPointerDecay>
+|   |     | |     `-DeclRefExpr 0x55cf38690f78 <col:40> 'int ()' Function 0x55cf3868e3e8 'omp_get_thread_num' 'int ()'
+|   |     | |-OMPBarrierDirective 0x55cf38691088 <line:11:13, col:24>
+|   |     | |-CallExpr 0x55cf386911c8 <line:12:5, col:61> 'int'
+|   |     | | |-ImplicitCastExpr 0x55cf386911b0 <col:5> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|   |     | | | `-DeclRefExpr 0x55cf386910a8 <col:5> 'int (const char *, ...)' Function 0x55cf3868e9b0 'printf' 'int (const char *, ...)'
+|   |     | | |-ImplicitCastExpr 0x55cf38691218 <col:12> 'const char *' <BitCast>
+|   |     | | | `-ImplicitCastExpr 0x55cf38691200 <col:12> 'char *' <ArrayToPointerDecay>
+|   |     | | |   `-StringLiteral 0x55cf38691108 <col:12> 'char [25]' lvalue "I (%d) pass the Barrier\n"
+|   |     | | `-CallExpr 0x55cf38691188 <col:41, col:60> 'int'
+|   |     | |   `-ImplicitCastExpr 0x55cf38691170 <col:41> 'int (*)()' <FunctionToPointerDecay>
+|   |     | |     `-DeclRefExpr 0x55cf38691148 <col:41> 'int ()' Function 0x55cf3868e3e8 'omp_get_thread_num' 'int ()'
+|   |     | |-OMPSingleDirective 0x55cf386915e0 <line:13:13, col:23>
+|   |     | | `-CapturedStmt 0x55cf386915c0 <line:14:5, line:16:5>
+|   |     | |   `-CapturedDecl 0x55cf38691328 <<invalid sloc>> <invalid sloc>
+|   |     | |     |-CompoundStmt 0x55cf386915a8 <line:14:5, line:16:5>
+|   |     | |     | `-CallExpr 0x55cf38691540 <line:15:7, col:82> 'int'
+|   |     | |     |   |-ImplicitCastExpr 0x55cf38691528 <col:7> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|   |     | |     |   | `-DeclRefExpr 0x55cf38691408 <col:7> 'int (const char *, ...)' Function 0x55cf3868e9b0 'printf' 'int (const char *, ...)'
+|   |     | |     |   |-ImplicitCastExpr 0x55cf38691590 <col:14> 'const char *' <BitCast>
+|   |     | |     |   | `-ImplicitCastExpr 0x55cf38691578 <col:14> 'char *' <ArrayToPointerDecay>
+|   |     | |     |   |   `-StringLiteral 0x55cf38691468 <col:14> 'char [44]' lvalue "I (%d) am the only one executing this code\n"
+|   |     | |     |   `-CallExpr 0x55cf38691500 <col:62, col:81> 'int'
+|   |     | |     |     `-ImplicitCastExpr 0x55cf386914e8 <col:62> 'int (*)()' <FunctionToPointerDecay>
+|   |     | |     |       `-DeclRefExpr 0x55cf386914c0 <col:62> 'int ()' Function 0x55cf3868e3e8 'omp_get_thread_num' 'int ()'
+|   |     | |     `-ImplicitParamDecl 0x55cf386913a8 <line:13:13> col:13 implicit __context 'struct (anonymous at barrier-omp_-_main.c:13:13) *'
+|   |     | `-OMPMasterDirective 0x55cf38691998 <line:17:13, col:23>
+|   |     |   `-CapturedStmt 0x55cf38691978 <line:18:5, line:20:5>
+|   |     |     `-CapturedDecl 0x55cf386916f8 <<invalid sloc>> <invalid sloc>
+|   |     |       |-CompoundStmt 0x55cf38691960 <line:18:5, line:20:5>
+|   |     |       | `-CallExpr 0x55cf386918f8 <line:19:7, col:60> 'int'
+|   |     |       |   |-ImplicitCastExpr 0x55cf386918e0 <col:7> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|   |     |       |   | `-DeclRefExpr 0x55cf386917d8 <col:7> 'int (const char *, ...)' Function 0x55cf3868e9b0 'printf' 'int (const char *, ...)'
+|   |     |       |   |-ImplicitCastExpr 0x55cf38691948 <col:14> 'const char *' <BitCast>
+|   |     |       |   | `-ImplicitCastExpr 0x55cf38691930 <col:14> 'char *' <ArrayToPointerDecay>
+|   |     |       |   |   `-StringLiteral 0x55cf38691838 <col:14> 'char [22]' lvalue "I (%d) am the Master\n"
+|   |     |       |   `-CallExpr 0x55cf386918b8 <col:40, col:59> 'int'
+|   |     |       |     `-ImplicitCastExpr 0x55cf386918a0 <col:40> 'int (*)()' <FunctionToPointerDecay>
+|   |     |       |       `-DeclRefExpr 0x55cf38691878 <col:40> 'int ()' Function 0x55cf3868e3e8 'omp_get_thread_num' 'int ()'
+|   |     |       `-ImplicitParamDecl 0x55cf38691778 <line:17:13> col:13 implicit __context 'struct (anonymous at barrier-omp_-_main.c:17:13) *'
+|   |     |-ImplicitParamDecl 0x55cf3868df70 <line:4:11> col:11 implicit .global_tid. 'int *const restrict'
+|   |     |-ImplicitParamDecl 0x55cf3868dfd0 <col:11> col:11 implicit .bound_tid. 'int *const restrict'
+|   |     |-ImplicitParamDecl 0x55cf3868e058 <col:11> col:11 implicit __context 'struct (anonymous at barrier-omp_-_main.c:4:11) *'
+|   |     |-FunctionDecl 0x55cf3868e138 parent 0x55cf38633e18 <<invalid sloc>> line:6:17 implicit used omp_get_wtime 'int ()'
+|   |     |-FunctionDecl 0x55cf3868e3e8 parent 0x55cf38633e18 <<invalid sloc>> line:7:54 implicit used omp_get_thread_num 'int ()'
+|   |     |-RecordDecl 0x55cf38691230 <line:13:13> col:13 implicit struct definition
+|   |     | `-CapturedRecordAttr 0x55cf386912e0 <<invalid sloc>> Implicit
+|   |     |-CapturedDecl 0x55cf38691328 <<invalid sloc>> <invalid sloc>
+|   |     | |-CompoundStmt 0x55cf386915a8 <line:14:5, line:16:5>
+|   |     | | `-CallExpr 0x55cf38691540 <line:15:7, col:82> 'int'
+|   |     | |   |-ImplicitCastExpr 0x55cf38691528 <col:7> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|   |     | |   | `-DeclRefExpr 0x55cf38691408 <col:7> 'int (const char *, ...)' Function 0x55cf3868e9b0 'printf' 'int (const char *, ...)'
+|   |     | |   |-ImplicitCastExpr 0x55cf38691590 <col:14> 'const char *' <BitCast>
+|   |     | |   | `-ImplicitCastExpr 0x55cf38691578 <col:14> 'char *' <ArrayToPointerDecay>
+|   |     | |   |   `-StringLiteral 0x55cf38691468 <col:14> 'char [44]' lvalue "I (%d) am the only one executing this code\n"
+|   |     | |   `-CallExpr 0x55cf38691500 <col:62, col:81> 'int'
+|   |     | |     `-ImplicitCastExpr 0x55cf386914e8 <col:62> 'int (*)()' <FunctionToPointerDecay>
+|   |     | |       `-DeclRefExpr 0x55cf386914c0 <col:62> 'int ()' Function 0x55cf3868e3e8 'omp_get_thread_num' 'int ()'
+|   |     | `-ImplicitParamDecl 0x55cf386913a8 <line:13:13> col:13 implicit __context 'struct (anonymous at barrier-omp_-_main.c:13:13) *'
+|   |     |-RecordDecl 0x55cf38691608 <line:17:13> col:13 implicit struct definition
+|   |     | `-CapturedRecordAttr 0x55cf386916b0 <<invalid sloc>> Implicit
+|   |     `-CapturedDecl 0x55cf386916f8 <<invalid sloc>> <invalid sloc>
+|   |       |-CompoundStmt 0x55cf38691960 <line:18:5, line:20:5>
+|   |       | `-CallExpr 0x55cf386918f8 <line:19:7, col:60> 'int'
+|   |       |   |-ImplicitCastExpr 0x55cf386918e0 <col:7> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|   |       |   | `-DeclRefExpr 0x55cf386917d8 <col:7> 'int (const char *, ...)' Function 0x55cf3868e9b0 'printf' 'int (const char *, ...)'
+|   |       |   |-ImplicitCastExpr 0x55cf38691948 <col:14> 'const char *' <BitCast>
+|   |       |   | `-ImplicitCastExpr 0x55cf38691930 <col:14> 'char *' <ArrayToPointerDecay>
+|   |       |   |   `-StringLiteral 0x55cf38691838 <col:14> 'char [22]' lvalue "I (%d) am the Master\n"
+|   |       |   `-CallExpr 0x55cf386918b8 <col:40, col:59> 'int'
+|   |       |     `-ImplicitCastExpr 0x55cf386918a0 <col:40> 'int (*)()' <FunctionToPointerDecay>
+|   |       |       `-DeclRefExpr 0x55cf38691878 <col:40> 'int ()' Function 0x55cf3868e3e8 'omp_get_thread_num' 'int ()'
+|   |       `-ImplicitParamDecl 0x55cf38691778 <line:17:13> col:13 implicit __context 'struct (anonymous at barrier-omp_-_main.c:17:13) *'
+|   `-ReturnStmt 0x55cf38691a80 <line:22:3, col:10>
+|     `-IntegerLiteral 0x55cf38691a60 <col:10> 'int' 0
+`-FunctionDecl 0x55cf3868e9b0 <line:10:5> col:5 implicit used printf 'int (const char *, ...)' extern
+  |-ParmVarDecl 0x55cf3868ea50 <<invalid sloc>> <invalid sloc> 'const char *'
+  `-FormatAttr 0x55cf3868eab8 <col:5> Implicit printf 1 2

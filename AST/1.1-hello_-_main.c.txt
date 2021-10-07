@@ -1,0 +1,58 @@
+TranslationUnitDecl 0x5588e11a9e18 <<invalid sloc>> <invalid sloc>
+|-TypedefDecl 0x5588e11aa3b0 <<invalid sloc>> <invalid sloc> implicit __int128_t '__int128'
+| `-BuiltinType 0x5588e11aa0b0 '__int128'
+|-TypedefDecl 0x5588e11aa420 <<invalid sloc>> <invalid sloc> implicit __uint128_t 'unsigned __int128'
+| `-BuiltinType 0x5588e11aa0d0 'unsigned __int128'
+|-TypedefDecl 0x5588e11aa6f8 <<invalid sloc>> <invalid sloc> implicit __NSConstantString 'struct __NSConstantString_tag'
+| `-RecordType 0x5588e11aa500 'struct __NSConstantString_tag'
+|   `-Record 0x5588e11aa478 '__NSConstantString_tag'
+|-TypedefDecl 0x5588e11aa790 <<invalid sloc>> <invalid sloc> implicit __builtin_ms_va_list 'char *'
+| `-PointerType 0x5588e11aa750 'char *'
+|   `-BuiltinType 0x5588e11a9eb0 'char'
+|-TypedefDecl 0x5588e11aaa58 <<invalid sloc>> <invalid sloc> implicit __builtin_va_list 'struct __va_list_tag [1]'
+| `-ConstantArrayType 0x5588e11aaa00 'struct __va_list_tag [1]' 1 
+|   `-RecordType 0x5588e11aa870 'struct __va_list_tag'
+|     `-Record 0x5588e11aa7e8 '__va_list_tag'
+|-FunctionDecl 0x5588e12039e0 <1.1-hello_-_main.c:1:1, line:12:1> line:1:5 main 'int ()'
+| `-CompoundStmt 0x5588e1205f20 <line:2:1, line:12:1>
+|   |-DeclStmt 0x5588e1203b38 <line:3:3, col:11>
+|   | `-VarDecl 0x5588e1203ad8 <col:3, col:7> col:7 used myid 'int'
+|   |-DeclStmt 0x5588e1203bc8 <line:4:3, col:15>
+|   | `-VarDecl 0x5588e1203b68 <col:3, col:7> col:7 used nthreads 'int'
+|   |-OMPParallelDirective 0x5588e1205eb8 <line:5:11, col:47>
+|   | |-OMPPrivateClause 0x5588e1203d70 <col:24, col:47>
+|   | | |-DeclRefExpr 0x5588e1203be0 <col:32> 'int' lvalue Var 0x5588e1203ad8 'myid' 'int'
+|   | | `-DeclRefExpr 0x5588e1203c08 <col:38> 'int' lvalue Var 0x5588e1203b68 'nthreads' 'int'
+|   | `-CapturedStmt 0x5588e1205e98 <line:6:3, line:10:3>
+|   |   `-CapturedDecl 0x5588e1203ec8 <<invalid sloc>> <invalid sloc>
+|   |     |-CompoundStmt 0x5588e1205e70 <line:6:3, line:10:3>
+|   |     | |-BinaryOperator 0x5588e1204238 <line:7:5, col:31> 'int' '='
+|   |     | | |-DeclRefExpr 0x5588e12040a8 <col:5> 'int' lvalue Var 0x5588e1203ad8 'myid' 'int'
+|   |     | | `-CallExpr 0x5588e1204210 <col:12, col:31> 'int'
+|   |     | |   `-ImplicitCastExpr 0x5588e12041f8 <col:12> 'int (*)()' <FunctionToPointerDecay>
+|   |     | |     `-DeclRefExpr 0x5588e12041a8 <col:12> 'int ()' Function 0x5588e12040f8 'omp_get_thread_num' 'int ()'
+|   |     | |-BinaryOperator 0x5588e12043c8 <line:8:5, col:36> 'int' '='
+|   |     | | |-DeclRefExpr 0x5588e1204260 <col:5> 'int' lvalue Var 0x5588e1203b68 'nthreads' 'int'
+|   |     | | `-CallExpr 0x5588e12043a0 <col:16, col:36> 'int'
+|   |     | |   `-ImplicitCastExpr 0x5588e1204388 <col:16> 'int (*)()' <FunctionToPointerDecay>
+|   |     | |     `-DeclRefExpr 0x5588e1204360 <col:16> 'int ()' Function 0x5588e12042b0 'omp_get_num_threads' 'int ()'
+|   |     | `-CallExpr 0x5588e1205dd0 <line:9:5, col:55> 'int'
+|   |     |   |-ImplicitCastExpr 0x5588e1205db8 <col:5> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|   |     |   | `-DeclRefExpr 0x5588e1204940 <col:5> 'int (const char *, ...)' Function 0x5588e12047e0 'printf' 'int (const char *, ...)'
+|   |     |   |-ImplicitCastExpr 0x5588e1205e28 <col:12> 'const char *' <BitCast>
+|   |     |   | `-ImplicitCastExpr 0x5588e1205e10 <col:12> 'char *' <ArrayToPointerDecay>
+|   |     |   |   `-StringLiteral 0x5588e12049a8 <col:12> 'char [25]' lvalue "%d of %d - hello world!\n"
+|   |     |   |-ImplicitCastExpr 0x5588e1205e40 <col:41> 'int' <LValueToRValue>
+|   |     |   | `-DeclRefExpr 0x5588e1205d38 <col:41> 'int' lvalue Var 0x5588e1203ad8 'myid' 'int'
+|   |     |   `-ImplicitCastExpr 0x5588e1205e58 <col:47> 'int' <LValueToRValue>
+|   |     |     `-DeclRefExpr 0x5588e1205d60 <col:47> 'int' lvalue Var 0x5588e1203b68 'nthreads' 'int'
+|   |     |-ImplicitParamDecl 0x5588e1203f30 <line:5:11> col:11 implicit .global_tid. 'int *const restrict'
+|   |     |-ImplicitParamDecl 0x5588e1203f90 <col:11> col:11 implicit .bound_tid. 'int *const restrict'
+|   |     |-ImplicitParamDecl 0x5588e1204018 <col:11> col:11 implicit __context 'struct (anonymous at 1.1-hello_-_main.c:5:11) *'
+|   |     |-FunctionDecl 0x5588e12040f8 parent 0x5588e11a9e18 <<invalid sloc>> line:7:12 implicit used omp_get_thread_num 'int ()'
+|   |     `-FunctionDecl 0x5588e12042b0 parent 0x5588e11a9e18 <<invalid sloc>> line:8:16 implicit used omp_get_num_threads 'int ()'
+|   `-ReturnStmt 0x5588e1205f08 <line:11:3, col:10>
+|     `-IntegerLiteral 0x5588e1205ee8 <col:10> 'int' 0
+`-FunctionDecl 0x5588e12047e0 <line:9:5> col:5 implicit used printf 'int (const char *, ...)' extern
+  |-ParmVarDecl 0x5588e1204880 <<invalid sloc>> <invalid sloc> 'const char *'
+  `-FormatAttr 0x5588e12048e8 <col:5> Implicit printf 1 2

@@ -1,0 +1,301 @@
+TranslationUnitDecl 0x55600df8be18 <<invalid sloc>> <invalid sloc>
+|-TypedefDecl 0x55600df8c3b0 <<invalid sloc>> <invalid sloc> implicit __int128_t '__int128'
+| `-BuiltinType 0x55600df8c0b0 '__int128'
+|-TypedefDecl 0x55600df8c420 <<invalid sloc>> <invalid sloc> implicit __uint128_t 'unsigned __int128'
+| `-BuiltinType 0x55600df8c0d0 'unsigned __int128'
+|-TypedefDecl 0x55600df8c6f8 <<invalid sloc>> <invalid sloc> implicit __NSConstantString 'struct __NSConstantString_tag'
+| `-RecordType 0x55600df8c500 'struct __NSConstantString_tag'
+|   `-Record 0x55600df8c478 '__NSConstantString_tag'
+|-TypedefDecl 0x55600df8c790 <<invalid sloc>> <invalid sloc> implicit __builtin_ms_va_list 'char *'
+| `-PointerType 0x55600df8c750 'char *'
+|   `-BuiltinType 0x55600df8beb0 'char'
+|-TypedefDecl 0x55600df8ca58 <<invalid sloc>> <invalid sloc> implicit __builtin_va_list 'struct __va_list_tag [1]'
+| `-ConstantArrayType 0x55600df8ca00 'struct __va_list_tag [1]' 1 
+|   `-RecordType 0x55600df8c870 'struct __va_list_tag'
+|     `-Record 0x55600df8c7e8 '__va_list_tag'
+|-FunctionDecl 0x55600dfe5c20 <array_tasks1.5_-_main.c:1:1, line:26:1> line:1:5 main 'int ()'
+| `-CompoundStmt 0x55600dfebea8 <line:2:1, line:26:1>
+|   |-DeclStmt 0x55600dfe5de0 <line:3:3, col:14>
+|   | `-VarDecl 0x55600dfe5d80 <col:3, col:13> col:7 used arr 'int [16]'
+|   |-DeclStmt 0x55600dfe5e70 <line:4:3, col:8>
+|   | `-VarDecl 0x55600dfe5e10 <col:3, col:7> col:7 used i 'int'
+|   |-OMPParallelDirective 0x55600dfeb970 <line:5:11, col:61>
+|   | |-OMPNum_threadsClause 0x55600dfe5ea8 <col:24, col:37>
+|   | | `-IntegerLiteral 0x55600dfe5e88 <col:36> 'int' 4
+|   | |-OMPPrivateClause 0x55600dfe5f98 <col:39, col:50>
+|   | | `-DeclRefExpr 0x55600dfe5ed0 <col:47> 'int' lvalue Var 0x55600dfe5e10 'i' 'int'
+|   | |-OMPSharedClause 0x55600dfe5fe8 <col:50, col:61>
+|   | | `-DeclRefExpr 0x55600dfe5fc0 <col:57> 'int [16]' lvalue Var 0x55600dfe5d80 'arr' 'int [16]'
+|   | `-CapturedStmt 0x55600dfeb938 <line:6:3, line:20:3>
+|   |   |-CapturedDecl 0x55600dfe6128 <<invalid sloc>> <invalid sloc>
+|   |   | |-CompoundStmt 0x55600dfeb920 <line:6:3, line:20:3>
+|   |   | | `-OMPSingleDirective 0x55600dfeb8f8 <line:7:13, col:23>
+|   |   | |   `-CapturedStmt 0x55600dfeb8a8 <line:8:5, line:19:5>
+|   |   | |     |-CapturedDecl 0x55600dfe63c8 <<invalid sloc>> <invalid sloc>
+|   |   | |     | |-CompoundStmt 0x55600dfeb888 <line:8:5, line:19:5>
+|   |   | |     | | |-CallExpr 0x55600dfe8ac0 <line:9:7, col:95> 'int'
+|   |   | |     | | | |-ImplicitCastExpr 0x55600dfe8aa8 <col:7> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|   |   | |     | | | | `-DeclRefExpr 0x55600dfe6a00 <col:7> 'int (const char *, ...)' Function 0x55600dfe68a0 'printf' 'int (const char *, ...)'
+|   |   | |     | | | |-ImplicitCastExpr 0x55600dfe8b18 <col:14> 'const char *' <BitCast>
+|   |   | |     | | | | `-ImplicitCastExpr 0x55600dfe8b00 <col:14> 'char *' <ArrayToPointerDecay>
+|   |   | |     | | | |   `-StringLiteral 0x55600dfe6a68 <col:14> 'char [34]' lvalue "[Thread %d/%d] I am the producer\n"
+|   |   | |     | | | |-CallExpr 0x55600dfe6c00 <col:52, col:71> 'int'
+|   |   | |     | | | | `-ImplicitCastExpr 0x55600dfe6be8 <col:52> 'int (*)()' <FunctionToPointerDecay>
+|   |   | |     | | | |   `-DeclRefExpr 0x55600dfe6b90 <col:52> 'int ()' Function 0x55600dfe6ae0 'omp_get_thread_num' 'int ()'
+|   |   | |     | | | `-CallExpr 0x55600dfe8a50 <col:74, col:94> 'int'
+|   |   | |     | | |   `-ImplicitCastExpr 0x55600dfe8a38 <col:74> 'int (*)()' <FunctionToPointerDecay>
+|   |   | |     | | |     `-DeclRefExpr 0x55600dfe8a10 <col:74> 'int ()' Function 0x55600dfe8960 'omp_get_num_threads' 'int ()'
+|   |   | |     | | `-ForStmt 0x55600dfeb850 <line:10:7, line:17:7>
+|   |   | |     | |   |-BinaryOperator 0x55600dfe8c28 <line:10:12, col:16> 'int' '='
+|   |   | |     | |   | |-DeclRefExpr 0x55600dfe8b58 <col:12> 'int' lvalue Var 0x55600dfe5e10 'i' 'int'
+|   |   | |     | |   | `-IntegerLiteral 0x55600dfe8c08 <col:16> 'int' 0
+|   |   | |     | |   |-<<<NULL>>>
+|   |   | |     | |   |-BinaryOperator 0x55600dfe8cb0 <col:19, col:23> 'int' '<'
+|   |   | |     | |   | |-ImplicitCastExpr 0x55600dfe8c98 <col:19> 'int' <LValueToRValue>
+|   |   | |     | |   | | `-DeclRefExpr 0x55600dfe8c50 <col:19> 'int' lvalue Var 0x55600dfe5e10 'i' 'int'
+|   |   | |     | |   | `-IntegerLiteral 0x55600dfe8c78 <col:23> 'int' 16
+|   |   | |     | |   |-UnaryOperator 0x55600dfe8d00 <col:27, col:28> 'int' postfix '++'
+|   |   | |     | |   | `-DeclRefExpr 0x55600dfe8cd8 <col:27> 'int' lvalue Var 0x55600dfe5e10 'i' 'int'
+|   |   | |     | |   `-CompoundStmt 0x55600dfeb838 <line:11:7, line:17:7>
+|   |   | |     | |     `-OMPTaskDirective 0x55600dfeb800 <line:12:17, col:53>
+|   |   | |     | |       |-OMPFirstprivateClause 0x55600dfe8ea0 <col:26, col:42>
+|   |   | |     | |       | `-DeclRefExpr 0x55600dfe8d20 <col:39> 'int' lvalue Var 0x55600dfe5e10 'i' 'int'
+|   |   | |     | |       |-OMPSharedClause 0x55600dfe9070 <col:42, col:53>
+|   |   | |     | |       | `-DeclRefExpr 0x55600dfe8f08 <col:49> 'int [16]' lvalue Var 0x55600dfe5d80 'arr' 'int [16]'
+|   |   | |     | |       `-CapturedStmt 0x55600dfeb7b0 <line:13:9, line:16:9>
+|   |   | |     | |         |-CapturedDecl 0x55600dfe9258 <<invalid sloc>> <invalid sloc>
+|   |   | |     | |         | |-CompoundStmt 0x55600dfeb790 <line:13:9, line:16:9>
+|   |   | |     | |         | | |-CallExpr 0x55600dfe9828 <line:14:11, col:108> 'int'
+|   |   | |     | |         | | | |-ImplicitCastExpr 0x55600dfe9810 <col:11> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|   |   | |     | |         | | | | `-DeclRefExpr 0x55600dfe9590 <col:11> 'int (const char *, ...)' Function 0x55600dfe68a0 'printf' 'int (const char *, ...)'
+|   |   | |     | |         | | | |-ImplicitCastExpr 0x55600dfe9888 <col:18> 'const char *' <BitCast>
+|   |   | |     | |         | | | | `-ImplicitCastExpr 0x55600dfe9870 <col:18> 'char *' <ArrayToPointerDecay>
+|   |   | |     | |         | | | |   `-StringLiteral 0x55600dfe95f8 <col:18> 'char [40]' lvalue "[Thread %d/%d] i is %d. I will execute\n"
+|   |   | |     | |         | | | |-CallExpr 0x55600dfe9688 <col:62, col:81> 'int'
+|   |   | |     | |         | | | | `-ImplicitCastExpr 0x55600dfe9670 <col:62> 'int (*)()' <FunctionToPointerDecay>
+|   |   | |     | |         | | | |   `-DeclRefExpr 0x55600dfe9648 <col:62> 'int ()' Function 0x55600dfe6ae0 'omp_get_thread_num' 'int ()'
+|   |   | |     | |         | | | |-CallExpr 0x55600dfe96f0 <col:84, col:104> 'int'
+|   |   | |     | |         | | | | `-ImplicitCastExpr 0x55600dfe96d8 <col:84> 'int (*)()' <FunctionToPointerDecay>
+|   |   | |     | |         | | | |   `-DeclRefExpr 0x55600dfe96b0 <col:84> 'int ()' Function 0x55600dfe8960 'omp_get_num_threads' 'int ()'
+|   |   | |     | |         | | | `-ImplicitCastExpr 0x55600dfe98a0 <col:107> 'int' <LValueToRValue>
+|   |   | |     | |         | | |   `-DeclRefExpr 0x55600dfe9718 <col:107> 'int' lvalue Var 0x55600dfe5e10 'i' 'int'
+|   |   | |     | |         | | `-BinaryOperator 0x55600dfeb768 <line:15:11, col:24> 'int' '='
+|   |   | |     | |         | |   |-ArraySubscriptExpr 0x55600dfeb6b8 <col:11, col:16> 'int' lvalue
+|   |   | |     | |         | |   | |-ImplicitCastExpr 0x55600dfeb688 <col:11> 'int *' <ArrayToPointerDecay>
+|   |   | |     | |         | |   | | `-DeclRefExpr 0x55600dfe98b8 <col:11> 'int [16]' lvalue Var 0x55600dfe5d80 'arr' 'int [16]'
+|   |   | |     | |         | |   | `-ImplicitCastExpr 0x55600dfeb6a0 <col:15> 'int' <LValueToRValue>
+|   |   | |     | |         | |   |   `-DeclRefExpr 0x55600dfeb660 <col:15> 'int' lvalue Var 0x55600dfe5e10 'i' 'int'
+|   |   | |     | |         | |   `-BinaryOperator 0x55600dfeb740 <col:20, col:24> 'int' '*'
+|   |   | |     | |         | |     |-ImplicitCastExpr 0x55600dfeb728 <col:20> 'int' <LValueToRValue>
+|   |   | |     | |         | |     | `-DeclRefExpr 0x55600dfeb6e0 <col:20> 'int' lvalue Var 0x55600dfe5e10 'i' 'int'
+|   |   | |     | |         | |     `-IntegerLiteral 0x55600dfeb708 <col:24> 'int' 2
+|   |   | |     | |         | |-AlwaysInlineAttr 0x55600dfe9548 <<invalid sloc>> Implicit __forceinline
+|   |   | |     | |         | |-ImplicitParamDecl 0x55600dfe92d8 <line:12:17> col:17 implicit .global_tid. 'int'
+|   |   | |     | |         | |-ImplicitParamDecl 0x55600dfe9338 <col:17> col:17 implicit .part_id. 'int *'
+|   |   | |     | |         | |-ImplicitParamDecl 0x55600dfe9398 <col:17> col:17 implicit .privates. 'void *const'
+|   |   | |     | |         | |-ImplicitParamDecl 0x55600dfe93f8 <col:17> col:17 implicit .copy_fn. 'void (*const)(void *const restrict, ...)'
+|   |   | |     | |         | |-ImplicitParamDecl 0x55600dfe9458 <col:17> col:17 implicit .task_t. 'void *const'
+|   |   | |     | |         | `-ImplicitParamDecl 0x55600dfe94e8 <col:17> col:17 implicit __context 'struct (anonymous at array_tasks1.5_-_main.c:12:17) *'
+|   |   | |     | |         |-DeclRefExpr 0x55600dfe97e8 <line:14:107> 'int' lvalue Var 0x55600dfe5e10 'i' 'int'
+|   |   | |     | |         `-DeclRefExpr 0x55600dfeb638 <line:15:11> 'int [16]' lvalue Var 0x55600dfe5d80 'arr' 'int [16]'
+|   |   | |     | |-ImplicitParamDecl 0x55600dfe6448 <line:7:13> col:13 implicit __context 'struct (anonymous at array_tasks1.5_-_main.c:7:13) *'
+|   |   | |     | |-FunctionDecl 0x55600dfe6ae0 parent 0x55600df8be18 <<invalid sloc>> line:9:52 implicit used omp_get_thread_num 'int ()'
+|   |   | |     | |-FunctionDecl 0x55600dfe8960 parent 0x55600df8be18 <<invalid sloc>> col:74 implicit used omp_get_num_threads 'int ()'
+|   |   | |     | |-VarDecl 0x55600dfe8d60 <line:12:39> col:39 implicit used i 'int' cinit
+|   |   | |     | | `-ImplicitCastExpr 0x55600dfe8e60 <col:39> 'int' <LValueToRValue>
+|   |   | |     | |   `-DeclRefExpr 0x55600dfe8e38 <col:39> 'int' lvalue Var 0x55600dfe8dd8 '.firstprivate.temp' 'int'
+|   |   | |     | |-RecordDecl 0x55600dfe9168 <col:17> col:17 implicit struct definition
+|   |   | |     | | |-CapturedRecordAttr 0x55600dfe9210 <<invalid sloc>> Implicit
+|   |   | |     | | |-FieldDecl 0x55600dfe9758 <line:14:107> col:107 implicit 'int'
+|   |   | |     | | | `-OMPCaptureKindAttr 0x55600dfe97a0 <<invalid sloc>> Implicit 8
+|   |   | |     | | `-FieldDecl 0x55600dfeb5f0 <line:15:11> col:11 implicit 'int (&)[16]'
+|   |   | |     | `-CapturedDecl 0x55600dfe9258 <<invalid sloc>> <invalid sloc>
+|   |   | |     |   |-CompoundStmt 0x55600dfeb790 <line:13:9, line:16:9>
+|   |   | |     |   | |-CallExpr 0x55600dfe9828 <line:14:11, col:108> 'int'
+|   |   | |     |   | | |-ImplicitCastExpr 0x55600dfe9810 <col:11> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|   |   | |     |   | | | `-DeclRefExpr 0x55600dfe9590 <col:11> 'int (const char *, ...)' Function 0x55600dfe68a0 'printf' 'int (const char *, ...)'
+|   |   | |     |   | | |-ImplicitCastExpr 0x55600dfe9888 <col:18> 'const char *' <BitCast>
+|   |   | |     |   | | | `-ImplicitCastExpr 0x55600dfe9870 <col:18> 'char *' <ArrayToPointerDecay>
+|   |   | |     |   | | |   `-StringLiteral 0x55600dfe95f8 <col:18> 'char [40]' lvalue "[Thread %d/%d] i is %d. I will execute\n"
+|   |   | |     |   | | |-CallExpr 0x55600dfe9688 <col:62, col:81> 'int'
+|   |   | |     |   | | | `-ImplicitCastExpr 0x55600dfe9670 <col:62> 'int (*)()' <FunctionToPointerDecay>
+|   |   | |     |   | | |   `-DeclRefExpr 0x55600dfe9648 <col:62> 'int ()' Function 0x55600dfe6ae0 'omp_get_thread_num' 'int ()'
+|   |   | |     |   | | |-CallExpr 0x55600dfe96f0 <col:84, col:104> 'int'
+|   |   | |     |   | | | `-ImplicitCastExpr 0x55600dfe96d8 <col:84> 'int (*)()' <FunctionToPointerDecay>
+|   |   | |     |   | | |   `-DeclRefExpr 0x55600dfe96b0 <col:84> 'int ()' Function 0x55600dfe8960 'omp_get_num_threads' 'int ()'
+|   |   | |     |   | | `-ImplicitCastExpr 0x55600dfe98a0 <col:107> 'int' <LValueToRValue>
+|   |   | |     |   | |   `-DeclRefExpr 0x55600dfe9718 <col:107> 'int' lvalue Var 0x55600dfe5e10 'i' 'int'
+|   |   | |     |   | `-BinaryOperator 0x55600dfeb768 <line:15:11, col:24> 'int' '='
+|   |   | |     |   |   |-ArraySubscriptExpr 0x55600dfeb6b8 <col:11, col:16> 'int' lvalue
+|   |   | |     |   |   | |-ImplicitCastExpr 0x55600dfeb688 <col:11> 'int *' <ArrayToPointerDecay>
+|   |   | |     |   |   | | `-DeclRefExpr 0x55600dfe98b8 <col:11> 'int [16]' lvalue Var 0x55600dfe5d80 'arr' 'int [16]'
+|   |   | |     |   |   | `-ImplicitCastExpr 0x55600dfeb6a0 <col:15> 'int' <LValueToRValue>
+|   |   | |     |   |   |   `-DeclRefExpr 0x55600dfeb660 <col:15> 'int' lvalue Var 0x55600dfe5e10 'i' 'int'
+|   |   | |     |   |   `-BinaryOperator 0x55600dfeb740 <col:20, col:24> 'int' '*'
+|   |   | |     |   |     |-ImplicitCastExpr 0x55600dfeb728 <col:20> 'int' <LValueToRValue>
+|   |   | |     |   |     | `-DeclRefExpr 0x55600dfeb6e0 <col:20> 'int' lvalue Var 0x55600dfe5e10 'i' 'int'
+|   |   | |     |   |     `-IntegerLiteral 0x55600dfeb708 <col:24> 'int' 2
+|   |   | |     |   |-AlwaysInlineAttr 0x55600dfe9548 <<invalid sloc>> Implicit __forceinline
+|   |   | |     |   |-ImplicitParamDecl 0x55600dfe92d8 <line:12:17> col:17 implicit .global_tid. 'int'
+|   |   | |     |   |-ImplicitParamDecl 0x55600dfe9338 <col:17> col:17 implicit .part_id. 'int *'
+|   |   | |     |   |-ImplicitParamDecl 0x55600dfe9398 <col:17> col:17 implicit .privates. 'void *const'
+|   |   | |     |   |-ImplicitParamDecl 0x55600dfe93f8 <col:17> col:17 implicit .copy_fn. 'void (*const)(void *const restrict, ...)'
+|   |   | |     |   |-ImplicitParamDecl 0x55600dfe9458 <col:17> col:17 implicit .task_t. 'void *const'
+|   |   | |     |   `-ImplicitParamDecl 0x55600dfe94e8 <col:17> col:17 implicit __context 'struct (anonymous at array_tasks1.5_-_main.c:12:17) *'
+|   |   | |     |-DeclRefExpr 0x55600dfe8be0 <line:10:12> 'int' lvalue Var 0x55600dfe5e10 'i' 'int'
+|   |   | |     `-DeclRefExpr 0x55600dfe9048 <line:12:49> 'int [16]' lvalue Var 0x55600dfe5d80 'arr' 'int [16]'
+|   |   | |-ImplicitParamDecl 0x55600dfe6190 <line:5:11> col:11 implicit .global_tid. 'int *const restrict'
+|   |   | |-ImplicitParamDecl 0x55600dfe61f0 <col:11> col:11 implicit .bound_tid. 'int *const restrict'
+|   |   | |-ImplicitParamDecl 0x55600dfe6278 <col:11> col:11 implicit __context 'struct (anonymous at array_tasks1.5_-_main.c:5:11) *'
+|   |   | |-RecordDecl 0x55600dfe62d8 <line:7:13> col:13 implicit struct definition
+|   |   | | |-CapturedRecordAttr 0x55600dfe6380 <<invalid sloc>> Implicit
+|   |   | | |-FieldDecl 0x55600dfe8b98 <line:10:12> col:12 implicit 'int &'
+|   |   | | `-FieldDecl 0x55600dfe9000 <line:12:49> col:49 implicit 'int (&)[16]'
+|   |   | `-CapturedDecl 0x55600dfe63c8 <<invalid sloc>> <invalid sloc>
+|   |   |   |-CompoundStmt 0x55600dfeb888 <line:8:5, line:19:5>
+|   |   |   | |-CallExpr 0x55600dfe8ac0 <line:9:7, col:95> 'int'
+|   |   |   | | |-ImplicitCastExpr 0x55600dfe8aa8 <col:7> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|   |   |   | | | `-DeclRefExpr 0x55600dfe6a00 <col:7> 'int (const char *, ...)' Function 0x55600dfe68a0 'printf' 'int (const char *, ...)'
+|   |   |   | | |-ImplicitCastExpr 0x55600dfe8b18 <col:14> 'const char *' <BitCast>
+|   |   |   | | | `-ImplicitCastExpr 0x55600dfe8b00 <col:14> 'char *' <ArrayToPointerDecay>
+|   |   |   | | |   `-StringLiteral 0x55600dfe6a68 <col:14> 'char [34]' lvalue "[Thread %d/%d] I am the producer\n"
+|   |   |   | | |-CallExpr 0x55600dfe6c00 <col:52, col:71> 'int'
+|   |   |   | | | `-ImplicitCastExpr 0x55600dfe6be8 <col:52> 'int (*)()' <FunctionToPointerDecay>
+|   |   |   | | |   `-DeclRefExpr 0x55600dfe6b90 <col:52> 'int ()' Function 0x55600dfe6ae0 'omp_get_thread_num' 'int ()'
+|   |   |   | | `-CallExpr 0x55600dfe8a50 <col:74, col:94> 'int'
+|   |   |   | |   `-ImplicitCastExpr 0x55600dfe8a38 <col:74> 'int (*)()' <FunctionToPointerDecay>
+|   |   |   | |     `-DeclRefExpr 0x55600dfe8a10 <col:74> 'int ()' Function 0x55600dfe8960 'omp_get_num_threads' 'int ()'
+|   |   |   | `-ForStmt 0x55600dfeb850 <line:10:7, line:17:7>
+|   |   |   |   |-BinaryOperator 0x55600dfe8c28 <line:10:12, col:16> 'int' '='
+|   |   |   |   | |-DeclRefExpr 0x55600dfe8b58 <col:12> 'int' lvalue Var 0x55600dfe5e10 'i' 'int'
+|   |   |   |   | `-IntegerLiteral 0x55600dfe8c08 <col:16> 'int' 0
+|   |   |   |   |-<<<NULL>>>
+|   |   |   |   |-BinaryOperator 0x55600dfe8cb0 <col:19, col:23> 'int' '<'
+|   |   |   |   | |-ImplicitCastExpr 0x55600dfe8c98 <col:19> 'int' <LValueToRValue>
+|   |   |   |   | | `-DeclRefExpr 0x55600dfe8c50 <col:19> 'int' lvalue Var 0x55600dfe5e10 'i' 'int'
+|   |   |   |   | `-IntegerLiteral 0x55600dfe8c78 <col:23> 'int' 16
+|   |   |   |   |-UnaryOperator 0x55600dfe8d00 <col:27, col:28> 'int' postfix '++'
+|   |   |   |   | `-DeclRefExpr 0x55600dfe8cd8 <col:27> 'int' lvalue Var 0x55600dfe5e10 'i' 'int'
+|   |   |   |   `-CompoundStmt 0x55600dfeb838 <line:11:7, line:17:7>
+|   |   |   |     `-OMPTaskDirective 0x55600dfeb800 <line:12:17, col:53>
+|   |   |   |       |-OMPFirstprivateClause 0x55600dfe8ea0 <col:26, col:42>
+|   |   |   |       | `-DeclRefExpr 0x55600dfe8d20 <col:39> 'int' lvalue Var 0x55600dfe5e10 'i' 'int'
+|   |   |   |       |-OMPSharedClause 0x55600dfe9070 <col:42, col:53>
+|   |   |   |       | `-DeclRefExpr 0x55600dfe8f08 <col:49> 'int [16]' lvalue Var 0x55600dfe5d80 'arr' 'int [16]'
+|   |   |   |       `-CapturedStmt 0x55600dfeb7b0 <line:13:9, line:16:9>
+|   |   |   |         |-CapturedDecl 0x55600dfe9258 <<invalid sloc>> <invalid sloc>
+|   |   |   |         | |-CompoundStmt 0x55600dfeb790 <line:13:9, line:16:9>
+|   |   |   |         | | |-CallExpr 0x55600dfe9828 <line:14:11, col:108> 'int'
+|   |   |   |         | | | |-ImplicitCastExpr 0x55600dfe9810 <col:11> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|   |   |   |         | | | | `-DeclRefExpr 0x55600dfe9590 <col:11> 'int (const char *, ...)' Function 0x55600dfe68a0 'printf' 'int (const char *, ...)'
+|   |   |   |         | | | |-ImplicitCastExpr 0x55600dfe9888 <col:18> 'const char *' <BitCast>
+|   |   |   |         | | | | `-ImplicitCastExpr 0x55600dfe9870 <col:18> 'char *' <ArrayToPointerDecay>
+|   |   |   |         | | | |   `-StringLiteral 0x55600dfe95f8 <col:18> 'char [40]' lvalue "[Thread %d/%d] i is %d. I will execute\n"
+|   |   |   |         | | | |-CallExpr 0x55600dfe9688 <col:62, col:81> 'int'
+|   |   |   |         | | | | `-ImplicitCastExpr 0x55600dfe9670 <col:62> 'int (*)()' <FunctionToPointerDecay>
+|   |   |   |         | | | |   `-DeclRefExpr 0x55600dfe9648 <col:62> 'int ()' Function 0x55600dfe6ae0 'omp_get_thread_num' 'int ()'
+|   |   |   |         | | | |-CallExpr 0x55600dfe96f0 <col:84, col:104> 'int'
+|   |   |   |         | | | | `-ImplicitCastExpr 0x55600dfe96d8 <col:84> 'int (*)()' <FunctionToPointerDecay>
+|   |   |   |         | | | |   `-DeclRefExpr 0x55600dfe96b0 <col:84> 'int ()' Function 0x55600dfe8960 'omp_get_num_threads' 'int ()'
+|   |   |   |         | | | `-ImplicitCastExpr 0x55600dfe98a0 <col:107> 'int' <LValueToRValue>
+|   |   |   |         | | |   `-DeclRefExpr 0x55600dfe9718 <col:107> 'int' lvalue Var 0x55600dfe5e10 'i' 'int'
+|   |   |   |         | | `-BinaryOperator 0x55600dfeb768 <line:15:11, col:24> 'int' '='
+|   |   |   |         | |   |-ArraySubscriptExpr 0x55600dfeb6b8 <col:11, col:16> 'int' lvalue
+|   |   |   |         | |   | |-ImplicitCastExpr 0x55600dfeb688 <col:11> 'int *' <ArrayToPointerDecay>
+|   |   |   |         | |   | | `-DeclRefExpr 0x55600dfe98b8 <col:11> 'int [16]' lvalue Var 0x55600dfe5d80 'arr' 'int [16]'
+|   |   |   |         | |   | `-ImplicitCastExpr 0x55600dfeb6a0 <col:15> 'int' <LValueToRValue>
+|   |   |   |         | |   |   `-DeclRefExpr 0x55600dfeb660 <col:15> 'int' lvalue Var 0x55600dfe5e10 'i' 'int'
+|   |   |   |         | |   `-BinaryOperator 0x55600dfeb740 <col:20, col:24> 'int' '*'
+|   |   |   |         | |     |-ImplicitCastExpr 0x55600dfeb728 <col:20> 'int' <LValueToRValue>
+|   |   |   |         | |     | `-DeclRefExpr 0x55600dfeb6e0 <col:20> 'int' lvalue Var 0x55600dfe5e10 'i' 'int'
+|   |   |   |         | |     `-IntegerLiteral 0x55600dfeb708 <col:24> 'int' 2
+|   |   |   |         | |-AlwaysInlineAttr 0x55600dfe9548 <<invalid sloc>> Implicit __forceinline
+|   |   |   |         | |-ImplicitParamDecl 0x55600dfe92d8 <line:12:17> col:17 implicit .global_tid. 'int'
+|   |   |   |         | |-ImplicitParamDecl 0x55600dfe9338 <col:17> col:17 implicit .part_id. 'int *'
+|   |   |   |         | |-ImplicitParamDecl 0x55600dfe9398 <col:17> col:17 implicit .privates. 'void *const'
+|   |   |   |         | |-ImplicitParamDecl 0x55600dfe93f8 <col:17> col:17 implicit .copy_fn. 'void (*const)(void *const restrict, ...)'
+|   |   |   |         | |-ImplicitParamDecl 0x55600dfe9458 <col:17> col:17 implicit .task_t. 'void *const'
+|   |   |   |         | `-ImplicitParamDecl 0x55600dfe94e8 <col:17> col:17 implicit __context 'struct (anonymous at array_tasks1.5_-_main.c:12:17) *'
+|   |   |   |         |-DeclRefExpr 0x55600dfe97e8 <line:14:107> 'int' lvalue Var 0x55600dfe5e10 'i' 'int'
+|   |   |   |         `-DeclRefExpr 0x55600dfeb638 <line:15:11> 'int [16]' lvalue Var 0x55600dfe5d80 'arr' 'int [16]'
+|   |   |   |-ImplicitParamDecl 0x55600dfe6448 <line:7:13> col:13 implicit __context 'struct (anonymous at array_tasks1.5_-_main.c:7:13) *'
+|   |   |   |-FunctionDecl 0x55600dfe6ae0 parent 0x55600df8be18 <<invalid sloc>> line:9:52 implicit used omp_get_thread_num 'int ()'
+|   |   |   |-FunctionDecl 0x55600dfe8960 parent 0x55600df8be18 <<invalid sloc>> col:74 implicit used omp_get_num_threads 'int ()'
+|   |   |   |-VarDecl 0x55600dfe8d60 <line:12:39> col:39 implicit used i 'int' cinit
+|   |   |   | `-ImplicitCastExpr 0x55600dfe8e60 <col:39> 'int' <LValueToRValue>
+|   |   |   |   `-DeclRefExpr 0x55600dfe8e38 <col:39> 'int' lvalue Var 0x55600dfe8dd8 '.firstprivate.temp' 'int'
+|   |   |   |-RecordDecl 0x55600dfe9168 <col:17> col:17 implicit struct definition
+|   |   |   | |-CapturedRecordAttr 0x55600dfe9210 <<invalid sloc>> Implicit
+|   |   |   | |-FieldDecl 0x55600dfe9758 <line:14:107> col:107 implicit 'int'
+|   |   |   | | `-OMPCaptureKindAttr 0x55600dfe97a0 <<invalid sloc>> Implicit 8
+|   |   |   | `-FieldDecl 0x55600dfeb5f0 <line:15:11> col:11 implicit 'int (&)[16]'
+|   |   |   `-CapturedDecl 0x55600dfe9258 <<invalid sloc>> <invalid sloc>
+|   |   |     |-CompoundStmt 0x55600dfeb790 <line:13:9, line:16:9>
+|   |   |     | |-CallExpr 0x55600dfe9828 <line:14:11, col:108> 'int'
+|   |   |     | | |-ImplicitCastExpr 0x55600dfe9810 <col:11> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|   |   |     | | | `-DeclRefExpr 0x55600dfe9590 <col:11> 'int (const char *, ...)' Function 0x55600dfe68a0 'printf' 'int (const char *, ...)'
+|   |   |     | | |-ImplicitCastExpr 0x55600dfe9888 <col:18> 'const char *' <BitCast>
+|   |   |     | | | `-ImplicitCastExpr 0x55600dfe9870 <col:18> 'char *' <ArrayToPointerDecay>
+|   |   |     | | |   `-StringLiteral 0x55600dfe95f8 <col:18> 'char [40]' lvalue "[Thread %d/%d] i is %d. I will execute\n"
+|   |   |     | | |-CallExpr 0x55600dfe9688 <col:62, col:81> 'int'
+|   |   |     | | | `-ImplicitCastExpr 0x55600dfe9670 <col:62> 'int (*)()' <FunctionToPointerDecay>
+|   |   |     | | |   `-DeclRefExpr 0x55600dfe9648 <col:62> 'int ()' Function 0x55600dfe6ae0 'omp_get_thread_num' 'int ()'
+|   |   |     | | |-CallExpr 0x55600dfe96f0 <col:84, col:104> 'int'
+|   |   |     | | | `-ImplicitCastExpr 0x55600dfe96d8 <col:84> 'int (*)()' <FunctionToPointerDecay>
+|   |   |     | | |   `-DeclRefExpr 0x55600dfe96b0 <col:84> 'int ()' Function 0x55600dfe8960 'omp_get_num_threads' 'int ()'
+|   |   |     | | `-ImplicitCastExpr 0x55600dfe98a0 <col:107> 'int' <LValueToRValue>
+|   |   |     | |   `-DeclRefExpr 0x55600dfe9718 <col:107> 'int' lvalue Var 0x55600dfe5e10 'i' 'int'
+|   |   |     | `-BinaryOperator 0x55600dfeb768 <line:15:11, col:24> 'int' '='
+|   |   |     |   |-ArraySubscriptExpr 0x55600dfeb6b8 <col:11, col:16> 'int' lvalue
+|   |   |     |   | |-ImplicitCastExpr 0x55600dfeb688 <col:11> 'int *' <ArrayToPointerDecay>
+|   |   |     |   | | `-DeclRefExpr 0x55600dfe98b8 <col:11> 'int [16]' lvalue Var 0x55600dfe5d80 'arr' 'int [16]'
+|   |   |     |   | `-ImplicitCastExpr 0x55600dfeb6a0 <col:15> 'int' <LValueToRValue>
+|   |   |     |   |   `-DeclRefExpr 0x55600dfeb660 <col:15> 'int' lvalue Var 0x55600dfe5e10 'i' 'int'
+|   |   |     |   `-BinaryOperator 0x55600dfeb740 <col:20, col:24> 'int' '*'
+|   |   |     |     |-ImplicitCastExpr 0x55600dfeb728 <col:20> 'int' <LValueToRValue>
+|   |   |     |     | `-DeclRefExpr 0x55600dfeb6e0 <col:20> 'int' lvalue Var 0x55600dfe5e10 'i' 'int'
+|   |   |     |     `-IntegerLiteral 0x55600dfeb708 <col:24> 'int' 2
+|   |   |     |-AlwaysInlineAttr 0x55600dfe9548 <<invalid sloc>> Implicit __forceinline
+|   |   |     |-ImplicitParamDecl 0x55600dfe92d8 <line:12:17> col:17 implicit .global_tid. 'int'
+|   |   |     |-ImplicitParamDecl 0x55600dfe9338 <col:17> col:17 implicit .part_id. 'int *'
+|   |   |     |-ImplicitParamDecl 0x55600dfe9398 <col:17> col:17 implicit .privates. 'void *const'
+|   |   |     |-ImplicitParamDecl 0x55600dfe93f8 <col:17> col:17 implicit .copy_fn. 'void (*const)(void *const restrict, ...)'
+|   |   |     |-ImplicitParamDecl 0x55600dfe9458 <col:17> col:17 implicit .task_t. 'void *const'
+|   |   |     `-ImplicitParamDecl 0x55600dfe94e8 <col:17> col:17 implicit __context 'struct (anonymous at array_tasks1.5_-_main.c:12:17) *'
+|   |   `-DeclRefExpr 0x55600dfe8fa8 <col:49> 'int [16]' lvalue Var 0x55600dfe5d80 'arr' 'int [16]'
+|   |-CallExpr 0x55600dfeba70 <line:21:3, col:32> 'int'
+|   | |-ImplicitCastExpr 0x55600dfeba58 <col:3> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|   | | `-DeclRefExpr 0x55600dfeb9b0 <col:3> 'int (const char *, ...)' Function 0x55600dfe68a0 'printf' 'int (const char *, ...)'
+|   | `-ImplicitCastExpr 0x55600dfebab8 <col:10> 'const char *' <BitCast>
+|   |   `-ImplicitCastExpr 0x55600dfebaa0 <col:10> 'char *' <ArrayToPointerDecay>
+|   |     `-StringLiteral 0x55600dfeba18 <col:10> 'char [19]' lvalue "\n----------------\n"
+|   |-ForStmt 0x55600dfebe38 <line:22:3, line:23:40>
+|   | |-BinaryOperator 0x55600dfebb18 <line:22:8, col:12> 'int' '='
+|   | | |-DeclRefExpr 0x55600dfebad0 <col:8> 'int' lvalue Var 0x55600dfe5e10 'i' 'int'
+|   | | `-IntegerLiteral 0x55600dfebaf8 <col:12> 'int' 0
+|   | |-<<<NULL>>>
+|   | |-BinaryOperator 0x55600dfebba0 <col:15, col:19> 'int' '<'
+|   | | |-ImplicitCastExpr 0x55600dfebb88 <col:15> 'int' <LValueToRValue>
+|   | | | `-DeclRefExpr 0x55600dfebb40 <col:15> 'int' lvalue Var 0x55600dfe5e10 'i' 'int'
+|   | | `-IntegerLiteral 0x55600dfebb68 <col:19> 'int' 16
+|   | |-UnaryOperator 0x55600dfebbf0 <col:23, col:24> 'int' postfix '++'
+|   | | `-DeclRefExpr 0x55600dfebbc8 <col:23> 'int' lvalue Var 0x55600dfe5e10 'i' 'int'
+|   | `-CallExpr 0x55600dfebd98 <line:23:5, col:40> 'int'
+|   |   |-ImplicitCastExpr 0x55600dfebd80 <col:5> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|   |   | `-DeclRefExpr 0x55600dfebc10 <col:5> 'int (const char *, ...)' Function 0x55600dfe68a0 'printf' 'int (const char *, ...)'
+|   |   |-ImplicitCastExpr 0x55600dfebdf0 <col:12> 'const char *' <BitCast>
+|   |   | `-ImplicitCastExpr 0x55600dfebdd8 <col:12> 'char *' <ArrayToPointerDecay>
+|   |   |   `-StringLiteral 0x55600dfebc78 <col:12> 'char [15]' lvalue "arr[%d] is %d\n"
+|   |   |-ImplicitCastExpr 0x55600dfebe08 <col:31> 'int' <LValueToRValue>
+|   |   | `-DeclRefExpr 0x55600dfebcb0 <col:31> 'int' lvalue Var 0x55600dfe5e10 'i' 'int'
+|   |   `-ImplicitCastExpr 0x55600dfebe20 <col:34, col:39> 'int' <LValueToRValue>
+|   |     `-ArraySubscriptExpr 0x55600dfebd58 <col:34, col:39> 'int' lvalue
+|   |       |-ImplicitCastExpr 0x55600dfebd28 <col:34> 'int *' <ArrayToPointerDecay>
+|   |       | `-DeclRefExpr 0x55600dfebcd8 <col:34> 'int [16]' lvalue Var 0x55600dfe5d80 'arr' 'int [16]'
+|   |       `-ImplicitCastExpr 0x55600dfebd40 <col:38> 'int' <LValueToRValue>
+|   |         `-DeclRefExpr 0x55600dfebd00 <col:38> 'int' lvalue Var 0x55600dfe5e10 'i' 'int'
+|   `-ReturnStmt 0x55600dfebe90 <line:25:3, col:10>
+|     `-IntegerLiteral 0x55600dfebe70 <col:10> 'int' 0
+`-FunctionDecl 0x55600dfe68a0 <line:9:7> col:7 implicit used printf 'int (const char *, ...)' extern
+  |-ParmVarDecl 0x55600dfe6940 <<invalid sloc>> <invalid sloc> 'const char *'
+  `-FormatAttr 0x55600dfe69a8 <col:7> Implicit printf 1 2

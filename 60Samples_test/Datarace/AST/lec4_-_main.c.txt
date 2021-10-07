@@ -1,0 +1,54 @@
+TranslationUnitDecl 0x55b58f4e8b98 <<invalid sloc>> <invalid sloc>
+|-TypedefDecl 0x55b58f4e9130 <<invalid sloc>> <invalid sloc> implicit __int128_t '__int128'
+| `-BuiltinType 0x55b58f4e8e30 '__int128'
+|-TypedefDecl 0x55b58f4e91a0 <<invalid sloc>> <invalid sloc> implicit __uint128_t 'unsigned __int128'
+| `-BuiltinType 0x55b58f4e8e50 'unsigned __int128'
+|-TypedefDecl 0x55b58f4e9478 <<invalid sloc>> <invalid sloc> implicit __NSConstantString 'struct __NSConstantString_tag'
+| `-RecordType 0x55b58f4e9280 'struct __NSConstantString_tag'
+|   `-Record 0x55b58f4e91f8 '__NSConstantString_tag'
+|-TypedefDecl 0x55b58f4e9510 <<invalid sloc>> <invalid sloc> implicit __builtin_ms_va_list 'char *'
+| `-PointerType 0x55b58f4e94d0 'char *'
+|   `-BuiltinType 0x55b58f4e8c30 'char'
+|-TypedefDecl 0x55b58f4e97d8 <<invalid sloc>> <invalid sloc> implicit __builtin_va_list 'struct __va_list_tag [1]'
+| `-ConstantArrayType 0x55b58f4e9780 'struct __va_list_tag [1]' 1 
+|   `-RecordType 0x55b58f4e95f0 'struct __va_list_tag'
+|     `-Record 0x55b58f4e9568 '__va_list_tag'
+|-FunctionDecl 0x55b58f542850 <lec4_-_main.c:1:1, line:12:1> line:1:5 main 'int ()'
+| `-CompoundStmt 0x55b58f544a10 <line:2:1, line:12:1>
+|   |-DeclStmt 0x55b58f5429c8 <line:3:3, col:16>
+|   | `-VarDecl 0x55b58f542948 <col:3, col:11> col:7 used x 'int' cinit
+|   |   `-IntegerLiteral 0x55b58f5429a8 <col:11> 'int' 12345
+|   |-DeclStmt 0x55b58f542a78 <line:4:3, col:16>
+|   | `-VarDecl 0x55b58f5429f8 <col:3, col:11> col:7 used y 'int' cinit
+|   |   `-IntegerLiteral 0x55b58f542a58 <col:11> 'int' 11111
+|   |-DeclStmt 0x55b58f542b28 <line:5:3, col:16>
+|   | `-VarDecl 0x55b58f542aa8 <col:3, col:11> col:7 used z 'int' cinit
+|   |   `-IntegerLiteral 0x55b58f542b08 <col:11> 'int' 22222
+|   |-OMPParallelDirective 0x55b58f5437e8 <line:6:11, col:36>
+|   | |-OMPSharedClause 0x55b58f542b90 <col:24, col:36>
+|   | | |-DeclRefExpr 0x55b58f542b40 <col:31> 'int' lvalue Var 0x55b58f5429f8 'y' 'int'
+|   | | `-DeclRefExpr 0x55b58f542b68 <col:34> 'int' lvalue Var 0x55b58f542aa8 'z' 'int'
+|   | `-CapturedStmt 0x55b58f5437b0 <line:7:3, line:10:3>
+|   |   |-CapturedDecl 0x55b58f542cd8 <<invalid sloc>> <invalid sloc>
+|   |   | |-CompoundStmt 0x55b58f543790 <line:7:3, line:10:3>
+|   |   | | |-BinaryOperator 0x55b58f5430d8 <line:8:5, col:28> 'int' '='
+|   |   | | | |-DeclRefExpr 0x55b58f542eb8 <col:5> 'int' lvalue Var 0x55b58f542948 'x' 'int'
+|   |   | | | `-CallExpr 0x55b58f5430b0 <col:9, col:28> 'int'
+|   |   | | |   `-ImplicitCastExpr 0x55b58f543098 <col:9> 'int (*)()' <FunctionToPointerDecay>
+|   |   | | |     `-DeclRefExpr 0x55b58f543040 <col:9> 'int ()' Function 0x55b58f542f90 'omp_get_thread_num' 'int ()'
+|   |   | | `-CallExpr 0x55b58f543730 <line:9:5, col:21> 'int'
+|   |   | |   |-ImplicitCastExpr 0x55b58f543718 <col:5> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|   |   | |   | `-DeclRefExpr 0x55b58f543650 <col:5> 'int (const char *, ...)' Function 0x55b58f5434f0 'printf' 'int (const char *, ...)'
+|   |   | |   `-ImplicitCastExpr 0x55b58f543778 <col:12> 'const char *' <BitCast>
+|   |   | |     `-ImplicitCastExpr 0x55b58f543760 <col:12> 'char *' <ArrayToPointerDecay>
+|   |   | |       `-StringLiteral 0x55b58f5436b8 <col:12> 'char [7]' lvalue "Hello\n"
+|   |   | |-ImplicitParamDecl 0x55b58f542d40 <line:6:11> col:11 implicit .global_tid. 'int *const restrict'
+|   |   | |-ImplicitParamDecl 0x55b58f542da0 <col:11> col:11 implicit .bound_tid. 'int *const restrict'
+|   |   | |-ImplicitParamDecl 0x55b58f542e28 <col:11> col:11 implicit __context 'struct (anonymous at lec4_-_main.c:6:11) *'
+|   |   | `-FunctionDecl 0x55b58f542f90 parent 0x55b58f4e8b98 <<invalid sloc>> line:8:9 implicit used omp_get_thread_num 'int ()'
+|   |   `-DeclRefExpr 0x55b58f542f40 <col:5> 'int' lvalue Var 0x55b58f542948 'x' 'int'
+|   `-ReturnStmt 0x55b58f543838 <line:11:3, col:10>
+|     `-IntegerLiteral 0x55b58f543818 <col:10> 'int' 0
+`-FunctionDecl 0x55b58f5434f0 <line:9:5> col:5 implicit used printf 'int (const char *, ...)' extern
+  |-ParmVarDecl 0x55b58f543590 <<invalid sloc>> <invalid sloc> 'const char *'
+  `-FormatAttr 0x55b58f5435f8 <col:5> Implicit printf 1 2
